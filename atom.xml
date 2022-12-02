@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>舣星码头</title>
+  
+  <subtitle>舣[ yǐ ]：停船靠岸</subtitle>
+  <link href="https://01warpdrive.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://01warpdrive.github.io/"/>
+  <updated>2022-12-02T03:42:40.110Z</updated>
+  <id>https://01warpdrive.github.io/</id>
+  
+  <author>
+    <name>舣星</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>互联网资源</title>
+    <link href="https://01warpdrive.github.io/posts/bc95.html"/>
+    <id>https://01warpdrive.github.io/posts/bc95.html</id>
+    <published>2022-12-02T03:11:38.000Z</published>
+    <updated>2022-12-02T03:42:40.110Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;互联网资源&quot;&gt;&lt;a href=&quot;#互联网资源&quot; class=&quot;headerlink&quot; title=&quot;互联网资源&quot;&gt;&lt;/a&gt;互联网资源&lt;/h1&gt;&lt;p&gt;近十几年来，互联网商业化加速。在逐利的泥沼中，很多优质资源被掩盖在海量的数据里。本文章收录了一些互联网资源，并不定期维护更新。&lt;/p&gt;
+&lt;p&gt;此外，如果相关负责人认为笔者行为涉及侵权，请联系笔者删除。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="资源共享" scheme="https://01warpdrive.github.io/categories/%E8%B5%84%E6%BA%90%E5%85%B1%E4%BA%AB/"/>
+    
+    
+    <category term="资源共享" scheme="https://01warpdrive.github.io/tags/%E8%B5%84%E6%BA%90%E5%85%B1%E4%BA%AB/"/>
+    
+    <category term="不定期更新" scheme="https://01warpdrive.github.io/tags/%E4%B8%8D%E5%AE%9A%E6%9C%9F%E6%9B%B4%E6%96%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>图床测试</title>
+    <link href="https://01warpdrive.github.io/posts/f2eb.html"/>
+    <id>https://01warpdrive.github.io/posts/f2eb.html</id>
+    <published>2022-12-01T04:14:45.000Z</published>
+    <updated>2022-12-02T03:13:28.123Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;图床测试&quot;&gt;&lt;a href=&quot;#图床测试&quot; class=&quot;headerlink&quot; title=&quot;图床测试&quot;&gt;&lt;/a&gt;图床测试&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://notes.sjtu.edu.cn/uploads/upload_572a421050d5af848e688fc45cc1a314.png&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="博客测试" scheme="https://01warpdrive.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%B5%8B%E8%AF%95/"/>
+    
+    
+    <category term="博客测试" scheme="https://01warpdrive.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>darknet 训练 yolov4-tiny模型</title>
+    <link href="https://01warpdrive.github.io/posts/a6dc.html"/>
+    <id>https://01warpdrive.github.io/posts/a6dc.html</id>
+    <published>2022-12-01T01:42:19.000Z</published>
+    <updated>2022-12-01T06:11:49.590Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;darknet-训练-yolov4-tiny模型&quot;&gt;&lt;a href=&quot;#darknet-训练-yolov4-tiny模型&quot; class=&quot;headerlink&quot; title=&quot;darknet 训练 yolov4-tiny模型&quot;&gt;&lt;/a&gt;darknet 训练 yolov4-tiny模型&lt;/h1&gt;&lt;h2 id=&quot;为什么是-yolov4-tiny-模型：&quot;&gt;&lt;a href=&quot;#为什么是-yolov4-tiny-模型：&quot; class=&quot;headerlink&quot; title=&quot;为什么是 yolov4-tiny 模型：&quot;&gt;&lt;/a&gt;为什么是 yolov4-tiny 模型：&lt;/h2&gt;&lt;p&gt;相比官网教程实例采用的 yolov4 和 yolov3， yolov4-tiny 更加小巧，适合机载电脑使用。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="深度学习" scheme="https://01warpdrive.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="深度学习" scheme="https://01warpdrive.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+</feed>
