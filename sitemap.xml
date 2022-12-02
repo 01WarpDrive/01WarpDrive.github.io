@@ -72,13 +72,6 @@
   </url>
   
   <url>
-    <loc>https://01warpdrive.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2022-12-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://01warpdrive.github.io/tags/%E8%B5%84%E6%BA%90%E5%85%B1%E4%BA%AB/</loc>
     <lastmod>2022-12-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -87,6 +80,13 @@
   
   <url>
     <loc>https://01warpdrive.github.io/tags/%E4%B8%8D%E5%AE%9A%E6%9C%9F%E6%9B%B4%E6%96%B0/</loc>
+    <lastmod>2022-12-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://01warpdrive.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2022-12-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -102,14 +102,14 @@
   </url>
   
   <url>
-    <loc>https://01warpdrive.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%B5%8B%E8%AF%95/</loc>
+    <loc>https://01warpdrive.github.io/categories/%E8%B5%84%E6%BA%90%E5%85%B1%E4%BA%AB/</loc>
     <lastmod>2022-12-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://01warpdrive.github.io/categories/%E8%B5%84%E6%BA%90%E5%85%B1%E4%BA%AB/</loc>
+    <loc>https://01warpdrive.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2022-12-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
