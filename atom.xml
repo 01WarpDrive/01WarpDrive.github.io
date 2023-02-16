@@ -6,7 +6,7 @@
   <link href="https://01warpdrive.github.io/atom.xml" rel="self"/>
   
   <link href="https://01warpdrive.github.io/"/>
-  <updated>2022-12-20T03:04:40.563Z</updated>
+  <updated>2023-02-16T06:57:44.255Z</updated>
   <id>https://01warpdrive.github.io/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>手搓操作系统（一）</title>
+    <link href="https://01warpdrive.github.io/posts/230.html"/>
+    <id>https://01warpdrive.github.io/posts/230.html</id>
+    <published>2023-01-17T10:25:56.000Z</published>
+    <updated>2023-02-16T06:57:44.255Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;笔者在网上看到有人推荐MIT 6.828，&lt;a href=&quot;https://www.zhihu.com/question/551946470/answer/2822552983&quot;&gt;原文&lt;/a&gt;。如果能全程跟进这个课程，便能手搓一个mini操作系统内核。太酷了！立马加上日程。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="操作系统" scheme="https://01warpdrive.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+    <category term="-操作系统 -自学" scheme="https://01warpdrive.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E8%87%AA%E5%AD%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>SJTU_ACMOJ 1173. 一道排序题</title>
@@ -46,7 +65,7 @@
     <link href="https://01warpdrive.github.io/posts/bc95.html"/>
     <id>https://01warpdrive.github.io/posts/bc95.html</id>
     <published>2022-12-02T03:11:38.000Z</published>
-    <updated>2022-12-02T03:42:40.110Z</updated>
+    <updated>2023-02-16T07:18:31.711Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;互联网资源&quot;&gt;&lt;a href=&quot;#互联网资源&quot; class=&quot;headerlink&quot; title=&quot;互联网资源&quot;&gt;&lt;/a&gt;互联网资源&lt;/h1&gt;&lt;p&gt;近十几年来，互联网商业化加速。在逐利的泥沼中，很多优质资源被掩盖在海量的数据里。本文章收录了一些互联网资源，并不定期维护更新。&lt;/p&gt;
