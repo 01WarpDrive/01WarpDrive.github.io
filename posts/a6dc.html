@@ -278,7 +278,8 @@
 <p>首先建议拍摄相应的照片素材（&gt;=500)，要求是尽量体现样本的多样性，这关系到最终模型的准确度，你也不想你的丹药废掉吧。</p>
 <p>然后，你可以参考 <a target="_blank" rel="noopener" href="https://github.com/heartexlabs/labelImg">label</a>，配置好标定软件。这里笔者更加推崇 Windows + Anaconda ，其中的 anaconda 是 windows 平台的 python 集成包，对于 python 相关的环境配置有很大的好处（你可以自行百度）。</p>
 <p>关于后续的操作，你可以参考官网的 demo 视频，总之就是四步：1. 选择图片素材的文件夹目录 2. 选择图片标定的类别 3. 在图片上标定方框 4.保存！！！ </p>
-<h2 id="上文火！（三体梗）总之就是开始炼丹了"><a href="#上文火！（三体梗）总之就是开始炼丹了" class="headerlink" title="上文火！（三体梗）总之就是开始炼丹了"></a>上文火！（三体梗）总之就是开始炼丹了</h2><p>你可以查看 github 这个部分 <a target="_blank" rel="noopener" href="https://github.com/AlexeyAB/darknet#how-to-train-tiny-yolo-to-detect-your-custom-objects">训练</a> 以及它的上一个部分。<br>大体上是如下几个步骤：</p>
+<h2 id="上文火！（三体梗）总之就是开始炼丹了"><a href="#上文火！（三体梗）总之就是开始炼丹了" class="headerlink" title="上文火！（三体梗）总之就是开始炼丹了"></a>上文火！（三体梗）总之就是开始炼丹了</h2><p>你可以查看 github 这个部分 <a target="_blank" rel="noopener" href="https://github.com/AlexeyAB/darknet#how-to-train-tiny-yolo-to-detect-your-custom-objects">训练</a> 以及它的上一个部分。
+大体上是如下几个步骤：</p>
 <ul>
 <li>下载预权重文件，后缀是类似 <code>.conv</code>，可以放在 darknet 主目录</li>
 <li>修改 <code>.cfg</code> 文件，在 darknet/cfg 将其他文件内容修改（这部分需要严格参考官网文档）</li>

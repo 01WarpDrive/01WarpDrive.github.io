@@ -282,7 +282,8 @@
 
 
 <p>在调查过程中发现，如今MIT 6.828已经作为研究生课程，而更适合本科生（菜鸟）入门的是MIT 6.S081，它的入门难度更低，并且在网上（B站）有完整的中文字幕视频。因此，作为菜鸟，我毅然决然地选择了MIT 6.S081。</p>
-<p>我将在博客开设「操作系统」分类,<br>并将我学习过程中的笔记和思考记录成系列「手搓操作系统」。</p>
+<p>我将在博客开设「操作系统」分类,
+并将我学习过程中的笔记和思考记录成系列「手搓操作系统」。</p>
 <p>按照预期，本系列将记录笔者学习课程内容的全部记录，其行文顺序和大纲安排依照笔者的实际学习顺序。因此，读者可以跟随本系列完成相应的学习。</p>
 <h1 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h1><p>首先先列出部分参考网站：</p>
 <ul>
@@ -294,20 +295,29 @@
 </li>
 <li><a target="_blank" rel="noopener" href="https://th0ar.gitbooks.io/xv6-chinese/content/">xv6中文文档</a></li>
 </ul>
-<h1 id="LEC1-了解操作系统"><a href="#LEC1-了解操作系统" class="headerlink" title="LEC1-了解操作系统"></a>LEC1-了解操作系统</h1><h2 id="xv6简介"><a href="#xv6简介" class="headerlink" title="xv6简介"></a>xv6简介</h2><p>xv6是MIT 开发的一个教学用的完整的类 Unix 操作系统，<br>可以运行在RISC-V微处理器上。在本课程中，将在Linux中的QEMU机器模拟器上运行xv6。</p>
-<p>对于非Linux系统用户来说，运行xv6需要先安装虚拟机软件模拟Linux系统环境，<br>如果你没有接触过虚拟机，笔者建议你先找个虚拟机相关的博客照着耍一耍。windows用户常用的虚拟机软件为VMware。</p>
+<h1 id="LEC1-了解操作系统"><a href="#LEC1-了解操作系统" class="headerlink" title="LEC1-了解操作系统"></a>LEC1-了解操作系统</h1><h2 id="xv6简介"><a href="#xv6简介" class="headerlink" title="xv6简介"></a>xv6简介</h2><p>xv6是MIT 开发的一个教学用的完整的类 Unix 操作系统，
+可以运行在RISC-V微处理器上。在本课程中，将在Linux中的QEMU机器模拟器上运行xv6。</p>
+<p>对于非Linux系统用户来说，运行xv6需要先安装虚拟机软件模拟Linux系统环境，
+如果你没有接触过虚拟机，笔者建议你先找个虚拟机相关的博客照着耍一耍。windows用户常用的虚拟机软件为VMware。</p>
 <blockquote>
 <p>熟练使用Linux环境对之后的课程有很大帮助，因此建议先找一些简单的linux技术项目练手，熟悉linux的快捷操作。</p>
 </blockquote>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>先准备好Linux环境（版本随意，笔者使用Ubuntu20.04），<br>然后参考<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/509870434">xv6 专栏索引</a>，<br>完成前三篇文章的内容，实现xv6的启动。</p>
-<p>其中，在「[xv6] xv6 的运行环境搭建」中编译QEMU时，<br>要求输入如下代码：</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>先准备好Linux环境（版本随意，笔者使用Ubuntu20.04），
+然后参考<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/509870434">xv6 专栏索引</a>，
+完成前三篇文章的内容，实现xv6的启动。</p>
+<p>其中，在「[xv6] xv6 的运行环境搭建」中编译QEMU时，
+要求输入如下代码：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">../configure --target-list=riscv64-softmmu &amp;&amp; make</span><br></pre></td></tr></table></figure>
 <p>之后报错：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Dependency &quot;pixman-1&quot; not found, tried pkgconfig</span><br></pre></td></tr></table></figure>
 <p>解决方案为：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install libpixman-1-dev</span><br></pre></td></tr></table></figure>
 
-<h2 id="视频P1"><a href="#视频P1" class="headerlink" title="视频P1"></a>视频P1</h2><p>完成xv6的安装后可以开始看B站视频P1。<br>在P1的后半部分，老师介绍了一些xv6中的指令如fork、echo等，<br>通过理解这些指令的功能和实现，笔者初步理解了xv6的具体表现形式。<br>它是一群底层函数的集群，对内存、处理器等硬件状态进行修改。<br>同时，老师引入的一些概念如内存、进程等也揭示了本课程的具体研究对象。</p>
+<h2 id="视频P1"><a href="#视频P1" class="headerlink" title="视频P1"></a>视频P1</h2><p>完成xv6的安装后可以开始看B站视频P1。
+在P1的后半部分，老师介绍了一些xv6中的指令如fork、echo等，
+通过理解这些指令的功能和实现，笔者初步理解了xv6的具体表现形式。
+它是一群底层函数的集群，对内存、处理器等硬件状态进行修改。
+同时，老师引入的一些概念如内存、进程等也揭示了本课程的具体研究对象。</p>
 <p>值得注意的是，视频中一些功能如copy并不在现有的xv6中，仅为教学时方便理解而讲授。</p>
 <h2 id="阅读材料"><a href="#阅读材料" class="headerlink" title="阅读材料"></a>阅读材料</h2><p>完成p1的入门后，笔者开始阅读081官网为lec1提供的阅读材料。</p>
 <p>首先是lec1部分的introduction和examples。introduction部分简单讲解了os的概念和部分xv6的示例函数代码，可以巩固视频p1的所学内容。</p>
@@ -320,7 +330,8 @@
 </ul>
 </li>
 <li>system calls：系统调用“System calls”是应用程序和系统内核交互的桥梁</li>
-<li>process identifier：简写为pid或PID，<br>有别于pid控制算法</li>
+<li>process identifier：简写为pid或PID，
+有别于pid控制算法</li>
 </ul>
 <h3 id="xv6说明文档chapter-1笔记"><a href="#xv6说明文档chapter-1笔记" class="headerlink" title="xv6说明文档chapter_1笔记"></a>xv6说明文档chapter_1笔记</h3><blockquote>
 <p>笔记仅仅为笔者对文档的理解概括。在笔者看来，初学者应当亲自写一份笔记；而完成一遍学习的人可以参考他人的笔记，对比他人的思考差异。</p>
@@ -338,7 +349,8 @@
 </ul>
 </li>
 <li>what will we learn?<ul>
-<li>The rest of this chapter outlines xv6’s services—processes, memory, file descriptors, pipes,<br>and a file system</li>
+<li>The rest of this chapter outlines xv6’s services—processes, memory, file descriptors, pipes,
+and a file system</li>
 </ul>
 </li>
 </ul>
@@ -348,23 +360,33 @@
 <li>an xv6 process consists of user-space memory (instructions, data, stack) and per-process state private to the kernel</li>
 <li>Xv6 time-shares processes: transparently switch the available CPUs among the set of processes waiting to execute</li>
 <li><em>fork</em> creates the child process with the exactly memory contnets as the parent process<ul>
-<li>In the parent, fork returns the<br>child’s PID; in the child, fork returns zero</li>
+<li>In the parent, fork returns the
+child’s PID; in the child, fork returns zero</li>
 </ul>
 </li>
 </ul>
 </li>
 <li><p>functions:</p>
 <ul>
-<li><em>exit</em> : causes the calling process to stop executing and to release resources such as<br>memory and open files</li>
-<li><em>wait</em> : returns the PID of an exited (or killed) child of<br>the current process and copies the exit status of the child to the address passed to wait; if none of<br>the caller’s children has exited, wait waits for one to do so</li>
-<li><em>exec</em> : replaces the calling process’s memory with a new memory image loaded<br>from a file stored in the file system</li>
+<li><em>exit</em> : causes the calling process to stop executing and to release resources such as
+memory and open files</li>
+<li><em>wait</em> : returns the PID of an exited (or killed) child of
+the current process and copies the exit status of the child to the address passed to wait; if none of
+the caller’s children has exited, wait waits for one to do so</li>
+<li><em>exec</em> : replaces the calling process’s memory with a new memory image loaded
+from a file stored in the file system</li>
 </ul>
 </li>
 <li><p>the xv6 shell: the main loop reads a line of input from the user with <em>get cmd</em>; then it calls <em>fork</em>, which creates a copy of the shell process; the parent calls <em>wait</em>, while the child runs the commands</p>
 <ul>
 <li>why <em>fork</em> and <em>exec</em> are not combined in a single call:   <ul>
-<li>To avoid the wastefulness<br>of creating a duplicate process and then immediately replacing it (with <em>exec</em>), operating kernels<br>optimize the implementation of <em>fork</em> for this use case by using virtual memory techniques such<br>as copy-on-write</li>
-<li>between the<br>two, the shell has a chance to redirect the child’s I/O without disturbing the I/O setup of the main<br>shell</li>
+<li>To avoid the wastefulness
+of creating a duplicate process and then immediately replacing it (with <em>exec</em>), operating kernels
+optimize the implementation of <em>fork</em> for this use case by using virtual memory techniques such
+as copy-on-write</li>
+<li>between the
+two, the shell has a chance to redirect the child’s I/O without disturbing the I/O setup of the main
+shell</li>
 </ul>
 </li>
 </ul>
@@ -374,30 +396,41 @@
 <li><p>a <em>file descriptor</em> is a small number representing a kernel-managed object that a process may read from or write to</p>
 <ul>
 <li>be used as an index into a per-process table, so that every process has a private space of file descriptors starting at zero</li>
-<li>a process reads<br>from file descriptor 0 (standard input), writes output to file descriptor 1 (standard output), and<br>writes error messages to file descriptor 2 (standard error)</li>
+<li>a process reads
+from file descriptor 0 (standard input), writes output to file descriptor 1 (standard output), and
+writes error messages to file descriptor 2 (standard error)</li>
 <li><em>file descriptors</em> and <em>fork</em> interact to make the I/O redirection easy to implement</li>
-<li>Although fork copies the file descriptor table, each underlying file offset is shared between<br>parent and child；This behavior helps produce sequential output from sequences of shell<br>commands</li>
+<li>Although fork copies the file descriptor table, each underlying file offset is shared between
+parent and child；This behavior helps produce sequential output from sequences of shell
+commands</li>
 </ul>
 </li>
 <li><p>functions:</p>
 <ul>
-<li>The call <em>read(fd, buf, n)</em> reads at most <em>n</em> bytes from the file descriptor <em>fd</em>, copies<br>them into <em>buf</em>, and returns the number of bytes read; Each file descriptor that refers to a file has an<br>offset associated with it</li>
-<li>The call <em>write(fd, buf, n)</em> writes <em>n</em> bytes from <em>buf</em> to the file descriptor <em>fd</em> and returns the<br>number of bytes written; Like <em>read</em>,</li>
+<li>The call <em>read(fd, buf, n)</em> reads at most <em>n</em> bytes from the file descriptor <em>fd</em>, copies
+them into <em>buf</em>, and returns the number of bytes read; Each file descriptor that refers to a file has an
+offset associated with it</li>
+<li>The call <em>write(fd, buf, n)</em> writes <em>n</em> bytes from <em>buf</em> to the file descriptor <em>fd</em> and returns the
+number of bytes written; Like <em>read</em>,</li>
 </ul>
 </li>
-<li><p>write* writes data at the current file offset and then advances that offset by the number of bytes<br>written</p>
+<li><p>write* writes data at the current file offset and then advances that offset by the number of bytes
+written</p>
 <ul>
 <li>The <em>close</em> system call releases a file descriptor, making it free for reuse by a future <em>open</em>,</li>
 </ul>
 </li>
 <li><p>pipe*, or <em>dup</em> system call</p>
 <ul>
-<li>The <em>dup</em> system call duplicates an existing file descriptor, returning a new one that refers to<br>the same underlying I/O object. Both file descriptors share an offset</li>
+<li>The <em>dup</em> system call duplicates an existing file descriptor, returning a new one that refers to
+the same underlying I/O object. Both file descriptors share an offset</li>
 </ul>
 </li>
 <li><p>details:</p>
 <ul>
-<li>Two file descriptors share an offset if they were derived from the same original file descriptor<br>by a sequence of fork and dup calls. Otherwise file descriptors do not share offsets, even if they<br>resulted from open calls for the same file</li>
+<li>Two file descriptors share an offset if they were derived from the same original file descriptor
+by a sequence of fork and dup calls. Otherwise file descriptors do not share offsets, even if they
+resulted from open calls for the same file</li>
 </ul>
 </li>
 </ul>
