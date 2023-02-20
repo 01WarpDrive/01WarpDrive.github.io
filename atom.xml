@@ -6,7 +6,7 @@
   <link href="https://01warpdrive.github.io/atom.xml" rel="self"/>
   
   <link href="https://01warpdrive.github.io/"/>
-  <updated>2023-02-16T12:22:40.563Z</updated>
+  <updated>2023-02-20T04:56:10.091Z</updated>
   <id>https://01warpdrive.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>拆轮子（一）</title>
+    <link href="https://01warpdrive.github.io/posts/ebc4.html"/>
+    <id>https://01warpdrive.github.io/posts/ebc4.html</id>
+    <published>2023-02-20T04:52:25.000Z</published>
+    <updated>2023-02-20T04:56:10.091Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;在尝试造轮子的过程中，笔者常常感到缺乏工程经验。回顾&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="项目合集" scheme="https://01warpdrive.github.io/categories/%E9%A1%B9%E7%9B%AE%E5%90%88%E9%9B%86/"/>
+    
+    
+    <category term="拆轮子" scheme="https://01warpdrive.github.io/tags/%E6%8B%86%E8%BD%AE%E5%AD%90/"/>
+    
+    <category term="自学" scheme="https://01warpdrive.github.io/tags/%E8%87%AA%E5%AD%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>手搓操作系统（一）</title>
