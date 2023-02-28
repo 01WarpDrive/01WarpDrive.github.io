@@ -37,7 +37,7 @@
 <meta property="og:image" content="https://notes.sjtu.edu.cn/uploads/upload_db095071f1a148576988729135cc6092.png">
 <meta property="og:image" content="https://notes.sjtu.edu.cn/uploads/upload_bfb0fb3c3565cfa7cea93cb84875c687.png">
 <meta property="article:published_time" content="2023-02-28T06:30:07.000Z">
-<meta property="article:modified_time" content="2023-02-28T06:32:06.252Z">
+<meta property="article:modified_time" content="2023-02-28T06:42:46.917Z">
 <meta property="article:author" content="舣星">
 <meta property="article:tag" content="-经验分享 -windows">
 <meta name="twitter:card" content="summary">
@@ -231,7 +231,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-02-28 14:30:07 / 修改时间：14:32:06" itemprop="dateCreated datePublished" datetime="2023-02-28T14:30:07+08:00">2023-02-28</time>
+              <time title="创建时间：2023-02-28 14:30:07 / 修改时间：14:42:46" itemprop="dateCreated datePublished" datetime="2023-02-28T14:30:07+08:00">2023-02-28</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -280,48 +280,27 @@
 <span id="more"></span>
 
 <p>然后，笔者是第二次遇到了hyper-V难以关闭的弱智问题，对于这种深埋底层、有替代方案的答辩功能笔者深恶痛绝，建议凡是需要用到ubuntu虚拟机的统一用vmware，网上资料多得是。不要随便搞windows的底层功能，出了问题难以找到正确的操作指南！！！</p>
-<h2 id="网上常见的关闭方法与背后意义"><a href="#网上常见的关闭方法与背后意义" class="headerlink" title="网上常见的关闭方法与背后意义"></a>网上常见的关闭方法与背后意义</h2><ol>
-<li>启用或关闭windows功能</li>
-</ol>
-<p>这也是大多数人对hyper-v的理解，网上常见的开启和关闭hyper-v功能都涉及到windows功能中的五种选项。</p>
+<h2 id="网上常见的关闭方法与背后意义"><a href="#网上常见的关闭方法与背后意义" class="headerlink" title="网上常见的关闭方法与背后意义"></a>网上常见的关闭方法与背后意义</h2><h3 id="1-启用或关闭windows功能"><a href="#1-启用或关闭windows功能" class="headerlink" title="1. 启用或关闭windows功能"></a>1. 启用或关闭windows功能</h3><p>这也是大多数人对hyper-v的理解，网上常见的开启和关闭hyper-v功能都涉及到windows功能中的五种选项。</p>
 <p>在<a target="_blank" rel="noopener" href="https://www.bluestacks.cn/faq_detail.html?id=102?utm_campaign=nxt_cn_5.10.0.6513&utm_source=support&utm_medium=bs5_player&email=&guid=a1fadb47-fe53-4e3c-a7dc-3f3155acc025&oem=nxt_cn&client_ver=5.10.0.6513&install_id=8dcfaf9e-b801-4de2-b0c7-0bf4e30cf6d3&locale_lang=zh-TW&country=CN&vmname=Pie64&locale=zh-tw">蓝叠模拟器hyper-V解决指导</a>中展示了如下图需要关闭的几种功能。</p>
 <p>这些功能是windows系统集成的windows功能开关，原则上通过这些开关关闭后，windows可以帮你配置底层的一些注册表、组策略等选项。好运的用户在这一步便能关闭hyper-V。</p>
 <p><img src="https://notes.sjtu.edu.cn/uploads/upload_c025a91918ac8f7eefb44d0db872bc9e.png"></p>
-<ol start="2">
-<li>注册表关闭</li>
-</ol>
-<p>同样是蓝叠介绍的方法，通过打开注册表(打开cmd窗口，输入regedit回车)，然后到“HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard”
+<h3 id="2-注册表关闭"><a href="#2-注册表关闭" class="headerlink" title="2. 注册表关闭"></a>2. 注册表关闭</h3><p>同样是蓝叠介绍的方法，通过打开注册表(打开cmd窗口，输入regedit回车)，然后到“HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard”
 将“EnableVirtualizationBasedSecurity”和“RequireMicrosoftSignedBootChain”两项都设置成“0”。</p>
 <p>再到“HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios下将HypervisorEnforcedCodeIntegrity的E”nabled”设置成”0”。</p>
 <p>这个方法涉及到了修改注册表，也是上文windows功能能够自动实现的，但特殊情况下windows功能没成功关闭注册表中这些选项，因此有些教程会让你尝试关闭这几个选项。</p>
 <p>如果完成了这一步后，仍然没有成功关闭hyper-V，那并非是你的改变无效。hyper-V包含了windows系统中好几个分散各处的功能，你仅仅关闭了其中最显眼的一个。这也是很多人尝试了网上多种方法却毫无收获的原因，其实你每一步都起到了作用，但没覆盖你所遇到的所有问题。</p>
-<ol start="3">
-<li>管理员打开cmd
-另外有教程要求以管理员模式打开命令提示符，输入：
+<h3 id="3-管理员打开cmd"><a href="#3-管理员打开cmd" class="headerlink" title="3. 管理员打开cmd"></a>3. 管理员打开cmd</h3><p>另外有教程要求以管理员模式打开命令提示符，输入：
 <code>bcdedit /set hypervisorlaunchtype off</code>
-之后重启。</li>
-</ol>
+之后重启。</p>
 <p>这个方法也是尝试配设内部的启动项，目的同样是关闭hyper-V。网上倒是有不少人反映这一步后解决了。</p>
-<ol start="4">
-<li>关闭相关服务
-在“计算机管理-服务”里把hyper-v相关服务关闭。
-<img src="https://notes.sjtu.edu.cn/uploads/upload_db095071f1a148576988729135cc6092.png"></li>
-</ol>
+<h3 id="4-关闭相关服务"><a href="#4-关闭相关服务" class="headerlink" title="4. 关闭相关服务"></a>4. 关闭相关服务</h3><p>在“计算机管理-服务”里把hyper-v相关服务关闭。
+<img src="https://notes.sjtu.edu.cn/uploads/upload_db095071f1a148576988729135cc6092.png"></p>
 <p>说实话这个服务笔者不是很理解，windows发展到现在，给笔者的感觉就是盘根错节，为了实现hyper-v，windows内部不知道牵扯了多少功能。</p>
-<ol start="5">
-<li>关闭内存完整性</li>
-</ol>
-<p>win11中进入windows安全中心，在「内核隔离」中关闭内存完整性。</p>
+<h3 id="5-关闭内存完整性"><a href="#5-关闭内存完整性" class="headerlink" title="5. 关闭内存完整性"></a>5. 关闭内存完整性</h3><p>win11中进入windows安全中心，在「内核隔离」中关闭内存完整性。</p>
 <p>内核完整性是win11推出的垃圾功能，即便没有hyper-v烦恼也值得关闭，它会占用性能资源。</p>
-<ol start="6">
-<li>模拟器提供的补丁</li>
-</ol>
-<p>在<a target="_blank" rel="noopener" href="https://www.bluestacks.cn/faq_detail.html?id=102?utm_campaign=nxt_cn_5.10.0.6513&utm_source=support&utm_medium=bs5_player&email=&guid=a1fadb47-fe53-4e3c-a7dc-3f3155acc025&oem=nxt_cn&client_ver=5.10.0.6513&install_id=8dcfaf9e-b801-4de2-b0c7-0bf4e30cf6d3&locale_lang=zh-TW&country=CN&vmname=Pie64&locale=zh-tw">蓝叠模拟器hyper-V解决指导</a>蓝叠提供了exe程序，用于帮助用户自动配置hyper-v。同时，新版的mumu模拟器在报错hyper-v后也会提供选项帮你自动配置。</p>
+<h3 id="6-模拟器提供的补丁"><a href="#6-模拟器提供的补丁" class="headerlink" title="6. 模拟器提供的补丁"></a>6. 模拟器提供的补丁</h3><p>在<a target="_blank" rel="noopener" href="https://www.bluestacks.cn/faq_detail.html?id=102?utm_campaign=nxt_cn_5.10.0.6513&utm_source=support&utm_medium=bs5_player&email=&guid=a1fadb47-fe53-4e3c-a7dc-3f3155acc025&oem=nxt_cn&client_ver=5.10.0.6513&install_id=8dcfaf9e-b801-4de2-b0c7-0bf4e30cf6d3&locale_lang=zh-TW&country=CN&vmname=Pie64&locale=zh-tw">蓝叠模拟器hyper-V解决指导</a>蓝叠提供了exe程序，用于帮助用户自动配置hyper-v。同时，新版的mumu模拟器在报错hyper-v后也会提供选项帮你自动配置。</p>
 <p>很可惜的是笔者没成功。</p>
-<ol start="7">
-<li>基于虚拟化的安全性</li>
-</ol>
-<p>首先提一嘴的是笔者是到这一步解决问题，笔者用的是华硕、windows11专业版。</p>
+<h3 id="7-基于虚拟化的安全性"><a href="#7-基于虚拟化的安全性" class="headerlink" title="7. 基于虚拟化的安全性"></a>7. 基于虚拟化的安全性</h3><p>首先提一嘴的是笔者是到这一步解决问题，笔者用的是华硕、windows11专业版。</p>
 <p>参考<a target="_blank" rel="noopener" href="https://www.cnblogs.com/xdl-smile/p/12736646.html">博客园</a>，win+R后查询msinfo32，打开系统信息，查看基于虚拟化的安全性是否启动。</p>
 <p><img src="https://notes.sjtu.edu.cn/uploads/upload_bfb0fb3c3565cfa7cea93cb84875c687.png"></p>
 <p>如果开启了，则按照笔者引用的博客中的方案，下载微软提供的脚本并运行，重启后windows会引导你关闭基于虚拟化的安全性。</p>
@@ -526,7 +505,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hyper-V%E7%A6%81%E7%94%A8%E6%8C%87%E5%8D%97"><span class="nav-number">1.</span> <span class="nav-text">Hyper-V禁用指南</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%91%E4%B8%8A%E5%B8%B8%E8%A7%81%E7%9A%84%E5%85%B3%E9%97%AD%E6%96%B9%E6%B3%95%E4%B8%8E%E8%83%8C%E5%90%8E%E6%84%8F%E4%B9%89"><span class="nav-number">1.2.</span> <span class="nav-text">网上常见的关闭方法与背后意义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">1.3.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hyper-V%E7%A6%81%E7%94%A8%E6%8C%87%E5%8D%97"><span class="nav-number">1.</span> <span class="nav-text">Hyper-V禁用指南</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%91%E4%B8%8A%E5%B8%B8%E8%A7%81%E7%9A%84%E5%85%B3%E9%97%AD%E6%96%B9%E6%B3%95%E4%B8%8E%E8%83%8C%E5%90%8E%E6%84%8F%E4%B9%89"><span class="nav-number">1.2.</span> <span class="nav-text">网上常见的关闭方法与背后意义</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%90%AF%E7%94%A8%E6%88%96%E5%85%B3%E9%97%ADwindows%E5%8A%9F%E8%83%BD"><span class="nav-number">1.2.1.</span> <span class="nav-text">1. 启用或关闭windows功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%85%B3%E9%97%AD"><span class="nav-number">1.2.2.</span> <span class="nav-text">2. 注册表关闭</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E7%AE%A1%E7%90%86%E5%91%98%E6%89%93%E5%BC%80cmd"><span class="nav-number">1.2.3.</span> <span class="nav-text">3. 管理员打开cmd</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E5%85%B3%E9%97%AD%E7%9B%B8%E5%85%B3%E6%9C%8D%E5%8A%A1"><span class="nav-number">1.2.4.</span> <span class="nav-text">4. 关闭相关服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E5%85%B3%E9%97%AD%E5%86%85%E5%AD%98%E5%AE%8C%E6%95%B4%E6%80%A7"><span class="nav-number">1.2.5.</span> <span class="nav-text">5. 关闭内存完整性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-%E6%A8%A1%E6%8B%9F%E5%99%A8%E6%8F%90%E4%BE%9B%E7%9A%84%E8%A1%A5%E4%B8%81"><span class="nav-number">1.2.6.</span> <span class="nav-text">6. 模拟器提供的补丁</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-%E5%9F%BA%E4%BA%8E%E8%99%9A%E6%8B%9F%E5%8C%96%E7%9A%84%E5%AE%89%E5%85%A8%E6%80%A7"><span class="nav-number">1.2.7.</span> <span class="nav-text">7. 基于虚拟化的安全性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">1.3.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
