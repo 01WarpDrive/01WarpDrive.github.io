@@ -26,20 +26,24 @@
     var CONFIG = {"hostname":"01warpdrive.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="简介笔者在网上看到有人推荐MIT 6.828，原文。如果能全程跟进这个课程，便能手搓一个mini操作系统内核。太酷了！立马加上日程。">
+  <meta name="description" content="Hyper-V禁用指南前言本文是笔者在浪费了宝贵的午睡时间尝试关闭hyper-V后写下的，难免带有极端情绪和错漏，敬请谅解。 首先，本文的面向对象是那些已经尝试过几种网上方法，重启了好几次电脑但未果的用户。本文汇总了笔者解决hyper-V关闭问题的一些经历和心得。还没尝试过几种常见关闭方法的用户先尝试那些，成功了可以节省时间。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="手搓操作系统（一）">
-<meta property="og:url" content="https://01warpdrive.github.io/posts/230.html">
+<meta property="og:title" content="Hyper-V禁用指南">
+<meta property="og:url" content="https://01warpdrive.github.io/posts/820f.html">
 <meta property="og:site_name" content="舣星码头">
-<meta property="og:description" content="简介笔者在网上看到有人推荐MIT 6.828，原文。如果能全程跟进这个课程，便能手搓一个mini操作系统内核。太酷了！立马加上日程。">
+<meta property="og:description" content="Hyper-V禁用指南前言本文是笔者在浪费了宝贵的午睡时间尝试关闭hyper-V后写下的，难免带有极端情绪和错漏，敬请谅解。 首先，本文的面向对象是那些已经尝试过几种网上方法，重启了好几次电脑但未果的用户。本文汇总了笔者解决hyper-V关闭问题的一些经历和心得。还没尝试过几种常见关闭方法的用户先尝试那些，成功了可以节省时间。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-01-17T10:25:56.000Z">
-<meta property="article:modified_time" content="2023-02-20T06:58:21.608Z">
+<meta property="og:image" content="https://notes.sjtu.edu.cn/uploads/upload_c025a91918ac8f7eefb44d0db872bc9e.png">
+<meta property="og:image" content="https://notes.sjtu.edu.cn/uploads/upload_db095071f1a148576988729135cc6092.png">
+<meta property="og:image" content="https://notes.sjtu.edu.cn/uploads/upload_bfb0fb3c3565cfa7cea93cb84875c687.png">
+<meta property="article:published_time" content="2023-02-28T06:30:07.000Z">
+<meta property="article:modified_time" content="2023-02-28T06:32:06.252Z">
 <meta property="article:author" content="舣星">
-<meta property="article:tag" content="-操作系统 -自学">
+<meta property="article:tag" content="-经验分享 -windows">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://notes.sjtu.edu.cn/uploads/upload_c025a91918ac8f7eefb44d0db872bc9e.png">
 
-<link rel="canonical" href="https://01warpdrive.github.io/posts/230.html">
+<link rel="canonical" href="https://01warpdrive.github.io/posts/820f.html">
 
 
 <script id="page-configurations">
@@ -52,7 +56,7 @@
   };
 </script>
 
-  <title>手搓操作系统（一） | 舣星码头</title>
+  <title>Hyper-V禁用指南 | 舣星码头</title>
   
 
 
@@ -201,7 +205,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://01warpdrive.github.io/posts/230.html">
+    <link itemprop="mainEntityOfPage" href="https://01warpdrive.github.io/posts/820f.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -214,7 +218,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          手搓操作系统（一）
+          Hyper-V禁用指南
         </h1>
 
         <div class="post-meta">
@@ -225,23 +229,17 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2023-01-17 18:25:56" itemprop="dateCreated datePublished" datetime="2023-01-17T18:25:56+08:00">2023-01-17</time>
+              <time title="创建时间：2023-02-28 14:30:07 / 修改时间：14:32:06" itemprop="dateCreated datePublished" datetime="2023-02-28T14:30:07+08:00">2023-02-28</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-02-20 14:58:21" itemprop="dateModified" datetime="2023-02-20T14:58:21+08:00">2023-02-20</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" itemprop="url" rel="index"><span itemprop="name">操作系统</span></a>
+                  <a href="/categories/windows/" itemprop="url" rel="index"><span itemprop="name">windows</span></a>
                 </span>
             </span>
 
@@ -258,14 +256,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>4.9k</span>
+              <span>1.8k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>4 分钟</span>
+              <span>2 分钟</span>
             </span>
 
         </div>
@@ -277,171 +275,58 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>笔者在网上看到有人推荐MIT 6.828，<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/551946470/answer/2822552983">原文</a>。如果能全程跟进这个课程，便能手搓一个mini操作系统内核。太酷了！立马加上日程。</p>
+        <h1 id="Hyper-V禁用指南"><a href="#Hyper-V禁用指南" class="headerlink" title="Hyper-V禁用指南"></a>Hyper-V禁用指南</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文是笔者在浪费了宝贵的午睡时间尝试关闭hyper-V后写下的，难免带有极端情绪和错漏，敬请谅解。</p>
+<p>首先，本文的面向对象是那些<strong>已经尝试过几种网上方法，重启了好几次电脑但未果</strong>的用户。本文汇总了笔者解决hyper-V关闭问题的一些经历和心得。还没尝试过几种常见关闭方法的用户先尝试那些，成功了可以节省时间。</p>
 <span id="more"></span>
 
-
-<p>在调查过程中发现，如今MIT 6.828已经作为研究生课程，而更适合本科生（菜鸟）入门的是MIT 6.S081，它的入门难度更低，并且在网上（B站）有完整的中文字幕视频。因此，作为菜鸟，我毅然决然地选择了MIT 6.S081。</p>
-<p>我将在博客开设「操作系统」分类,
-并将我学习过程中的笔记和思考记录成系列「手搓操作系统」。</p>
-<p>按照预期，本系列将记录笔者学习课程内容的全部记录，其行文顺序和大纲安排依照笔者的实际学习顺序。因此，读者可以跟随本系列完成相应的学习。</p>
-<h1 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h1><p>首先先列出部分参考网站：</p>
-<ul>
-<li><a target="_blank" rel="noopener" href="https://pdos.csail.mit.edu/6.S081/2020/schedule.html">S081的官网，主要学习资料</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV19k4y1C7kA/?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=8454ab826a14f828220a9319be9bc502">S081教学视频，主要学习资料</a></li>
-<li><a target="_blank" rel="noopener" href="https://pdos.csail.mit.edu/6.S081/2020/xv6/book-riscv-rev1.pdf">xv6说明文档</a><blockquote>
-<p>xv6为课程教学用的简单系统。在这儿笔者提供的是2020版的文档，读者应当到官网上确认文档是否更新，看新不看旧。</p>
-</blockquote>
-</li>
-<li><a target="_blank" rel="noopener" href="https://th0ar.gitbooks.io/xv6-chinese/content/">xv6中文文档</a></li>
-</ul>
-<h1 id="LEC1-了解操作系统"><a href="#LEC1-了解操作系统" class="headerlink" title="LEC1-了解操作系统"></a>LEC1-了解操作系统</h1><h2 id="xv6简介"><a href="#xv6简介" class="headerlink" title="xv6简介"></a>xv6简介</h2><p>xv6是MIT 开发的一个教学用的完整的类 Unix 操作系统，
-可以运行在RISC-V微处理器上。在本课程中，将在Linux中的QEMU机器模拟器上运行xv6。</p>
-<p>对于非Linux系统用户来说，运行xv6需要先安装虚拟机软件模拟Linux系统环境，
-如果你没有接触过虚拟机，笔者建议你先找个虚拟机相关的博客照着耍一耍。windows用户常用的虚拟机软件为VMware。</p>
-<blockquote>
-<p>熟练使用Linux环境对之后的课程有很大帮助，因此建议先找一些简单的linux技术项目练手，熟悉linux的快捷操作。</p>
-</blockquote>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>先准备好Linux环境（版本随意，笔者使用Ubuntu20.04），
-然后参考<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/509870434">xv6 专栏索引</a>，
-完成前三篇文章的内容，实现xv6的启动。</p>
-<p>其中，在「[xv6] xv6 的运行环境搭建」中编译QEMU时，
-要求输入如下代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">../configure --target-list=riscv64-softmmu &amp;&amp; make</span><br></pre></td></tr></table></figure>
-<p>之后报错：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Dependency &quot;pixman-1&quot; not found, tried pkgconfig</span><br></pre></td></tr></table></figure>
-<p>解决方案为：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install libpixman-1-dev</span><br></pre></td></tr></table></figure>
-
-<h2 id="视频P1"><a href="#视频P1" class="headerlink" title="视频P1"></a>视频P1</h2><p>完成xv6的安装后可以开始看B站视频P1。
-在P1的后半部分，老师介绍了一些xv6中的指令如fork、echo等，
-通过理解这些指令的功能和实现，笔者初步理解了xv6的具体表现形式。
-它是一群底层函数的集群，对内存、处理器等硬件状态进行修改。
-同时，老师引入的一些概念如内存、进程等也揭示了本课程的具体研究对象。</p>
-<p>值得注意的是，视频中一些功能如copy并不在现有的xv6中，仅为教学时方便理解而讲授。</p>
-<h2 id="阅读材料"><a href="#阅读材料" class="headerlink" title="阅读材料"></a>阅读材料</h2><p>完成p1的入门后，笔者开始阅读081官网为lec1提供的阅读材料。</p>
-<p>首先是lec1部分的introduction和examples。introduction部分简单讲解了os的概念和部分xv6的示例函数代码，可以巩固视频p1的所学内容。</p>
-<p>然后是阅读xv6的说明文档chapter 1：Operating system interfaces。还未适应英文阅读的读者可以配合xv6中文文档使用。</p>
-<h2 id="笔记"><a href="#笔记" class="headerlink" title="笔记"></a>笔记</h2><h3 id="部分词汇概念"><a href="#部分词汇概念" class="headerlink" title="部分词汇概念"></a>部分词汇概念</h3><ul>
-<li>file descriptor（文件描述符）：<ul>
-<li>内核为了高效管理已被打开的文件所创建的索引，用于指代被打开的文件，对文件所有 I/O 操作相关的系统调用都需要通过文件描述符；</li>
-<li>代码中使用缩写fd作为int类型变量名，指代索引；</li>
-<li>unix中约定0为标准输入，1为标准输出；</li>
-</ul>
-</li>
-<li>system calls：系统调用“System calls”是应用程序和系统内核交互的桥梁</li>
-<li>process identifier：简写为pid或PID，
-有别于pid控制算法</li>
-</ul>
-<h3 id="xv6说明文档chapter-1笔记"><a href="#xv6说明文档chapter-1笔记" class="headerlink" title="xv6说明文档chapter_1笔记"></a>xv6说明文档chapter_1笔记</h3><blockquote>
-<p>笔记仅仅为笔者对文档的理解概括。在笔者看来，初学者应当亲自写一份笔记；而完成一遍学习的人可以参考他人的笔记，对比他人的思考差异。</p>
-</blockquote>
-<h4 id="introduction"><a href="#introduction" class="headerlink" title="introduction"></a>introduction</h4><ul>
-<li>why do we need an operating system?<ul>
-<li>to share a computer among multiple programs</li>
-<li>provide controlled ways for programs to interact</li>
-</ul>
-</li>
-<li>xv6 takes the traditional form of a kernel：<ul>
-<li>a special program that provides services to running programs</li>
-<li>Each running program, called a process, has memory containing instructions, data, and a stack</li>
-<li>a process  invokes a system call; the system call enters the kernel; the kernel performs the service and returns</li>
-</ul>
-</li>
-<li>what will we learn?<ul>
-<li>The rest of this chapter outlines xv6’s services—processes, memory, file descriptors, pipes,
-and a file system</li>
-</ul>
-</li>
-</ul>
-<h4 id="Processes-and-memory"><a href="#Processes-and-memory" class="headerlink" title="Processes and memory"></a>Processes and memory</h4><ul>
-<li><p>process</p>
-<ul>
-<li>an xv6 process consists of user-space memory (instructions, data, stack) and per-process state private to the kernel</li>
-<li>Xv6 time-shares processes: transparently switch the available CPUs among the set of processes waiting to execute</li>
-<li><em>fork</em> creates the child process with the exactly memory contnets as the parent process<ul>
-<li>In the parent, fork returns the
-child’s PID; in the child, fork returns zero</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>functions:</p>
-<ul>
-<li><em>exit</em> : causes the calling process to stop executing and to release resources such as
-memory and open files</li>
-<li><em>wait</em> : returns the PID of an exited (or killed) child of
-the current process and copies the exit status of the child to the address passed to wait; if none of
-the caller’s children has exited, wait waits for one to do so</li>
-<li><em>exec</em> : replaces the calling process’s memory with a new memory image loaded
-from a file stored in the file system</li>
-</ul>
-</li>
-<li><p>the xv6 shell: the main loop reads a line of input from the user with <em>get cmd</em>; then it calls <em>fork</em>, which creates a copy of the shell process; the parent calls <em>wait</em>, while the child runs the commands</p>
-<ul>
-<li>why <em>fork</em> and <em>exec</em> are not combined in a single call:   <ul>
-<li>To avoid the wastefulness
-of creating a duplicate process and then immediately replacing it (with <em>exec</em>), operating kernels
-optimize the implementation of <em>fork</em> for this use case by using virtual memory techniques such
-as copy-on-write</li>
-<li>between the
-two, the shell has a chance to redirect the child’s I/O without disturbing the I/O setup of the main
-shell</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h4 id="I-O-and-File-descriptors"><a href="#I-O-and-File-descriptors" class="headerlink" title="I/O and File descriptors"></a>I/O and File descriptors</h4><ul>
-<li><p>a <em>file descriptor</em> is a small number representing a kernel-managed object that a process may read from or write to</p>
-<ul>
-<li>be used as an index into a per-process table, so that every process has a private space of file descriptors starting at zero</li>
-<li>a process reads
-from file descriptor 0 (standard input), writes output to file descriptor 1 (standard output), and
-writes error messages to file descriptor 2 (standard error)</li>
-<li><em>file descriptors</em> and <em>fork</em> interact to make the I/O redirection easy to implement</li>
-<li>Although fork copies the file descriptor table, each underlying file offset is shared between
-parent and child；This behavior helps produce sequential output from sequences of shell
-commands</li>
-</ul>
-</li>
-<li><p>functions:</p>
-<ul>
-<li>The call <em>read(fd, buf, n)</em> reads at most <em>n</em> bytes from the file descriptor <em>fd</em>, copies
-them into <em>buf</em>, and returns the number of bytes read; Each file descriptor that refers to a file has an
-offset associated with it</li>
-<li>The call <em>write(fd, buf, n)</em> writes <em>n</em> bytes from <em>buf</em> to the file descriptor <em>fd</em> and returns the
-number of bytes written; Like <em>read</em>,</li>
-</ul>
-</li>
-<li><p>write* writes data at the current file offset and then advances that offset by the number of bytes
-written</p>
-<ul>
-<li>The <em>close</em> system call releases a file descriptor, making it free for reuse by a future <em>open</em>,</li>
-</ul>
-</li>
-<li><p>pipe*, or <em>dup</em> system call</p>
-<ul>
-<li>The <em>dup</em> system call duplicates an existing file descriptor, returning a new one that refers to
-the same underlying I/O object. Both file descriptors share an offset</li>
-</ul>
-</li>
-<li><p>details:</p>
-<ul>
-<li>Two file descriptors share an offset if they were derived from the same original file descriptor
-by a sequence of fork and dup calls. Otherwise file descriptors do not share offsets, even if they
-resulted from open calls for the same file</li>
-</ul>
-</li>
-</ul>
-<h4 id="Pipes"><a href="#Pipes" class="headerlink" title="Pipes"></a>Pipes</h4><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/skyroben/article/details/71513385">pipe概念介绍</a></p>
-<ul>
-<li>A <em>pipe</em> is a small kernel buffer exposed to processes as a pair of file descriptors, one for reading and one for writing<ul>
-<li>Pipes provide a way for processes to communicate</li>
-</ul>
-</li>
-<li></li>
-</ul>
+<p>然后，笔者是第二次遇到了hyper-V难以关闭的弱智问题，对于这种深埋底层、有替代方案的答辩功能笔者深恶痛绝，建议凡是需要用到ubuntu虚拟机的统一用vmware，网上资料多得是。不要随便搞windows的底层功能，出了问题难以找到正确的操作指南！！！</p>
+<h2 id="网上常见的关闭方法与背后意义"><a href="#网上常见的关闭方法与背后意义" class="headerlink" title="网上常见的关闭方法与背后意义"></a>网上常见的关闭方法与背后意义</h2><ol>
+<li>启用或关闭windows功能</li>
+</ol>
+<p>这也是大多数人对hyper-v的理解，网上常见的开启和关闭hyper-v功能都涉及到windows功能中的五种选项。</p>
+<p>在<a target="_blank" rel="noopener" href="https://www.bluestacks.cn/faq_detail.html?id=102?utm_campaign=nxt_cn_5.10.0.6513&utm_source=support&utm_medium=bs5_player&email=&guid=a1fadb47-fe53-4e3c-a7dc-3f3155acc025&oem=nxt_cn&client_ver=5.10.0.6513&install_id=8dcfaf9e-b801-4de2-b0c7-0bf4e30cf6d3&locale_lang=zh-TW&country=CN&vmname=Pie64&locale=zh-tw">蓝叠模拟器hyper-V解决指导</a>中展示了如下图需要关闭的几种功能。</p>
+<p>这些功能是windows系统集成的windows功能开关，原则上通过这些开关关闭后，windows可以帮你配置底层的一些注册表、组策略等选项。好运的用户在这一步便能关闭hyper-V。</p>
+<p><img src="https://notes.sjtu.edu.cn/uploads/upload_c025a91918ac8f7eefb44d0db872bc9e.png"></p>
+<ol start="2">
+<li>注册表关闭</li>
+</ol>
+<p>同样是蓝叠介绍的方法，通过打开注册表(打开cmd窗口，输入regedit回车)，然后到“HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard”
+将“EnableVirtualizationBasedSecurity”和“RequireMicrosoftSignedBootChain”两项都设置成“0”。</p>
+<p>再到“HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios下将HypervisorEnforcedCodeIntegrity的E”nabled”设置成”0”。</p>
+<p>这个方法涉及到了修改注册表，也是上文windows功能能够自动实现的，但特殊情况下windows功能没成功关闭注册表中这些选项，因此有些教程会让你尝试关闭这几个选项。</p>
+<p>如果完成了这一步后，仍然没有成功关闭hyper-V，那并非是你的改变无效。hyper-V包含了windows系统中好几个分散各处的功能，你仅仅关闭了其中最显眼的一个。这也是很多人尝试了网上多种方法却毫无收获的原因，其实你每一步都起到了作用，但没覆盖你所遇到的所有问题。</p>
+<ol start="3">
+<li>管理员打开cmd
+另外有教程要求以管理员模式打开命令提示符，输入：
+<code>bcdedit /set hypervisorlaunchtype off</code>
+之后重启。</li>
+</ol>
+<p>这个方法也是尝试配设内部的启动项，目的同样是关闭hyper-V。网上倒是有不少人反映这一步后解决了。</p>
+<ol start="4">
+<li>关闭相关服务
+在“计算机管理-服务”里把hyper-v相关服务关闭。
+<img src="https://notes.sjtu.edu.cn/uploads/upload_db095071f1a148576988729135cc6092.png"></li>
+</ol>
+<p>说实话这个服务笔者不是很理解，windows发展到现在，给笔者的感觉就是盘根错节，为了实现hyper-v，windows内部不知道牵扯了多少功能。</p>
+<ol start="5">
+<li>关闭内存完整性</li>
+</ol>
+<p>win11中进入windows安全中心，在「内核隔离」中关闭内存完整性。</p>
+<p>内核完整性是win11推出的垃圾功能，即便没有hyper-v烦恼也值得关闭，它会占用性能资源。</p>
+<ol start="6">
+<li>模拟器提供的补丁</li>
+</ol>
+<p>在<a target="_blank" rel="noopener" href="https://www.bluestacks.cn/faq_detail.html?id=102?utm_campaign=nxt_cn_5.10.0.6513&utm_source=support&utm_medium=bs5_player&email=&guid=a1fadb47-fe53-4e3c-a7dc-3f3155acc025&oem=nxt_cn&client_ver=5.10.0.6513&install_id=8dcfaf9e-b801-4de2-b0c7-0bf4e30cf6d3&locale_lang=zh-TW&country=CN&vmname=Pie64&locale=zh-tw">蓝叠模拟器hyper-V解决指导</a>蓝叠提供了exe程序，用于帮助用户自动配置hyper-v。同时，新版的mumu模拟器在报错hyper-v后也会提供选项帮你自动配置。</p>
+<p>很可惜的是笔者没成功。</p>
+<ol start="7">
+<li>基于虚拟化的安全性</li>
+</ol>
+<p>首先提一嘴的是笔者是到这一步解决问题，笔者用的是华硕、windows11专业版。</p>
+<p>参考<a target="_blank" rel="noopener" href="https://www.cnblogs.com/xdl-smile/p/12736646.html">博客园</a>，win+R后查询msinfo32，打开系统信息，查看基于虚拟化的安全性是否启动。</p>
+<p><img src="https://notes.sjtu.edu.cn/uploads/upload_bfb0fb3c3565cfa7cea93cb84875c687.png"></p>
+<p>如果开启了，则按照笔者引用的博客中的方案，下载微软提供的脚本并运行，重启后windows会引导你关闭基于虚拟化的安全性。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>至此，笔者已经遍历完了笔者所尝试的各种方法。笔者怀疑其中有很大部分是重复甚至无用的。因此如果你也像笔者一样尝试了几种方式未果后，笔者建议试试看「基于虚拟化的安全性」这一步，这应该是非常靠近系统底层的顽固问题，在部分人的系统中，其他配置方法都无法关闭这个功能。</p>
+<p>最后，人生苦短，远离hyper-V。</p>
 
     </div>
 
@@ -467,7 +352,7 @@ resulted from open calls for the same file</li>
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://01warpdrive.github.io/posts/230.html" title="手搓操作系统（一）">https://01warpdrive.github.io/posts/230.html</a>
+    <a href="https://01warpdrive.github.io/posts/820f.html" title="Hyper-V禁用指南">https://01warpdrive.github.io/posts/820f.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -509,7 +394,7 @@ resulted from open calls for the same file</li>
           <div class="post-tags">
 
 
-              <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E8%87%AA%E5%AD%A6/" rel="tag"># -操作系统 -自学</a>
+              <a href="/tags/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB-windows/" rel="tag"># -经验分享 -windows</a>
           </div>
 
           <script type="text/javascript">
@@ -574,13 +459,10 @@ resulted from open calls for the same file</li>
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/posts/ca6a.html" rel="prev" title="SJTU_ACMOJ 1173. 一道排序题">
-      <i class="fa fa-chevron-left"></i> SJTU_ACMOJ 1173. 一道排序题
+    <a href="/posts/0.html" rel="prev" title="">
+      <i class="fa fa-chevron-left"></i> 
     </a></div>
-      <div class="post-nav-item">
-    <a href="/posts/ebc4.html" rel="next" title="拆轮子（一）">
-      拆轮子（一） <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -644,7 +526,7 @@ resulted from open calls for the same file</li>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AE%80%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%A5%E9%97%A8"><span class="nav-number">2.</span> <span class="nav-text">入门</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#LEC1-%E4%BA%86%E8%A7%A3%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="nav-number">3.</span> <span class="nav-text">LEC1-了解操作系统</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#xv6%E7%AE%80%E4%BB%8B"><span class="nav-number">3.1.</span> <span class="nav-text">xv6简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85"><span class="nav-number">3.2.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%86%E9%A2%91P1"><span class="nav-number">3.3.</span> <span class="nav-text">视频P1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%98%85%E8%AF%BB%E6%9D%90%E6%96%99"><span class="nav-number">3.4.</span> <span class="nav-text">阅读材料</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%94%E8%AE%B0"><span class="nav-number">3.5.</span> <span class="nav-text">笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%83%A8%E5%88%86%E8%AF%8D%E6%B1%87%E6%A6%82%E5%BF%B5"><span class="nav-number">3.5.1.</span> <span class="nav-text">部分词汇概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#xv6%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3chapter-1%E7%AC%94%E8%AE%B0"><span class="nav-number">3.5.2.</span> <span class="nav-text">xv6说明文档chapter_1笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#introduction"><span class="nav-number">3.5.2.1.</span> <span class="nav-text">introduction</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Processes-and-memory"><span class="nav-number">3.5.2.2.</span> <span class="nav-text">Processes and memory</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#I-O-and-File-descriptors"><span class="nav-number">3.5.2.3.</span> <span class="nav-text">I&#x2F;O and File descriptors</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Pipes"><span class="nav-number">3.5.2.4.</span> <span class="nav-text">Pipes</span></a></li></ol></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hyper-V%E7%A6%81%E7%94%A8%E6%8C%87%E5%8D%97"><span class="nav-number">1.</span> <span class="nav-text">Hyper-V禁用指南</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%91%E4%B8%8A%E5%B8%B8%E8%A7%81%E7%9A%84%E5%85%B3%E9%97%AD%E6%96%B9%E6%B3%95%E4%B8%8E%E8%83%8C%E5%90%8E%E6%84%8F%E4%B9%89"><span class="nav-number">1.2.</span> <span class="nav-text">网上常见的关闭方法与背后意义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">1.3.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

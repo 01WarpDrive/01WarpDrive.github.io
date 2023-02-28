@@ -6,7 +6,7 @@
   <link href="https://01warpdrive.github.io/atom.xml" rel="self"/>
   
   <link href="https://01warpdrive.github.io/"/>
-  <updated>2023-02-20T05:12:07.999Z</updated>
+  <updated>2023-02-28T06:32:06.252Z</updated>
   <id>https://01warpdrive.github.io/</id>
   
   <author>
@@ -17,14 +17,64 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Hyper-V禁用指南</title>
+    <link href="https://01warpdrive.github.io/posts/820f.html"/>
+    <id>https://01warpdrive.github.io/posts/820f.html</id>
+    <published>2023-02-28T06:30:07.000Z</published>
+    <updated>2023-02-28T06:32:06.252Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Hyper-V禁用指南&quot;&gt;&lt;a href=&quot;#Hyper-V禁用指南&quot; class=&quot;headerlink&quot; title=&quot;Hyper-V禁用指南&quot;&gt;&lt;/a&gt;Hyper-V禁用指南&lt;/h1&gt;&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;本文是笔者在浪费了宝贵的午睡时间尝试关闭hyper-V后写下的，难免带有极端情绪和错漏，敬请谅解。&lt;/p&gt;
+&lt;p&gt;首先，本文的面向对象是那些&lt;strong&gt;已经尝试过几种网上方法，重启了好几次电脑但未果&lt;/strong&gt;的用户。本文汇总了笔者解决hyper-V关闭问题的一些经历和心得。还没尝试过几种常见关闭方法的用户先尝试那些，成功了可以节省时间。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="windows" scheme="https://01warpdrive.github.io/categories/windows/"/>
+    
+    
+    <category term="-经验分享 -windows" scheme="https://01warpdrive.github.io/tags/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB-windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://01warpdrive.github.io/posts/0.html"/>
+    <id>https://01warpdrive.github.io/posts/0.html</id>
+    <published>2023-02-22T11:09:45.556Z</published>
+    <updated>2023-02-22T11:45:31.573Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>拆轮子（一）</title>
     <link href="https://01warpdrive.github.io/posts/ebc4.html"/>
     <id>https://01warpdrive.github.io/posts/ebc4.html</id>
     <published>2023-02-20T04:52:25.000Z</published>
-    <updated>2023-02-20T05:12:07.999Z</updated>
+    <updated>2023-02-20T07:03:42.227Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;在尝试造轮子的过程中，笔者常常感到缺乏工程经验。回顾&lt;/p&gt;</summary>
+    <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;在尝试造轮子的过程中，笔者常常感到缺乏工程经验。回顾已有的学习经历，
+自己所学习的能力归纳起来仅仅是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;C++ Python浅显的编程技巧&lt;/li&gt;
+&lt;li&gt;基于命令行界面交互的简单计算代码&lt;/li&gt;
+&lt;li&gt;特定方向的环境搭建及使用&lt;/li&gt;
+&lt;li&gt;常见数据结构与算法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;网络上常见的CS指导都专注于理论研究，即语言、工具讲解，优质课程学习等，因此笔者缺乏应用层面的视野，也无法辨别理论知识的价值，无法直观地构建理论框架。&lt;/p&gt;
+&lt;p&gt;因此笔者希望能够由小及大，由点到面，撰写一份工程复现清单，同时简单记录自己的心得。这里的工程指的是计算机相关的优秀开源项目。&lt;/p&gt;</summary>
     
     
     
@@ -42,7 +92,7 @@
     <link href="https://01warpdrive.github.io/posts/230.html"/>
     <id>https://01warpdrive.github.io/posts/230.html</id>
     <published>2023-01-17T10:25:56.000Z</published>
-    <updated>2023-02-16T12:22:40.563Z</updated>
+    <updated>2023-02-20T06:58:21.608Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;笔者在网上看到有人推荐MIT 6.828，&lt;a href=&quot;https://www.zhihu.com/question/551946470/answer/2822552983&quot;&gt;原文&lt;/a&gt;。如果能全程跟进这个课程，便能手搓一个mini操作系统内核。太酷了！立马加上日程。&lt;/p&gt;</summary>
@@ -87,7 +137,7 @@ $x=∑a[i]∗b[i]$&lt;/p&gt;
     <link href="https://01warpdrive.github.io/posts/bc95.html"/>
     <id>https://01warpdrive.github.io/posts/bc95.html</id>
     <published>2022-12-02T03:11:38.000Z</published>
-    <updated>2023-02-20T02:00:15.805Z</updated>
+    <updated>2023-02-22T13:50:22.155Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;互联网资源&quot;&gt;&lt;a href=&quot;#互联网资源&quot; class=&quot;headerlink&quot; title=&quot;互联网资源&quot;&gt;&lt;/a&gt;互联网资源&lt;/h1&gt;&lt;p&gt;近十几年来，互联网商业化加速。在逐利的泥沼中，很多优质资源被掩盖在海量的数据里。本文章收录了一些互联网资源，并不定期维护更新。&lt;/p&gt;
