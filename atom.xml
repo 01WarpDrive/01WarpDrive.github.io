@@ -6,7 +6,7 @@
   <link href="https://01warpdrive.github.io/atom.xml" rel="self"/>
   
   <link href="https://01warpdrive.github.io/"/>
-  <updated>2023-06-22T08:05:31.046Z</updated>
+  <updated>2023-07-03T07:41:05.063Z</updated>
   <id>https://01warpdrive.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://01warpdrive.github.io/posts/c862.html"/>
     <id>https://01warpdrive.github.io/posts/c862.html</id>
     <published>2023-06-22T08:04:40.000Z</published>
-    <updated>2023-06-22T08:05:31.046Z</updated>
+    <updated>2023-07-03T07:41:05.063Z</updated>
     
     
       
@@ -54,76 +54,6 @@
     
     
     <category term="-经验分享 -windows" scheme="https://01warpdrive.github.io/tags/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB-windows/"/>
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://01warpdrive.github.io/posts/0.html"/>
-    <id>https://01warpdrive.github.io/posts/0.html</id>
-    <published>2023-02-22T11:09:45.556Z</published>
-    <updated>2023-02-28T06:32:37.658Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>拆轮子（一）</title>
-    <link href="https://01warpdrive.github.io/posts/ebc4.html"/>
-    <id>https://01warpdrive.github.io/posts/ebc4.html</id>
-    <published>2023-02-20T04:52:25.000Z</published>
-    <updated>2023-02-20T07:03:42.227Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;在尝试造轮子的过程中，笔者常常感到缺乏工程经验。回顾已有的学习经历，
-自己所学习的能力归纳起来仅仅是：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;C++ Python浅显的编程技巧&lt;/li&gt;
-&lt;li&gt;基于命令行界面交互的简单计算代码&lt;/li&gt;
-&lt;li&gt;特定方向的环境搭建及使用&lt;/li&gt;
-&lt;li&gt;常见数据结构与算法&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;网络上常见的CS指导都专注于理论研究，即语言、工具讲解，优质课程学习等，因此笔者缺乏应用层面的视野，也无法辨别理论知识的价值，无法直观地构建理论框架。&lt;/p&gt;
-&lt;p&gt;因此笔者希望能够由小及大，由点到面，撰写一份工程复现清单，同时简单记录自己的心得。这里的工程指的是计算机相关的优秀开源项目。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="项目合集" scheme="https://01warpdrive.github.io/categories/%E9%A1%B9%E7%9B%AE%E5%90%88%E9%9B%86/"/>
-    
-    
-    <category term="拆轮子" scheme="https://01warpdrive.github.io/tags/%E6%8B%86%E8%BD%AE%E5%AD%90/"/>
-    
-    <category term="自学" scheme="https://01warpdrive.github.io/tags/%E8%87%AA%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>手搓操作系统（一）</title>
-    <link href="https://01warpdrive.github.io/posts/230.html"/>
-    <id>https://01warpdrive.github.io/posts/230.html</id>
-    <published>2023-01-17T10:25:56.000Z</published>
-    <updated>2023-02-20T06:58:21.608Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;笔者在网上看到有人推荐MIT 6.828，&lt;a href=&quot;https://www.zhihu.com/question/551946470/answer/2822552983&quot;&gt;原文&lt;/a&gt;。如果能全程跟进这个课程，便能手搓一个mini操作系统内核。太酷了！立马加上日程。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="操作系统" scheme="https://01warpdrive.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-    
-    <category term="-操作系统 -自学" scheme="https://01warpdrive.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E8%87%AA%E5%AD%A6/"/>
     
   </entry>
   

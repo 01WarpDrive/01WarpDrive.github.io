@@ -1,32 +1,22 @@
+
+
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
 <head>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.4.2">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-  <meta name="google-site-verification" content="true">
-  <meta name="msvalidate.01" content="true">
-  <meta name="yandex-verification" content="true">
-  <meta name="baidu-site-verification" content="true">
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
-  <script src="/lib/pace/pace.min.js"></script>
-
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"01warpdrive.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
-  </script>
-
-  <meta name="description" content="我效率最高的那一天，删了一百行代码。">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="舣星">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="我效率最高的那一天，删了一百行代码。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="舣星码头">
 <meta property="og:url" content="https://01warpdrive.github.io/index.html">
@@ -34,1423 +24,663 @@
 <meta property="og:description" content="我效率最高的那一天，删了一百行代码。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="舣星">
-<meta name="twitter:card" content="summary">
-
-<link rel="canonical" href="https://01warpdrive.github.io/">
-
-
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : true,
-    isPost : false,
-    lang   : 'zh-CN'
-  };
-</script>
-
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
   <title>舣星码头</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
   
 
 
 
 
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"01warpdrive.github.io","root":"/","version":"1.9.5","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
 
 
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-<link rel="alternate" href="/atom.xml" title="舣星码头" type="application/atom+xml">
+  
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="舣星码头" type="application/atom+xml">
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-    <a target="_blank" rel="noopener" href="https://github.com/01WarpDrive" class="github-corner" aria-label="View source on GitHub">
-    <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
-    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
+<body>
+  
 
-  <div class="site-meta">
+  <header>
+    
 
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">舣星码头</h1>
-      <span class="logo-line-after"><i></i></span>
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
     </a>
-      <p class="site-subtitle" itemprop="description">舣[ yǐ ]：停船靠岸</p>
-  </div>
 
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-        <i class="fa fa-search fa-fw fa-lg"></i>
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
     </div>
   </div>
-</div>
-
-
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
-
-  </li>
-      <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
-        </a>
-      </li>
-  </ul>
 </nav>
 
+  
 
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="An elegant Material-Design theme for Hexo"></span>
+          
+        </div>
 
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off"
-           placeholder="搜索..." spellcheck="false"
-           type="search" class="search-input">
-  </div>
-  <span class="popup-btn-close">
-    <i class="fa fa-times-circle"></i>
-  </span>
-</div>
-<div id="search-result">
-  <div id="no-result">
-    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
-  </div>
-</div>
+        
+      </div>
 
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
     </div>
   </div>
+</div>
 
 </div>
-    </header>
 
+  </header>
+
+  <main>
     
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-  <div class="reading-progress-bar"></div>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
+      <div class="container nopadding-x-md">
+        <div id="board"
+          style="margin-top: 0">
           
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
 
-          <div class="content index posts-expand">
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/posts/c862.html" target="_self">
+          代码和随笔
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/posts/c862.html" target="_self">
+        <div>
+          刷题代码和随笔格式介绍 刷题顺序参考序 | LeetCode Cookbook (halfrost.com)  所有思路分析中的公式、操作都是按照 C++ 语法表示的。  「分析」部分大多是参考了官方题解后自己整理的，想借此锻炼自己的表达能力。   Array4 寻找两个正序数组的中位数 给定两个大小分别为 m 和 n 的正序（从小到大）数组 nums1 和 nums2。请你找出并返回这两个正序数
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-06-22 16:04" pubdate>
+              2023-06-22
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/posts/820f.html" target="_self">
+          Hyper-V禁用指南
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/posts/820f.html" target="_self">
+        <div>
+          Hyper-V禁用指南前言本文是笔者在浪费了宝贵的午睡时间尝试关闭hyper-V后写下的，难免带有极端情绪和错漏，敬请谅解。 首先，本文的面向对象是那些已经尝试过几种网上方法，重启了好几次电脑但未果的用户。本文汇总了笔者解决hyper-V关闭问题的一些经历和心得。还没尝试过几种常见关闭方法的用户先尝试那些，成功了可以节省时间。
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-02-28 14:30" pubdate>
+              2023-02-28
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
             
-      
+
+<span class="category-chains">
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://01warpdrive.github.io/posts/bc95.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="舣星">
-      <meta itemprop="description" content="我效率最高的那一天，<br>删了一百行代码。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="舣星码头">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/bc95.html" class="post-title-link" itemprop="url">互联网资源</a>
-        </h2>
-
-        <div class="post-meta">
-
-          
-            <i class="fa fa-thumb-tack"></i>
-            <font color=7D26CD>置顶</font>
-            <span class="post-meta-divider">|</span>
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-12-02 11:11:38" itemprop="dateCreated datePublished" datetime="2022-12-02T11:11:38+08:00">2022-12-02</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-02-22 21:50:22" itemprop="dateModified" datetime="2023-02-22T21:50:22+08:00">2023-02-22</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%B5%84%E6%BA%90%E5%85%B1%E4%BA%AB/" itemprop="url" rel="index"><span itemprop="name">资源共享</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>1.6k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
     
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="互联网资源"><a href="#互联网资源" class="headerlink" title="互联网资源"></a>互联网资源</h1><p>近十几年来，互联网商业化加速。在逐利的泥沼中，很多优质资源被掩盖在海量的数据里。本文章收录了一些互联网资源，并不定期维护更新。</p>
-<p>此外，如果相关负责人认为笔者行为涉及侵权，请联系笔者删除。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/bc95.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
+      <span class="category-chain">
         
-      
-    </div>
-
-    
-    
-    
-
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
+  <a href="/categories/windows/" class="category-chain-item">windows</a>
   
   
 
-      
+      </span>
+    
   
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://01warpdrive.github.io/posts/c862.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="舣星">
-      <meta itemprop="description" content="我效率最高的那一天，<br>删了一百行代码。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="舣星码头">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/c862.html" class="post-title-link" itemprop="url">代码和随笔</a>
-        </h2>
-
-        <div class="post-meta">
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2023-06-22 16:04:40 / 修改时间：16:05:31" itemprop="dateCreated datePublished" datetime="2023-06-22T16:04:40+08:00">2023-06-22</time>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>3.6k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>3 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="刷题代码和随笔"><a href="#刷题代码和随笔" class="headerlink" title="刷题代码和随笔"></a>刷题代码和随笔</h1><h1 id="格式介绍"><a href="#格式介绍" class="headerlink" title="格式介绍"></a>格式介绍</h1><ul>
-<li><p>刷题顺序参考<a target="_blank" rel="noopener" href="https://books.halfrost.com/leetcode/">序 | LeetCode Cookbook (halfrost.com)</a></p>
-</li>
-<li><p>所有思路分析中的公式、操作都是按照 C++ 语法表示的。</p>
-</li>
-<li><p>「分析」部分大多是参考了官方题解后自己整理的，想借此锻炼自己的表达能力。</p>
-</li>
-</ul>
-<h1 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h1><h2 id="4-寻找两个正序数组的中位数"><a href="#4-寻找两个正序数组的中位数" class="headerlink" title="4 寻找两个正序数组的中位数"></a>4 <a target="_blank" rel="noopener" href="https://leetcode.cn/problems/median-of-two-sorted-arrays/">寻找两个正序数组的中位数</a></h2><blockquote>
-<p>给定两个大小分别为 m 和 n 的正序（从小到大）数组 nums1 和 nums2。请你找出并返回这两个正序数组的中位数 。算法的时间复杂度应该为 O(log (m+n)) 。
-链接：https://leetcode.cn/problems/median-of-two-sorted-arrays</p>
-</blockquote>
-<h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p>要求对数时间复杂度，联想到二分查找。二分查找在有序数组中查找指定的数，每次迭代中可以通过大小比较排除一半的数据。本题要在两个数组中找中位数，是否可以通过选定 pivots ，在一次迭代中排除掉一定比例的数据？</p>
-<p>我们注意到，中位数问题是第 k 小问题的一个特例：</p>
-<ul>
-<li>一个偶数数组的中位数为它第$len/2$小的元素和$len/2 + 1$的元素的均值</li>
-<li>一个奇数数组的中位数为它第$len/2 + 1$ 的元素</li>
-</ul>
-<p>显然，第一次迭代并排除部分数据后，我们的问题就变成了找第 $k$ 小的数。因此，pivots 的选取和 $k$ 有关。</p>
-<ul>
-<li>取<code>pivot1 = nums1[k/2-1]</code> 和 <code>pivot2 = nums2[k/2-1] </code>进行比较</li>
-<li>取 <code>pivot = min(pivot1, pivot2)</code>，两个数组中小于等于 pivot 的元素共计不会超过 $(k/2-1) + (k/2-1) &lt;= k-2$ 个</li>
-<li>pivot 所在数组的 pivot 前部分元素可以排除掉</li>
-<li>修改两个数组（通过更改起始下标），修改 k，重复以上步骤，直到 k=1</li>
-</ul>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">double</span> <span class="title">findMedianSortedArrays</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums1, vector&lt;<span class="type">int</span>&gt;&amp; nums2)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> len = nums1.<span class="built_in">size</span>() + nums2.<span class="built_in">size</span>();</span><br><span class="line">        <span class="keyword">if</span> (len % <span class="number">2</span> != <span class="number">0</span>) <span class="keyword">return</span> <span class="built_in">findKthNum</span>(nums1, nums2, len / <span class="number">2</span> + <span class="number">1</span>);</span><br><span class="line">        <span class="keyword">else</span> <span class="built_in">return</span> (<span class="built_in">findKthNum</span>(nums1, nums2, len / <span class="number">2</span>) + <span class="built_in">findKthNum</span>(nums1, nums2, len / <span class="number">2</span> + <span class="number">1</span>)) / <span class="number">2.0</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">double</span> <span class="title">findKthNum</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums1, vector&lt;<span class="type">int</span>&gt;&amp; nums2, <span class="type">int</span> k)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> index1, index2, pivot1, pivot2;</span><br><span class="line">        <span class="type">int</span> left1 = <span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> left2 = <span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> m = nums1.<span class="built_in">size</span>();</span><br><span class="line">        <span class="type">int</span> n = nums2.<span class="built_in">size</span>();</span><br><span class="line">        <span class="keyword">while</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (left1 == m) <span class="keyword">return</span> nums2[left2 + k - <span class="number">1</span>];</span><br><span class="line">            <span class="keyword">if</span> (left2 == n) <span class="keyword">return</span> nums1[left1 + k - <span class="number">1</span>];</span><br><span class="line">            <span class="keyword">if</span> (k == <span class="number">1</span>) <span class="keyword">return</span> std::<span class="built_in">min</span>(nums1[left1], nums2[left2]);</span><br><span class="line">            index1 = std::<span class="built_in">min</span>(left1 + k / <span class="number">2</span> - <span class="number">1</span>, m - <span class="number">1</span>);</span><br><span class="line">            index2 = std::<span class="built_in">min</span>(left2 + k / <span class="number">2</span> - <span class="number">1</span>, n - <span class="number">1</span>);</span><br><span class="line">            <span class="keyword">if</span> (nums1[index1] &lt; nums2[index2]) &#123;</span><br><span class="line">                k -= index1 - left1 + <span class="number">1</span>;</span><br><span class="line">                left1 = index1 + <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> &#123;</span><br><span class="line">                k -= index2 - left2 + <span class="number">1</span>;</span><br><span class="line">                left2 = index2 + <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h3 id="心得"><a href="#心得" class="headerlink" title="心得"></a>心得</h3><ul>
-<li>写 while 循环先确定退出条件</li>
-<li>数组选取 pivot 时确保不会越界</li>
-<li>将要用的数据先确定类型，如 <code>int m = nums1.size()</code>，在 leetcode 中，<code>min(left1 + k / 2 - 1, nums1.size() - 1)</code> 会由于<code>nums1.size()</code> 类型不是 <code>int</code> 的原因而无法调用</li>
-</ul>
-<h2 id="11-盛最多水的容器"><a href="#11-盛最多水的容器" class="headerlink" title="11 盛最多水的容器"></a>11 <a target="_blank" rel="noopener" href="https://leetcode.cn/problems/container-with-most-water/">盛最多水的容器</a></h2><p>难度中等</p>
-<p>4360</p>
-<blockquote>
-<p>给定一个长度为 n 的整数数组 height 。有 n 条垂线，第 i 条线的两个端点是 (i, 0) 和 (i, height[i]) 。</p>
-<p>找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。</p>
-<p>返回容器可以储存的最大水量。</p>
-<p>说明：你不能倾斜容器。
-链接：https://leetcode.cn/problems/container-with-most-water</p>
-</blockquote>
-<h3 id="分析-1"><a href="#分析-1" class="headerlink" title="分析"></a>分析</h3><p>数组类型的数据结构，首先想到的便是遍历。其中，双指针遍历（滑动窗口）是很常见的思路。笔者认为滑动窗口的思考方法，优先考虑从大窗口变成小窗口。</p>
-<p>本题中，笔者用两个指针$i$,$j$表示窗口边界。当向中间移动两个指针时，宽度减小。要想获得更大的容量，就得找到更大的高度。由于高度取决于两个指针中的“短板”， 因此，只有当内移短板指针时，才需要判断并更新当前的最大容量。</p>
-<h4 id="正确性"><a href="#正确性" class="headerlink" title="正确性"></a>正确性</h4><p>将所有双指针组合视作$C(n,2)$个状态，则每次更新容量，都会剔除部分「不大于」当前最大容量的状态。因此，当最终只剩下一个状态时，必定不小于所有已经剔除的状态。</p>
-<h3 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">maxArea</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; height)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> i = <span class="number">0</span>, j = height.<span class="built_in">size</span>() - <span class="number">1</span>, capacity = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (i &lt; j) &#123;</span><br><span class="line">            capacity = height[i] &lt; height[j] ?</span><br><span class="line">                        <span class="built_in">max</span>(capacity, (j - i) * height[i++]): <span class="comment">// 注意 j-i 在 i++ 前</span></span><br><span class="line">                        <span class="built_in">max</span>(capacity, (j - i) * height[j--]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> capacity;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="心得-1"><a href="#心得-1" class="headerlink" title="心得"></a>心得</h3><ul>
-<li>一种思路：遍历——双指针遍历（滑动窗口）</li>
-<li>本次的代码看起来有点炫技。笔者认为将代码写得通俗易懂和佶屈聱牙是两种不同的境界，前者适合一个优秀理想的开发团队，后者则是身处不稳定的职位时提高自身不可替代性的一种手段。实际上本次的代码只是个小细节，真正的佶屈聱牙应当是优秀特异的算法思路和先进高效的代码技术。</li>
-</ul>
-<h2 id="15-三数之和"><a href="#15-三数之和" class="headerlink" title="15. 三数之和"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/3sum/">15. 三数之和</a></h2><blockquote>
-<p>给你一个整数数组 nums ，判断是否存在三元组 [nums[i], nums[j], nums[k]] 满足 i != j、i != k 且 j != k ，同时还满足 nums[i] + nums[j] + nums[k] == 0 。请</p>
-<p>你返回所有和为 0 且不重复的三元组。</p>
-<p>注意：答案中不可以包含重复的三元组。</p>
-</blockquote>
-<h3 id="分析-2"><a href="#分析-2" class="headerlink" title="分析"></a>分析</h3><p>暴力遍历需要$O(n^3)$，因为涉及到大小比较，考虑对数组排序。</p>
-<p>由于返回的三元组不允许重复，因此分析时可以把重复元素排除。假定$i&lt;j&lt;k$，第一层遍历选定数字 $num[i]$ ，则问题转变为在有序数组中寻找两数之和。显然，对于 $i$ 后面的子数组，通过维持两个指针 $j,k$ ，不断右移、左移两个指针即可在 $O(n)$ 时间内找到所有合适的 $j,k$。</p>
-<p>过程中需要添加判断语句排除重复元素。</p>
-<h3 id="代码-2"><a href="#代码-2" class="headerlink" title="代码"></a>代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    vector&lt;vector&lt;<span class="type">int</span>&gt;&gt; <span class="built_in">threeSum</span>(vector&lt;<span class="type">int</span>&gt;&amp; nums) &#123;</span><br><span class="line">        vector&lt;vector&lt;<span class="type">int</span>&gt;&gt; ans = &#123;&#125;;</span><br><span class="line">        <span class="type">int</span> tmp;</span><br><span class="line">        <span class="keyword">if</span> (nums.<span class="built_in">size</span>() &lt; <span class="number">3</span>) <span class="keyword">return</span> ans;</span><br><span class="line">        <span class="built_in">sort</span>(nums.<span class="built_in">begin</span>(), nums.<span class="built_in">end</span>());</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; nums.<span class="built_in">size</span>() - <span class="number">2</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (nums[i] &gt; <span class="number">0</span>) <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">if</span> (i &gt; <span class="number">0</span> &amp;&amp; nums[i] == nums[i - <span class="number">1</span>]) <span class="keyword">continue</span>;</span><br><span class="line">            <span class="type">int</span> j = i + <span class="number">1</span>, k =  nums.<span class="built_in">size</span>() - <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">while</span>(j &lt; k) &#123;</span><br><span class="line">                <span class="keyword">if</span> (j &gt; i + <span class="number">1</span> &amp;&amp; nums[j] == nums[j - <span class="number">1</span>]) &#123;</span><br><span class="line">                    j++;</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                tmp = nums[i] + nums[j] + nums[k];</span><br><span class="line">                <span class="keyword">if</span> (tmp &gt; <span class="number">0</span>) &#123;</span><br><span class="line">                    k--;</span><br><span class="line">                &#125; <span class="keyword">else</span> <span class="keyword">if</span> (tmp == <span class="number">0</span>) &#123;</span><br><span class="line">                    ans.<span class="built_in">push_back</span>(&#123;nums[i], nums[j++], nums[k--]&#125;);</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    j++;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="心得-2"><a href="#心得-2" class="headerlink" title="心得"></a>心得</h3><ul>
-<li>涉及元素比较的数组题，可以考虑先排序数组</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://01warpdrive.github.io/posts/820f.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="舣星">
-      <meta itemprop="description" content="我效率最高的那一天，<br>删了一百行代码。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="舣星码头">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/820f.html" class="post-title-link" itemprop="url">Hyper-V禁用指南</a>
-        </h2>
-
-        <div class="post-meta">
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2023-02-28 14:30:07 / 修改时间：14:42:46" itemprop="dateCreated datePublished" datetime="2023-02-28T14:30:07+08:00">2023-02-28</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/windows/" itemprop="url" rel="index"><span itemprop="name">windows</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>1.8k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="Hyper-V禁用指南"><a href="#Hyper-V禁用指南" class="headerlink" title="Hyper-V禁用指南"></a>Hyper-V禁用指南</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文是笔者在浪费了宝贵的午睡时间尝试关闭hyper-V后写下的，难免带有极端情绪和错漏，敬请谅解。</p>
-<p>首先，本文的面向对象是那些<strong>已经尝试过几种网上方法，重启了好几次电脑但未果</strong>的用户。本文汇总了笔者解决hyper-V关闭问题的一些经历和心得。还没尝试过几种常见关闭方法的用户先尝试那些，成功了可以节省时间。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/820f.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://01warpdrive.github.io/posts/0.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="舣星">
-      <meta itemprop="description" content="我效率最高的那一天，<br>删了一百行代码。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="舣星码头">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/0.html" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta">
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2023-02-22 19:09:45" itemprop="dateCreated datePublished" datetime="2023-02-22T19:09:45+08:00">2023-02-22</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-02-28 14:32:37" itemprop="dateModified" datetime="2023-02-28T14:32:37+08:00">2023-02-28</time>
-              </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>68</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="vscode-快捷键入门"><a href="#vscode-快捷键入门" class="headerlink" title="vscode 快捷键入门"></a>vscode 快捷键入门</h1><p><strong>快捷键可以在vscode左下角齿轮标志中「键盘快捷方式」中搜索，
-例如搜索「窗口」，可以看到相关功能以及对应快捷键。</strong></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://01warpdrive.github.io/posts/ebc4.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="舣星">
-      <meta itemprop="description" content="我效率最高的那一天，<br>删了一百行代码。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="舣星码头">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/ebc4.html" class="post-title-link" itemprop="url">拆轮子（一）</a>
-        </h2>
-
-        <div class="post-meta">
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2023-02-20 12:52:25 / 修改时间：15:03:42" itemprop="dateCreated datePublished" datetime="2023-02-20T12:52:25+08:00">2023-02-20</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E9%A1%B9%E7%9B%AE%E5%90%88%E9%9B%86/" itemprop="url" rel="index"><span itemprop="name">项目合集</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>704</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>在尝试造轮子的过程中，笔者常常感到缺乏工程经验。回顾已有的学习经历，
-自己所学习的能力归纳起来仅仅是：</p>
-<ul>
-<li>C++ Python浅显的编程技巧</li>
-<li>基于命令行界面交互的简单计算代码</li>
-<li>特定方向的环境搭建及使用</li>
-<li>常见数据结构与算法</li>
-</ul>
-<p>网络上常见的CS指导都专注于理论研究，即语言、工具讲解，优质课程学习等，因此笔者缺乏应用层面的视野，也无法辨别理论知识的价值，无法直观地构建理论框架。</p>
-<p>因此笔者希望能够由小及大，由点到面，撰写一份工程复现清单，同时简单记录自己的心得。这里的工程指的是计算机相关的优秀开源项目。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/ebc4.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://01warpdrive.github.io/posts/230.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="舣星">
-      <meta itemprop="description" content="我效率最高的那一天，<br>删了一百行代码。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="舣星码头">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/230.html" class="post-title-link" itemprop="url">手搓操作系统（一）</a>
-        </h2>
-
-        <div class="post-meta">
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2023-01-17 18:25:56" itemprop="dateCreated datePublished" datetime="2023-01-17T18:25:56+08:00">2023-01-17</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-02-20 14:58:21" itemprop="dateModified" datetime="2023-02-20T14:58:21+08:00">2023-02-20</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" itemprop="url" rel="index"><span itemprop="name">操作系统</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>4.9k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>4 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>笔者在网上看到有人推荐MIT 6.828，<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/551946470/answer/2822552983">原文</a>。如果能全程跟进这个课程，便能手搓一个mini操作系统内核。太酷了！立马加上日程。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/230.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://01warpdrive.github.io/posts/ca6a.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="舣星">
-      <meta itemprop="description" content="我效率最高的那一天，<br>删了一百行代码。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="舣星码头">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/ca6a.html" class="post-title-link" itemprop="url">SJTU_ACMOJ 1173. 一道排序题</a>
-        </h2>
-
-        <div class="post-meta">
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-12-07 19:30:24" itemprop="dateCreated datePublished" datetime="2022-12-07T19:30:24+08:00">2022-12-07</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-12-20 11:04:40" itemprop="dateModified" datetime="2022-12-20T11:04:40+08:00">2022-12-20</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" itemprop="url" rel="index"><span itemprop="name">数据结构</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>2.9k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>3 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="SJTU-ACMOJ-1173-一道排序题"><a href="#SJTU-ACMOJ-1173-一道排序题" class="headerlink" title="SJTU_ACMOJ 1173. 一道排序题"></a>SJTU_ACMOJ 1173. 一道排序题</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>萌萌的死神最讨厌数学题了，讨厌讨厌真是讨厌死了。</p>
-<p>这不，死神一生的好朋友gingkgo又拿数学题来难为他了。接到题目后，死神原本眉飞色舞的脸瞬间石化了，真是讨厌死了。</p>
-<p>幸亏还有你们这群好朋友呢！如果没有的话，事情才不知道会怎么样呢！</p>
-<p>现在问题来了，给你2个数组a[]和b[]，他们有相同的长度n，你可以任意交换一个数组中的元素，我们定义函数
-$x=∑a[i]∗b[i]$</p>
-<p>现在，死神请你告诉他，x最大可以取到多少，最小可以取到多少？真是讨厌死了。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/ca6a.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://01warpdrive.github.io/posts/f2eb.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="舣星">
-      <meta itemprop="description" content="我效率最高的那一天，<br>删了一百行代码。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="舣星码头">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/f2eb.html" class="post-title-link" itemprop="url">图床测试</a>
-        </h2>
-
-        <div class="post-meta">
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-12-01 12:14:45" itemprop="dateCreated datePublished" datetime="2022-12-01T12:14:45+08:00">2022-12-01</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-12-02 11:13:28" itemprop="dateModified" datetime="2022-12-02T11:13:28+08:00">2022-12-02</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%B5%8B%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">博客测试</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>4</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="图床测试"><a href="#图床测试" class="headerlink" title="图床测试"></a>图床测试</h1><p><img src="https://notes.sjtu.edu.cn/uploads/upload_572a421050d5af848e688fc45cc1a314.png"></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/f2eb.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://01warpdrive.github.io/posts/a6dc.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="舣星">
-      <meta itemprop="description" content="我效率最高的那一天，<br>删了一百行代码。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="舣星码头">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/a6dc.html" class="post-title-link" itemprop="url">darknet 训练 yolov4-tiny模型</a>
-        </h2>
-
-        <div class="post-meta">
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2022-12-01 09:42:19 / 修改时间：14:11:49" itemprop="dateCreated datePublished" datetime="2022-12-01T09:42:19+08:00">2022-12-01</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">深度学习</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>724</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="darknet-训练-yolov4-tiny模型"><a href="#darknet-训练-yolov4-tiny模型" class="headerlink" title="darknet 训练 yolov4-tiny模型"></a>darknet 训练 yolov4-tiny模型</h1><h2 id="为什么是-yolov4-tiny-模型："><a href="#为什么是-yolov4-tiny-模型：" class="headerlink" title="为什么是 yolov4-tiny 模型："></a>为什么是 yolov4-tiny 模型：</h2><p>相比官网教程实例采用的 yolov4 和 yolov3， yolov4-tiny 更加小巧，适合机载电脑使用。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/a6dc.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
-  
-
-
+</span>
 
           </div>
-          
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
-
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB-windows/">#-经验分享 -windows</a>
+            
+          </div>
+        
       </div>
-      <!--/noindex-->
+    </article>
+  </div>
 
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="舣星"
-      src="/images/avatar.jpg">
-  <p class="site-author-name" itemprop="name">舣星</p>
-  <div class="site-description" itemprop="description">我效率最高的那一天，<br>删了一百行代码。</div>
-</div>
-  <div class="">
-    <a target="_blank" class="social-link" href="/atom.xml" style="color: burlywood;">
-      <span class="icon">
-        <i class="fa fa-rss"></i>
-      </span>
-      <span class="label">RSS</span>
-    </a>
-  </div>
-  <div class="">
-    <a target="_blank" class="social-link" href="/images/wechat_img.png" style="color: green;">
-      <span class="icon">
-        <i class="fab fa-weixin"></i>
-      </span>
-      <span class="label">订阅号</span>
-    </a>
-  </div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives">
-          <span class="site-state-item-count">9</span>
-          <span class="site-state-item-name">日志</span>
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/posts/ca6a.html" target="_self">
+          SJTU_ACMOJ 1173. 一道排序题
         </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-          
-        <span class="site-state-item-count">7</span>
-        <span class="site-state-item-name">分类</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-          
-        <span class="site-state-item-count">10</span>
-        <span class="site-state-item-name">标签</span></a>
-      </div>
-  </nav>
-</div>
-  <div class="links-of-author motion-element">
-      <span class="links-of-author-item">
-        <a href="https://github.com/01WarpDrive" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;01WarpDrive" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/posts/ca6a.html" target="_self">
+        <div>
+          SJTU_ACMOJ 1173. 一道排序题题目描述萌萌的死神最讨厌数学题了，讨厌讨厌真是讨厌死了。 这不，死神一生的好朋友gingkgo又拿数学题来难为他了。接到题目后，死神原本眉飞色舞的脸瞬间石化了，真是讨厌死了。 幸亏还有你们这群好朋友呢！如果没有的话，事情才不知道会怎么样呢！ 现在问题来了，给你2个数组a[]和b[]，他们有相同的长度n，你可以任意交换一个数组中的元素，我们定义函数 $x=
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-12-07 19:30" pubdate>
+              2022-12-07
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="category-chain-item">数据结构</a>
+  
+  
+
       </span>
-      <span class="links-of-author-item">
-        <a href="mailto:yixinzhou1024@sjtu.edu.cn" title="E-Mail → mailto:yixinzhou1024@sjtu.edu.cn" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/ACMOJ/">#ACMOJ</a>
+            
+              <a href="/tags/%E7%AE%97%E6%B3%95%E9%A2%98/">#算法题</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/posts/bc95.html" target="_self">
+          互联网资源
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/posts/bc95.html" target="_self">
+        <div>
+          互联网资源近十几年来，互联网商业化加速。在逐利的泥沼中，很多优质资源被掩盖在海量的数据里。本文章收录了一些互联网资源，并不定期维护更新。 此外，如果相关负责人认为笔者行为涉及侵权，请联系笔者删除。
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-12-02 11:11" pubdate>
+              2022-12-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E8%B5%84%E6%BA%90%E5%85%B1%E4%BA%AB/" class="category-chain-item">资源共享</a>
+  
+  
+
       </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%B5%84%E6%BA%90%E5%85%B1%E4%BA%AB/">#资源共享</a>
+            
+              <a href="/tags/%E4%B8%8D%E5%AE%9A%E6%9C%9F%E6%9B%B4%E6%96%B0/">#不定期更新</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/posts/f2eb.html" target="_self">
+          图床测试
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/posts/f2eb.html" target="_self">
+        <div>
+          图床测试
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-12-01 12:14" pubdate>
+              2022-12-01
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%B5%8B%E8%AF%95/" class="category-chain-item">博客测试</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%B5%8B%E8%AF%95/">#博客测试</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/posts/a6dc.html" target="_self">
+          darknet 训练 yolov4-tiny模型
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/posts/a6dc.html" target="_self">
+        <div>
+          darknet 训练 yolov4-tiny模型为什么是 yolov4-tiny 模型：相比官网教程实例采用的 yolov4 和 yolov3， yolov4-tiny 更加小巧，适合机载电脑使用。
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-12-01 09:42" pubdate>
+              2022-12-01
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" class="category-chain-item">深度学习</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">#深度学习</a>
+            
+          </div>
+        
+      </div>
+    </article>
   </div>
 
 
 
-      </div>
 
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
     </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 2022-12 – 
-  <span itemprop="copyrightYear">2023</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">舣星</span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-chart-area"></i>
-    </span>
-    <span title="站点总字数">16k</span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-coffee"></i>
-    </span>
-    <span title="站点阅读时长">15 分钟</span>
-</div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
-
-
-    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-    <span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span>
-    <span class="post-meta-divider">|</span>
-    <span id="busuanzi_container_site_uv">总访客数<span id="busuanzi_value_site_uv"></span>人</span>
-    <span class="post-meta-divider">|</span>
-<!-- 不蒜子计数初始值纠正 -->
-<script>
-$(document).ready(function() {
-
-    var int = setInterval(fixCount, 50);  // 50ms周期检测函数
-    var countOffset = 20000;  // 初始化首次数据
-
-    function fixCount() {            
-       if (document.getElementById("busuanzi_container_site_pv").style.display != "none")
-        {
-            $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + countOffset); 
-            clearInterval(int);
-        }                  
-        if ($("#busuanzi_container_site_pv").css("display") != "none")
-        {
-            $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + countOffset); // 加上初始数据 
-            clearInterval(int); // 停止检测
-        }  
-    }
-       	
-});
-</script> 
-
-        
-<div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-user"></i>
-      </span>
-      <span class="site-uv" title="总访客量">
-        <span id="busuanzi_value_site_uv"></span>
-      </span>
-    </span>
-    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-eye"></i>
-      </span>
-      <span class="site-pv" title="总访问量">
-        <span id="busuanzi_value_site_pv"></span>
-      </span>
-    </span>
 </div>
 
+    
 
+    
+  </main>
 
-
-
-
-
-
-      </div>
-    </footer>
-  </div>
-
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
   
   
-  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/pisces.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
-
-
   
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
   <script>
-    (function(){
-      var canonicalURL, curProtocol;
-      //Get the <link> tag
-      var x=document.getElementsByTagName("link");
-		//Find the last canonical URL
-		if(x.length > 0){
-			for (i=0;i<x.length;i++){
-				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
-					canonicalURL=x[i].href;
-				}
-			}
-		}
-    //Get protocol
-	    if (!canonicalURL){
-	    	curProtocol = window.location.protocol.split(':')[0];
-	    }
-	    else{
-	    	curProtocol = canonicalURL.split(':')[0];
-	    }
-      //Get current URL if the canonical URL does not exist
-	    if (!canonicalURL) canonicalURL = window.location.href;
-	    //Assign script content. Replace current URL with the canonical URL
-      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
   </script>
 
 
 
 
   
-<script src="/js/local-search.js"></script>
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
 
 
 
 
 
-
-
-
-
-
-
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
 
 
   
 
-  
-      
-
-<script>
-  if (typeof MathJax === 'undefined') {
-    window.MathJax = {
-      loader: {
-        source: {
-          '[tex]/amsCd': '[tex]/amscd',
-          '[tex]/AMScd': '[tex]/amscd'
-        }
-      },
-      tex: {
-        inlineMath: {'[+]': [['$', '$']]},
-        tags: 'ams'
-      },
-      options: {
-        renderActions: {
-          findScript: [10, doc => {
-            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
-              const display = !!node.type.match(/; *mode=display/);
-              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-              const text = document.createTextNode('');
-              node.parentNode.replaceChild(text, node);
-              math.start = {node: text, delim: '', n: 0};
-              math.end = {node: text, delim: '', n: 0};
-              doc.math.push(math);
-            });
-          }, '', false],
-          insertedScript: [200, () => {
-            document.querySelectorAll('mjx-container').forEach(node => {
-              let target = node.parentNode;
-              if (target.nodeName.toLowerCase() === 'li') {
-                target.parentNode.classList.add('has-jax');
-              }
-            });
-          }, '', false]
-        }
-      }
-    };
-    (function () {
-      var script = document.createElement('script');
-      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
-      script.defer = true;
-      document.head.appendChild(script);
-    })();
-  } else {
-    MathJax.startup.document.state(0);
-    MathJax.texReset();
-    MathJax.typeset();
-  }
-</script>
-
-    
-
-  
-
-
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
 </body>
 </html>
