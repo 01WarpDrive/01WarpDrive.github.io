@@ -1,0 +1,818 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/icon.jpg">
+  <link rel="icon" href="/img/icon.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="舣星">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="leetcode 刷题记录格式介绍 刷题顺序参考序 | LeetCode Cookbook (halfrost.com)  所有思路分析中的公式、操作都是按照 C++ 语法表示的。  「分析」部分大多是参考了官方题解后自己整理的，想借此锻炼自己的表达能力。  本文章仅仅作为个人的成长记录，没有很高的阅读价值。   Array4 寻找两个正序数组的中位数 给定两个大小分别为 m 和 n 的正序（从小">
+<meta property="og:type" content="article">
+<meta property="og:title" content="leetcode 刷题记录">
+<meta property="og:url" content="https://01warpdrive.github.io/posts/c862.html">
+<meta property="og:site_name" content="舣星码头">
+<meta property="og:description" content="leetcode 刷题记录格式介绍 刷题顺序参考序 | LeetCode Cookbook (halfrost.com)  所有思路分析中的公式、操作都是按照 C++ 语法表示的。  「分析」部分大多是参考了官方题解后自己整理的，想借此锻炼自己的表达能力。  本文章仅仅作为个人的成长记录，没有很高的阅读价值。   Array4 寻找两个正序数组的中位数 给定两个大小分别为 m 和 n 的正序（从小">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://notes.sjtu.edu.cn/uploads/upload_4236a9dac322ef915a3e9b8db7ef4301.png">
+<meta property="article:published_time" content="2023-08-18T11:32:31.090Z">
+<meta property="article:modified_time" content="2023-08-18T11:41:16.818Z">
+<meta property="article:author" content="舣星">
+<meta property="article:tag" content="C++">
+<meta property="article:tag" content="算法，不定期更新">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://notes.sjtu.edu.cn/uploads/upload_4236a9dac322ef915a3e9b8db7ef4301.png">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>leetcode 刷题记录 - 舣星码头</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"01warpdrive.github.io","root":"/","version":"1.9.5","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', '');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="舣星码头" type="application/atom+xml">
+</head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>舣星码头</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="leetcode 刷题记录"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-08-18 19:32" pubdate>
+          2023年8月18日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+
+    
+
+    
+    
+      
+        <span id="busuanzi_container_page_pv" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="busuanzi_value_page_pv"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">leetcode 刷题记录</h1>
+            
+              <p class="note note-info">
+                
+                  
+                    本文最后更新于：2023年8月18日 晚上
+                  
+                
+              </p>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="leetcode-刷题记录"><a href="#leetcode-刷题记录" class="headerlink" title="leetcode 刷题记录"></a>leetcode 刷题记录</h1><h1 id="格式介绍"><a href="#格式介绍" class="headerlink" title="格式介绍"></a>格式介绍</h1><ul>
+<li><p>刷题顺序参考<a target="_blank" rel="noopener" href="https://books.halfrost.com/leetcode/">序 | LeetCode Cookbook (halfrost.com)</a></p>
+</li>
+<li><p>所有思路分析中的公式、操作都是按照 C++ 语法表示的。</p>
+</li>
+<li><p>「分析」部分大多是参考了官方题解后自己整理的，想借此锻炼自己的表达能力。</p>
+</li>
+<li><p>本文章仅仅作为个人的成长记录，没有很高的阅读价值。</p>
+</li>
+</ul>
+<h1 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h1><h2 id="4-寻找两个正序数组的中位数"><a href="#4-寻找两个正序数组的中位数" class="headerlink" title="4 寻找两个正序数组的中位数"></a>4 <a target="_blank" rel="noopener" href="https://leetcode.cn/problems/median-of-two-sorted-arrays/">寻找两个正序数组的中位数</a></h2><blockquote>
+<p>给定两个大小分别为 m 和 n 的正序（从小到大）数组 nums1 和 nums2。请你找出并返回这两个正序数组的中位数 。算法的时间复杂度应该为 O(log (m+n)) 。
+链接：https://leetcode.cn/problems/median-of-two-sorted-arrays</p>
+</blockquote>
+<h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p>要求对数时间复杂度，联想到二分查找。二分查找在有序数组中查找指定的数，每次迭代中可以通过大小比较排除一半的数据。本题要在两个数组中找中位数，是否可以通过选定 pivots ，在一次迭代中排除掉一定比例的数据？</p>
+<p>我们注意到，中位数问题是第 k 小问题的一个特例：</p>
+<ul>
+<li>一个偶数数组的中位数为它第$len/2$小的元素和$len/2 + 1$的元素的均值</li>
+<li>一个奇数数组的中位数为它第$len/2 + 1$ 的元素</li>
+</ul>
+<p>显然，第一次迭代并排除部分数据后，我们的问题就变成了找第 $k$ 小的数。因此，pivots 的选取和 $k$ 有关。</p>
+<ul>
+<li>取<code>pivot1 = nums1[k/2-1]</code> 和 <code>pivot2 = nums2[k/2-1] </code>进行比较</li>
+<li>取 <code>pivot = min(pivot1, pivot2)</code>，两个数组中小于等于 pivot 的元素共计不会超过 $(k/2-1) + (k/2-1) &lt;= k-2$ 个</li>
+<li>pivot 所在数组的 pivot 前部分元素可以排除掉</li>
+<li>修改两个数组（通过更改起始下标），修改 k，重复以上步骤，直到 k=1</li>
+</ul>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">double</span> <span class="hljs-title">findMedianSortedArrays</span><span class="hljs-params">(vector&lt;<span class="hljs-type">int</span>&gt;&amp; nums1, vector&lt;<span class="hljs-type">int</span>&gt;&amp; nums2)</span> </span>&#123;<br>        <span class="hljs-type">int</span> len = nums1.<span class="hljs-built_in">size</span>() + nums2.<span class="hljs-built_in">size</span>();<br>        <span class="hljs-keyword">if</span> (len % <span class="hljs-number">2</span> != <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span> <span class="hljs-built_in">findKthNum</span>(nums1, nums2, len / <span class="hljs-number">2</span> + <span class="hljs-number">1</span>);<br>        <span class="hljs-keyword">else</span> <span class="hljs-built_in">return</span> (<span class="hljs-built_in">findKthNum</span>(nums1, nums2, len / <span class="hljs-number">2</span>) + <span class="hljs-built_in">findKthNum</span>(nums1, nums2, len / <span class="hljs-number">2</span> + <span class="hljs-number">1</span>)) / <span class="hljs-number">2.0</span>;<br>    &#125;<br><br>    <span class="hljs-function"><span class="hljs-type">double</span> <span class="hljs-title">findKthNum</span><span class="hljs-params">(vector&lt;<span class="hljs-type">int</span>&gt;&amp; nums1, vector&lt;<span class="hljs-type">int</span>&gt;&amp; nums2, <span class="hljs-type">int</span> k)</span> </span>&#123;<br>        <span class="hljs-type">int</span> index1, index2, pivot1, pivot2;<br>        <span class="hljs-type">int</span> left1 = <span class="hljs-number">0</span>;<br>        <span class="hljs-type">int</span> left2 = <span class="hljs-number">0</span>;<br>        <span class="hljs-type">int</span> m = nums1.<span class="hljs-built_in">size</span>();<br>        <span class="hljs-type">int</span> n = nums2.<span class="hljs-built_in">size</span>();<br>        <span class="hljs-keyword">while</span> (<span class="hljs-literal">true</span>) &#123;<br>            <span class="hljs-keyword">if</span> (left1 == m) <span class="hljs-keyword">return</span> nums2[left2 + k - <span class="hljs-number">1</span>];<br>            <span class="hljs-keyword">if</span> (left2 == n) <span class="hljs-keyword">return</span> nums1[left1 + k - <span class="hljs-number">1</span>];<br>            <span class="hljs-keyword">if</span> (k == <span class="hljs-number">1</span>) <span class="hljs-keyword">return</span> std::<span class="hljs-built_in">min</span>(nums1[left1], nums2[left2]);<br>            index1 = std::<span class="hljs-built_in">min</span>(left1 + k / <span class="hljs-number">2</span> - <span class="hljs-number">1</span>, m - <span class="hljs-number">1</span>);<br>            index2 = std::<span class="hljs-built_in">min</span>(left2 + k / <span class="hljs-number">2</span> - <span class="hljs-number">1</span>, n - <span class="hljs-number">1</span>);<br>            <span class="hljs-keyword">if</span> (nums1[index1] &lt; nums2[index2]) &#123;<br>                k -= index1 - left1 + <span class="hljs-number">1</span>;<br>                left1 = index1 + <span class="hljs-number">1</span>;<br>            &#125;<br>            <span class="hljs-keyword">else</span> &#123;<br>                k -= index2 - left2 + <span class="hljs-number">1</span>;<br>                left2 = index2 + <span class="hljs-number">1</span>;<br>            &#125;<br>        &#125;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
+
+<h3 id="心得"><a href="#心得" class="headerlink" title="心得"></a>心得</h3><ul>
+<li>写 while 循环先确定退出条件</li>
+<li>数组选取 pivot 时确保不会越界</li>
+<li>将要用的数据先确定类型，如 <code>int m = nums1.size()</code>，在 leetcode 中，<code>min(left1 + k / 2 - 1, nums1.size() - 1)</code> 会由于<code>nums1.size()</code> 类型不是 <code>int</code> 的原因而无法调用</li>
+</ul>
+<h2 id="11-盛最多水的容器"><a href="#11-盛最多水的容器" class="headerlink" title="11 盛最多水的容器"></a>11 <a target="_blank" rel="noopener" href="https://leetcode.cn/problems/container-with-most-water/">盛最多水的容器</a></h2><p>难度中等</p>
+<p>4360</p>
+<blockquote>
+<p>给定一个长度为 n 的整数数组 height 。有 n 条垂线，第 i 条线的两个端点是 (i, 0) 和 (i, height[i]) 。</p>
+<p>找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。</p>
+<p>返回容器可以储存的最大水量。</p>
+<p>说明：你不能倾斜容器。
+链接：https://leetcode.cn/problems/container-with-most-water</p>
+</blockquote>
+<h3 id="分析-1"><a href="#分析-1" class="headerlink" title="分析"></a>分析</h3><p>数组类型的数据结构，首先想到的便是遍历。其中，双指针遍历（滑动窗口）是很常见的思路。笔者认为滑动窗口的思考方法，优先考虑从大窗口变成小窗口。</p>
+<p>本题中，笔者用两个指针$i$,$j$表示窗口边界。当向中间移动两个指针时，宽度减小。要想获得更大的容量，就得找到更大的高度。由于高度取决于两个指针中的“短板”， 因此，只有当内移短板指针时，才需要判断并更新当前的最大容量。</p>
+<h4 id="正确性"><a href="#正确性" class="headerlink" title="正确性"></a>正确性</h4><p>将所有双指针组合视作$C(n,2)$个状态，则每次更新容量，都会剔除部分「不大于」当前最大容量的状态。因此，当最终只剩下一个状态时，必定不小于所有已经剔除的状态。</p>
+<h3 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">maxArea</span><span class="hljs-params">(vector&lt;<span class="hljs-type">int</span>&gt;&amp; height)</span> </span>&#123;<br>        <span class="hljs-type">int</span> i = <span class="hljs-number">0</span>, j = height.<span class="hljs-built_in">size</span>() - <span class="hljs-number">1</span>, capacity = <span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">while</span> (i &lt; j) &#123;<br>            capacity = height[i] &lt; height[j] ?<br>                        <span class="hljs-built_in">max</span>(capacity, (j - i) * height[i++]): <span class="hljs-comment">// 注意 j-i 在 i++ 前</span><br>                        <span class="hljs-built_in">max</span>(capacity, (j - i) * height[j--]);<br>        &#125;<br>        <span class="hljs-keyword">return</span> capacity;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
+
+
+
+<h3 id="心得-1"><a href="#心得-1" class="headerlink" title="心得"></a>心得</h3><ul>
+<li>一种思路：遍历——双指针遍历（滑动窗口）</li>
+<li>本次的代码看起来有点炫技。笔者认为将代码写得通俗易懂和佶屈聱牙是两种不同的境界，前者适合一个优秀理想的开发团队，后者则是身处不稳定的职位时提高自身不可替代性的一种手段。实际上本次的代码只是个小细节，真正的佶屈聱牙应当是优秀特异的算法思路和先进高效的代码技术。</li>
+</ul>
+<h2 id="15-三数之和"><a href="#15-三数之和" class="headerlink" title="15. 三数之和"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/3sum/">15. 三数之和</a></h2><blockquote>
+<p>给你一个整数数组 nums ，判断是否存在三元组 [nums[i], nums[j], nums[k]] 满足 i != j、i != k 且 j != k ，同时还满足 nums[i] + nums[j] + nums[k] == 0 。请</p>
+<p>你返回所有和为 0 且不重复的三元组。</p>
+<p>注意：答案中不可以包含重复的三元组。</p>
+</blockquote>
+<h3 id="分析-2"><a href="#分析-2" class="headerlink" title="分析"></a>分析</h3><p>暴力遍历需要$O(n^3)$，因为涉及到大小比较，考虑对数组排序。</p>
+<p>由于返回的三元组不允许重复，因此分析时可以把重复元素排除。假定$i&lt;j&lt;k$，第一层遍历选定数字 $num[i]$ ，则问题转变为在有序数组中寻找两数之和。显然，对于 $i$ 后面的子数组，通过维持两个指针 $j,k$ ，不断右移、左移两个指针即可在 $O(n)$ 时间内找到所有合适的 $j,k$。</p>
+<p>过程中需要添加判断语句排除重复元素。</p>
+<h3 id="代码-2"><a href="#代码-2" class="headerlink" title="代码"></a>代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    vector&lt;vector&lt;<span class="hljs-type">int</span>&gt;&gt; <span class="hljs-built_in">threeSum</span>(vector&lt;<span class="hljs-type">int</span>&gt;&amp; nums) &#123;<br>        vector&lt;vector&lt;<span class="hljs-type">int</span>&gt;&gt; ans = &#123;&#125;;<br>        <span class="hljs-type">int</span> tmp;<br>        <span class="hljs-keyword">if</span> (nums.<span class="hljs-built_in">size</span>() &lt; <span class="hljs-number">3</span>) <span class="hljs-keyword">return</span> ans;<br>        <span class="hljs-built_in">sort</span>(nums.<span class="hljs-built_in">begin</span>(), nums.<span class="hljs-built_in">end</span>());<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; nums.<span class="hljs-built_in">size</span>() - <span class="hljs-number">2</span>; i++) &#123;<br>            <span class="hljs-keyword">if</span> (nums[i] &gt; <span class="hljs-number">0</span>) <span class="hljs-keyword">break</span>;<br>            <span class="hljs-keyword">if</span> (i &gt; <span class="hljs-number">0</span> &amp;&amp; nums[i] == nums[i - <span class="hljs-number">1</span>]) <span class="hljs-keyword">continue</span>;<br>            <span class="hljs-type">int</span> j = i + <span class="hljs-number">1</span>, k =  nums.<span class="hljs-built_in">size</span>() - <span class="hljs-number">1</span>;<br>            <span class="hljs-keyword">while</span>(j &lt; k) &#123;<br>                <span class="hljs-keyword">if</span> (j &gt; i + <span class="hljs-number">1</span> &amp;&amp; nums[j] == nums[j - <span class="hljs-number">1</span>]) &#123;<br>                    j++;<br>                    <span class="hljs-keyword">continue</span>;<br>                &#125;<br>                tmp = nums[i] + nums[j] + nums[k];<br>                <span class="hljs-keyword">if</span> (tmp &gt; <span class="hljs-number">0</span>) &#123;<br>                    k--;<br>                &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (tmp == <span class="hljs-number">0</span>) &#123;<br>                    ans.<span class="hljs-built_in">push_back</span>(&#123;nums[i], nums[j++], nums[k--]&#125;);<br>                &#125; <span class="hljs-keyword">else</span> &#123;<br>                    j++;<br>                &#125;<br>            &#125;<br>        &#125;<br>        <span class="hljs-keyword">return</span> ans;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
+
+
+
+<h3 id="心得-2"><a href="#心得-2" class="headerlink" title="心得"></a>心得</h3><ul>
+<li>涉及元素比较的数组题，可以考虑先排序数组</li>
+</ul>
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3>
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%AE%97%E6%B3%95/" class="category-chain-item">算法</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/C/" class="print-no-link">#C++</a>
+      
+        <a href="/tags/%E7%AE%97%E6%B3%95%EF%BC%8C%E4%B8%8D%E5%AE%9A%E6%9C%9F%E6%9B%B4%E6%96%B0/" class="print-no-link">#算法，不定期更新</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>leetcode 刷题记录</div>
+      <div>https://01warpdrive.github.io/posts/c862.html</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>舣星</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年8月18日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/posts/820f.html" title="Hyper-V禁用指南">
+                        <span class="hidden-mobile">Hyper-V禁用指南</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
