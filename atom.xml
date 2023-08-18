@@ -6,7 +6,7 @@
   <link href="https://01warpdrive.github.io/atom.xml" rel="self"/>
   
   <link href="https://01warpdrive.github.io/"/>
-  <updated>2023-08-18T11:41:16.818Z</updated>
+  <updated>2023-08-18T11:50:48.573Z</updated>
   <id>https://01warpdrive.github.io/</id>
   
   <author>
@@ -21,16 +21,10 @@
     <link href="https://01warpdrive.github.io/posts/c862.html"/>
     <id>https://01warpdrive.github.io/posts/c862.html</id>
     <published>2023-08-18T11:32:31.090Z</published>
-    <updated>2023-08-18T11:41:16.818Z</updated>
+    <updated>2023-08-18T11:50:48.573Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
+    <summary type="html">记录笔者根据网上推荐的 leetcode 刷题指南的学习过程，以此文章勉励自己在代码上不断进步。</summary>
     
     
     
@@ -48,11 +42,10 @@
     <link href="https://01warpdrive.github.io/posts/820f.html"/>
     <id>https://01warpdrive.github.io/posts/820f.html</id>
     <published>2023-02-28T06:30:07.000Z</published>
-    <updated>2023-08-18T05:48:43.334Z</updated>
+    <updated>2023-08-18T11:50:40.031Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;Hyper-V禁用指南&quot;&gt;&lt;a href=&quot;#Hyper-V禁用指南&quot; class=&quot;headerlink&quot; title=&quot;Hyper-V禁用指南&quot;&gt;&lt;/a&gt;Hyper-V禁用指南&lt;/h1&gt;&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;本文是笔者在浪费了宝贵的午睡时间尝试关闭hyper-V后写下的，难免带有极端情绪和错漏，敬请谅解。&lt;/p&gt;
-&lt;p&gt;首先，本文的面向对象是那些&lt;strong&gt;已经尝试过几种网上方法，重启了好几次电脑但未果&lt;/strong&gt;的用户。本文汇总了笔者解决hyper-V关闭问题的一些经历和心得。还没尝试过几种常见关闭方法的用户先尝试那些，成功了可以节省时间。&lt;/p&gt;</summary>
+    <summary type="html">整理汇总了几种 windows 平台禁用 Hyper-V 的方法。</summary>
     
     
     
@@ -70,11 +63,10 @@
     <link href="https://01warpdrive.github.io/posts/bc95.html"/>
     <id>https://01warpdrive.github.io/posts/bc95.html</id>
     <published>2022-12-02T03:11:38.000Z</published>
-    <updated>2023-08-18T05:39:54.185Z</updated>
+    <updated>2023-08-18T11:50:56.285Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;网络资源分享&quot;&gt;&lt;a href=&quot;#网络资源分享&quot; class=&quot;headerlink&quot; title=&quot;网络资源分享&quot;&gt;&lt;/a&gt;网络资源分享&lt;/h1&gt;&lt;p&gt;近十几年来，互联网商业化加速。在逐利的泥沼中，很多优质资源被掩盖在海量的数据里。本文章收录了一些互联网资源，并不定期维护更新。&lt;/p&gt;
-&lt;p&gt;此外，如果相关负责人认为笔者行为涉及侵权，请联系笔者删除。&lt;/p&gt;</summary>
+    <summary type="html">这里汇集了一些笔者收藏的网络资源，五花八门、品类丰富。</summary>
     
     
     
@@ -92,11 +84,10 @@
     <link href="https://01warpdrive.github.io/posts/f2eb.html"/>
     <id>https://01warpdrive.github.io/posts/f2eb.html</id>
     <published>2022-12-01T04:14:45.000Z</published>
-    <updated>2023-08-18T05:24:36.846Z</updated>
+    <updated>2023-08-18T11:50:52.299Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;图床测试&quot;&gt;&lt;a href=&quot;#图床测试&quot; class=&quot;headerlink&quot; title=&quot;图床测试&quot;&gt;&lt;/a&gt;图床测试&lt;/h1&gt;&lt;p&gt;这是测试图片&lt;sup id=&quot;fnref:1&quot; class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span class=&quot;hint--top hint--rounded&quot; aria-label=&quot;参考链接1&quot;&gt;[1]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://notes.sjtu.edu.cn/uploads/upload_572a421050d5af848e688fc45cc1a314.png&quot;&gt;&lt;/p&gt;</summary>
+    <summary type="html">这是一篇测试文章，用来确认笔者的图床没有挂掉。</summary>
     
     
     

@@ -16,16 +16,16 @@
   <meta name="author" content="舣星">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Hyper-V禁用指南前言本文是笔者在浪费了宝贵的午睡时间尝试关闭hyper-V后写下的，难免带有极端情绪和错漏，敬请谅解。 首先，本文的面向对象是那些已经尝试过几种网上方法，重启了好几次电脑但未果的用户。本文汇总了笔者解决hyper-V关闭问题的一些经历和心得。还没尝试过几种常见关闭方法的用户先尝试那些，成功了可以节省时间。">
+    <meta name="description" content="整理汇总了几种 windows 平台禁用 Hyper-V 的方法。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hyper-V禁用指南">
 <meta property="og:url" content="https://01warpdrive.github.io/posts/820f.html">
 <meta property="og:site_name" content="舣星码头">
-<meta property="og:description" content="Hyper-V禁用指南前言本文是笔者在浪费了宝贵的午睡时间尝试关闭hyper-V后写下的，难免带有极端情绪和错漏，敬请谅解。 首先，本文的面向对象是那些已经尝试过几种网上方法，重启了好几次电脑但未果的用户。本文汇总了笔者解决hyper-V关闭问题的一些经历和心得。还没尝试过几种常见关闭方法的用户先尝试那些，成功了可以节省时间。">
+<meta property="og:description" content="整理汇总了几种 windows 平台禁用 Hyper-V 的方法。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://notes.sjtu.edu.cn/uploads/upload_1cafa831768a87c9c45f1d2face70521.png">
 <meta property="article:published_time" content="2023-02-28T06:30:07.000Z">
-<meta property="article:modified_time" content="2023-08-18T05:48:43.334Z">
+<meta property="article:modified_time" content="2023-08-18T11:50:40.031Z">
 <meta property="article:author" content="舣星">
 <meta property="article:tag" content="windows">
 <meta property="article:tag" content="经验分享">
@@ -298,7 +298,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年8月18日 下午
+                    本文最后更新于：2023年8月18日 晚上
                   
                 
               </p>
@@ -308,7 +308,7 @@
                 
                 <h1 id="Hyper-V禁用指南"><a href="#Hyper-V禁用指南" class="headerlink" title="Hyper-V禁用指南"></a>Hyper-V禁用指南</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文是笔者在浪费了宝贵的午睡时间尝试关闭hyper-V后写下的，难免带有极端情绪和错漏，敬请谅解。</p>
 <p>首先，本文的面向对象是那些<strong>已经尝试过几种网上方法，重启了好几次电脑但未果</strong>的用户。本文汇总了笔者解决hyper-V关闭问题的一些经历和心得。还没尝试过几种常见关闭方法的用户先尝试那些，成功了可以节省时间。</p>
-<span id="more"></span>
+<!-- more -->
 
 <p>然后，笔者是第二次遇到了hyper-V难以关闭的弱智问题，对于这种深埋底层、有替代方案的答辩功能笔者深恶痛绝，建议凡是需要用到ubuntu虚拟机的统一用vmware，网上资料多得是。不要随便搞windows的底层功能，出了问题难以找到正确的操作指南！！！</p>
 <h2 id="网上常见的关闭方法与背后意义"><a href="#网上常见的关闭方法与背后意义" class="headerlink" title="网上常见的关闭方法与背后意义"></a>网上常见的关闭方法与背后意义</h2><h3 id="1-启用或关闭windows功能"><a href="#1-启用或关闭windows功能" class="headerlink" title="1. 启用或关闭windows功能"></a>1. 启用或关闭windows功能</h3><p>这也是大多数人对hyper-v的理解，网上常见的开启和关闭hyper-v功能都涉及到windows功能中的五种选项。</p>
