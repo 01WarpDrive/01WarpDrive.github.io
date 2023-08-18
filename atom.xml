@@ -6,7 +6,7 @@
   <link href="https://01warpdrive.github.io/atom.xml" rel="self"/>
   
   <link href="https://01warpdrive.github.io/"/>
-  <updated>2023-07-03T07:41:05.063Z</updated>
+  <updated>2023-08-18T05:31:13.795Z</updated>
   <id>https://01warpdrive.github.io/</id>
   
   <author>
@@ -17,32 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>代码和随笔</title>
-    <link href="https://01warpdrive.github.io/posts/c862.html"/>
-    <id>https://01warpdrive.github.io/posts/c862.html</id>
-    <published>2023-06-22T08:04:40.000Z</published>
-    <updated>2023-07-03T07:41:05.063Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>Hyper-V禁用指南</title>
     <link href="https://01warpdrive.github.io/posts/820f.html"/>
     <id>https://01warpdrive.github.io/posts/820f.html</id>
     <published>2023-02-28T06:30:07.000Z</published>
-    <updated>2023-02-28T06:42:46.917Z</updated>
+    <updated>2023-08-18T05:31:13.795Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;Hyper-V禁用指南&quot;&gt;&lt;a href=&quot;#Hyper-V禁用指南&quot; class=&quot;headerlink&quot; title=&quot;Hyper-V禁用指南&quot;&gt;&lt;/a&gt;Hyper-V禁用指南&lt;/h1&gt;&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;本文是笔者在浪费了宝贵的午睡时间尝试关闭hyper-V后写下的，难免带有极端情绪和错漏，敬请谅解。&lt;/p&gt;
@@ -53,33 +32,9 @@
     <category term="windows" scheme="https://01warpdrive.github.io/categories/windows/"/>
     
     
-    <category term="-经验分享 -windows" scheme="https://01warpdrive.github.io/tags/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB-windows/"/>
+    <category term="windows" scheme="https://01warpdrive.github.io/tags/windows/"/>
     
-  </entry>
-  
-  <entry>
-    <title>SJTU_ACMOJ 1173. 一道排序题</title>
-    <link href="https://01warpdrive.github.io/posts/ca6a.html"/>
-    <id>https://01warpdrive.github.io/posts/ca6a.html</id>
-    <published>2022-12-07T11:30:24.000Z</published>
-    <updated>2022-12-20T03:04:40.563Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;SJTU-ACMOJ-1173-一道排序题&quot;&gt;&lt;a href=&quot;#SJTU-ACMOJ-1173-一道排序题&quot; class=&quot;headerlink&quot; title=&quot;SJTU_ACMOJ 1173. 一道排序题&quot;&gt;&lt;/a&gt;SJTU_ACMOJ 1173. 一道排序题&lt;/h1&gt;&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;萌萌的死神最讨厌数学题了，讨厌讨厌真是讨厌死了。&lt;/p&gt;
-&lt;p&gt;这不，死神一生的好朋友gingkgo又拿数学题来难为他了。接到题目后，死神原本眉飞色舞的脸瞬间石化了，真是讨厌死了。&lt;/p&gt;
-&lt;p&gt;幸亏还有你们这群好朋友呢！如果没有的话，事情才不知道会怎么样呢！&lt;/p&gt;
-&lt;p&gt;现在问题来了，给你2个数组a[]和b[]，他们有相同的长度n，你可以任意交换一个数组中的元素，我们定义函数
-$x=∑a[i]∗b[i]$&lt;/p&gt;
-&lt;p&gt;现在，死神请你告诉他，x最大可以取到多少，最小可以取到多少？真是讨厌死了。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="数据结构" scheme="https://01warpdrive.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-    
-    <category term="ACMOJ" scheme="https://01warpdrive.github.io/tags/ACMOJ/"/>
-    
-    <category term="算法题" scheme="https://01warpdrive.github.io/tags/%E7%AE%97%E6%B3%95%E9%A2%98/"/>
+    <category term="经验分享" scheme="https://01warpdrive.github.io/tags/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
     
   </entry>
   
@@ -130,7 +85,7 @@ $x=∑a[i]∗b[i]$&lt;/p&gt;
     <link href="https://01warpdrive.github.io/posts/a6dc.html"/>
     <id>https://01warpdrive.github.io/posts/a6dc.html</id>
     <published>2022-12-01T01:42:19.000Z</published>
-    <updated>2022-12-01T06:11:49.590Z</updated>
+    <updated>2023-08-18T05:30:34.846Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;darknet-训练-yolov4-tiny模型&quot;&gt;&lt;a href=&quot;#darknet-训练-yolov4-tiny模型&quot; class=&quot;headerlink&quot; title=&quot;darknet 训练 yolov4-tiny模型&quot;&gt;&lt;/a&gt;darknet 训练 yolov4-tiny模型&lt;/h1&gt;&lt;h2 id=&quot;为什么是-yolov4-tiny-模型：&quot;&gt;&lt;a href=&quot;#为什么是-yolov4-tiny-模型：&quot; class=&quot;headerlink&quot; title=&quot;为什么是 yolov4-tiny 模型：&quot;&gt;&lt;/a&gt;为什么是 yolov4-tiny 模型：&lt;/h2&gt;&lt;p&gt;相比官网教程实例采用的 yolov4 和 yolov3， yolov4-tiny 更加小巧，适合机载电脑使用。&lt;/p&gt;</summary>
@@ -140,7 +95,9 @@ $x=∑a[i]∗b[i]$&lt;/p&gt;
     <category term="深度学习" scheme="https://01warpdrive.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="深度学习" scheme="https://01warpdrive.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    <category term="machine learning" scheme="https://01warpdrive.github.io/tags/machine-learning/"/>
+    
+    <category term="darknet" scheme="https://01warpdrive.github.io/tags/darknet/"/>
     
   </entry>
   
