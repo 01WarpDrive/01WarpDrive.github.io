@@ -1,9 +1,7 @@
 User-agent: *
 Allow: /
-Allow: /about/
-Allow: /tags/
+Allow: /archives/
 Allow: /categories/
-Allow: /js/
-Allow: /css/
-Allow: /posts/
+Allow: /tags/
+Allow: /about/
 Sitemap: /sitemap.xml

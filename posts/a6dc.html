@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html lang="zh-CN" data-default-color-scheme=auto>
+<html lang="zh-CN" data-default-color-scheme="auto">
 
 
 
@@ -14,7 +14,7 @@
   
   <meta name="theme-color" content="#2f4154">
   <meta name="author" content="舣星">
-  <meta name="keywords" content="">
+  <meta name="keywords" content>
   
     <meta name="description" content="简要介绍了如何通过 darknet 训练 yolov4-tiny 模型。">
 <meta property="og:type" content="article">
@@ -38,15 +38,15 @@
   
   <title>darknet 训练 yolov4-tiny模型 - 舣星码头</title>
 
-  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css">
 
 
 
-  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css">
 
-  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+  <link rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css">
 
-  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css">
 
 
 
@@ -60,12 +60,12 @@
 <link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
 
 
-<link  rel="stylesheet" href="/css/main.css" />
+<link rel="stylesheet" href="/css/main.css">
 
 
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css">
   
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css">
   
 
 
@@ -81,8 +81,8 @@
       Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
     }
   </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
+  <script src="/js/utils.js"></script>
+  <script src="/js/color-schema.js"></script>
   
 
   
@@ -131,9 +131,7 @@
       <strong>舣星码头</strong>
     </a>
 
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <div class="animated-icon"><span></span><span></span><span></span></div>
     </button>
 
@@ -223,8 +221,7 @@
 
   
 
-<div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+<div id="banner" class="banner" parallax="true" style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -311,9 +308,9 @@
 
 <h2 id="炼丹原料准备："><a href="#炼丹原料准备：" class="headerlink" title="炼丹原料准备："></a>炼丹原料准备：</h2><p>当代的模型训练和神秘东方帝国古老时候的炼丹技术有着高度类似性，所以又被称为“炼丹”，笑。</p>
 <p>首先建议拍摄相应的照片素材（&gt;=500)，要求是尽量体现样本的多样性，这关系到最终模型的准确度，你也不想你的丹药废掉吧。</p>
-<p>然后，你可以参考 <a target="_blank" rel="noopener" href="https://github.com/heartexlabs/labelImg">label</a>，配置好标定软件。这里笔者更加推崇 Windows + Anaconda ，其中的 anaconda 是 windows 平台的 python 集成包，对于 python 相关的环境配置有很大的好处（你可以自行百度）。</p>
+<p>然后，你可以参考 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/heartexlabs/labelImg">label</a>，配置好标定软件。这里笔者更加推崇 Windows + Anaconda ，其中的 anaconda 是 windows 平台的 python 集成包，对于 python 相关的环境配置有很大的好处（你可以自行百度）。</p>
 <p>关于后续的操作，你可以参考官网的 demo 视频，总之就是四步：1. 选择图片素材的文件夹目录 2. 选择图片标定的类别 3. 在图片上标定方框 4.保存！！！ </p>
-<h2 id="上文火！（三体梗）总之就是开始炼丹了"><a href="#上文火！（三体梗）总之就是开始炼丹了" class="headerlink" title="上文火！（三体梗）总之就是开始炼丹了"></a>上文火！（三体梗）总之就是开始炼丹了</h2><p>你可以查看 github 这个部分 <a target="_blank" rel="noopener" href="https://github.com/AlexeyAB/darknet#how-to-train-tiny-yolo-to-detect-your-custom-objects">训练</a> 以及它的上一个部分。
+<h2 id="上文火！（三体梗）总之就是开始炼丹了"><a href="#上文火！（三体梗）总之就是开始炼丹了" class="headerlink" title="上文火！（三体梗）总之就是开始炼丹了"></a>上文火！（三体梗）总之就是开始炼丹了</h2><p>你可以查看 github 这个部分 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/AlexeyAB/darknet#how-to-train-tiny-yolo-to-detect-your-custom-objects">训练</a> 以及它的上一个部分。
 大体上是如下几个步骤：</p>
 <ul>
 <li>下载预权重文件，后缀是类似 <code>.conv</code>，可以放在 darknet 主目录</li>
@@ -323,12 +320,12 @@
 <li>创建 <code>train.txt</code>，内部写入所有图片素材的目录（建议用 excel 或 python 制作）</li>
 </ul>
 <p>最终，进入命令行输入官网上要求的代码，当命令行开始“翻滚”起来时，恭喜，你也是一名炼丹师了。</p>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><p>本文档写得简略，建议仔细参考官方文档，同时也可以看看  <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/494058726">比较好的教程</a>（有几处细节与官方不同，记得注意）。</p>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><p>本文档写得简略，建议仔细参考官方文档，同时也可以看看  <a target="_blank" rel="external nofollow noopener noreferrer" href="https://zhuanlan.zhihu.com/p/494058726">比较好的教程</a>（有几处细节与官方不同，记得注意）。</p>
 
                 
               </div>
             
-            <hr/>
+            <hr>
             <div>
               <div class="post-metas my-3">
   
@@ -395,7 +392,7 @@
             
               
               
-                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/" rel="external nofollow noopener noreferrer">
                   <span class="hint--top hint--rounded" aria-label="BY - 署名">
                     <i class="iconfont icon-by"></i>
                   </span>
@@ -500,8 +497,7 @@
     
 
     
-      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header text-center">
@@ -530,7 +526,7 @@
     <div class="footer-inner">
   
     <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+       <a href="https://hexo.io" target="_blank" rel="external nofollow noopener noreferrer"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="external nofollow noopener noreferrer"><span>Fluid</span></a> 
     </div>
   
   
@@ -566,8 +562,8 @@
 
   <!-- Scripts -->
   
-  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+  <script src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js"></script>
+  <link rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css">
 
   <script>
     NProgress.configure({"showSpinner":false,"trickleSpeed":100})
@@ -578,13 +574,13 @@
   </script>
 
 
-<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
-<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
+<script src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>
+<script src="/js/events.js"></script>
+<script src="/js/plugins.js"></script>
 
 
-  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js"></script>
   <script>
     (function (window, document) {
       var typing = Fluid.plugins.typing;
@@ -603,7 +599,7 @@
 
 
   
-    <script  src="/js/img-lazyload.js" ></script>
+    <script src="/js/img-lazyload.js"></script>
   
 
 
@@ -649,7 +645,7 @@
 </script>
 
 
-  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+  <script src="https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js"></script>
 
   <script>Fluid.plugins.codeWidget();</script>
 
@@ -743,11 +739,11 @@
       </script>
     
 
-  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
+  <script src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
 
-  <script  src="/js/local-search.js" ></script>
+  <script src="/js/local-search.js"></script>
 
-  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 
@@ -755,7 +751,7 @@
 
 <!-- 主题的启动项，将它保持在最底部 -->
 <!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
+<script src="/js/boot.js"></script>
 
 
   

@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html lang="zh-CN" data-default-color-scheme=auto>
+<html lang="zh-CN" data-default-color-scheme="auto">
 
 
 
@@ -14,7 +14,7 @@
   
   <meta name="theme-color" content="#2f4154">
   <meta name="author" content="舣星">
-  <meta name="keywords" content="">
+  <meta name="keywords" content>
   
     <meta name="description" content="记录笔者根据网上推荐的 leetcode 刷题指南的学习过程，以此文章勉励自己在代码上不断进步。">
 <meta property="og:type" content="article">
@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://notes.sjtu.edu.cn/uploads/upload_4236a9dac322ef915a3e9b8db7ef4301.png">
 <meta property="article:published_time" content="2023-08-18T03:11:38.000Z">
-<meta property="article:modified_time" content="2023-08-27T13:30:10.142Z">
+<meta property="article:modified_time" content="2023-09-11T01:29:52.114Z">
 <meta property="article:author" content="舣星">
 <meta property="article:tag" content="C++">
 <meta property="article:tag" content="算法，不定期更新">
@@ -38,15 +38,15 @@
   
   <title>leetcode 刷题记录 - 舣星码头</title>
 
-  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css">
 
 
 
-  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css">
 
-  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+  <link rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css">
 
-  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css">
 
 
 
@@ -60,12 +60,12 @@
 <link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
 
 
-<link  rel="stylesheet" href="/css/main.css" />
+<link rel="stylesheet" href="/css/main.css">
 
 
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css">
   
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css">
   
 
 
@@ -81,8 +81,8 @@
       Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
     }
   </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
+  <script src="/js/utils.js"></script>
+  <script src="/js/color-schema.js"></script>
   
 
   
@@ -131,9 +131,7 @@
       <strong>舣星码头</strong>
     </a>
 
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <div class="animated-icon"><span></span><span></span><span></span></div>
     </button>
 
@@ -223,8 +221,7 @@
 
   
 
-<div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+<div id="banner" class="banner" parallax="true" style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -298,7 +295,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年8月27日 晚上
+                    本文最后更新于：2023年9月11日 上午
                   
                 
               </p>
@@ -307,7 +304,7 @@
               <div class="markdown-body">
                 
                 <h1 id="leetcode-刷题记录"><a href="#leetcode-刷题记录" class="headerlink" title="leetcode 刷题记录"></a>leetcode 刷题记录</h1><h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><ul>
-<li><p>刷题顺序参考<a target="_blank" rel="noopener" href="https://books.halfrost.com/leetcode/">序 | LeetCode Cookbook (halfrost.com)</a></p>
+<li><p>刷题顺序参考<a target="_blank" rel="external nofollow noopener noreferrer" href="https://books.halfrost.com/leetcode/">序 | LeetCode Cookbook (halfrost.com)</a></p>
 </li>
 <li><p>所有思路分析中的公式、操作都是按照 C++ 语法表示的。</p>
 </li>
@@ -316,7 +313,7 @@
 <li><p><strong>本文章更多是记录个人的刷题情况，其中的题解分析往往是事先参考了官网相关题解，语言表述和技术细节多有不如，不推荐作为您的主要刷题参考。</strong></p>
 </li>
 </ul>
-<h1 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h1><h2 id="4-寻找两个正序数组的中位数"><a href="#4-寻找两个正序数组的中位数" class="headerlink" title="4 寻找两个正序数组的中位数"></a>4 <a target="_blank" rel="noopener" href="https://leetcode.cn/problems/median-of-two-sorted-arrays/">寻找两个正序数组的中位数</a></h2><blockquote>
+<h1 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h1><h2 id="4-寻找两个正序数组的中位数"><a href="#4-寻找两个正序数组的中位数" class="headerlink" title="4 寻找两个正序数组的中位数"></a>4 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://leetcode.cn/problems/median-of-two-sorted-arrays/">寻找两个正序数组的中位数</a></h2><blockquote>
 <p>给定两个大小分别为 m 和 n 的正序（从小到大）数组 nums1 和 nums2。请你找出并返回这两个正序数组的中位数 。算法的时间复杂度应该为 O(log (m+n)) 。
 链接：https://leetcode.cn/problems/median-of-two-sorted-arrays</p>
 </blockquote>
@@ -340,7 +337,7 @@
 <li>数组选取 pivot 时确保不会越界</li>
 <li>将要用的数据先确定类型，如 <code>int m = nums1.size()</code>，在 leetcode 中，<code>min(left1 + k / 2 - 1, nums1.size() - 1)</code> 会由于<code>nums1.size()</code> 类型不是 <code>int</code> 的原因而无法调用</li>
 </ul>
-<h2 id="11-盛最多水的容器"><a href="#11-盛最多水的容器" class="headerlink" title="11 盛最多水的容器"></a>11 <a target="_blank" rel="noopener" href="https://leetcode.cn/problems/container-with-most-water/">盛最多水的容器</a></h2><p>难度中等</p>
+<h2 id="11-盛最多水的容器"><a href="#11-盛最多水的容器" class="headerlink" title="11 盛最多水的容器"></a>11 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://leetcode.cn/problems/container-with-most-water/">盛最多水的容器</a></h2><p>难度中等</p>
 <p>4360</p>
 <blockquote>
 <p>给定一个长度为 n 的整数数组 height 。有 n 条垂线，第 i 条线的两个端点是 (i, 0) 和 (i, height[i]) 。</p>
@@ -360,7 +357,7 @@
 <li>一种思路：遍历——双指针遍历（滑动窗口）</li>
 <li>本次的代码看起来有点炫技。笔者认为将代码写得通俗易懂和佶屈聱牙是两种不同的境界，前者适合一个优秀理想的开发团队，后者则是身处不稳定的职位时提高自身不可替代性的一种手段。实际上本次的代码只是个小细节，真正的佶屈聱牙应当是优秀特异的算法思路和先进高效的代码技术。</li>
 </ul>
-<h2 id="15-三数之和"><a href="#15-三数之和" class="headerlink" title="15. 三数之和"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/3sum/">15. 三数之和</a></h2><blockquote>
+<h2 id="15-三数之和"><a href="#15-三数之和" class="headerlink" title="15. 三数之和"></a><a target="_blank" rel="external nofollow noopener noreferrer" href="https://leetcode.cn/problems/3sum/">15. 三数之和</a></h2><blockquote>
 <p>给你一个整数数组 nums ，判断是否存在三元组 [nums[i], nums[j], nums[k]] 满足 i != j、i != k 且 j != k ，同时还满足 nums[i] + nums[j] + nums[k] == 0 。请</p>
 <p>你返回所有和为 0 且不重复的三元组。</p>
 <p>注意：答案中不可以包含重复的三元组。</p>
@@ -375,7 +372,7 @@
 <h3 id="心得-2"><a href="#心得-2" class="headerlink" title="心得"></a>心得</h3><ul>
 <li>涉及元素比较的数组题，可以考虑先排序数组</li>
 </ul>
-<h2 id="16-最接近的三数之和"><a href="#16-最接近的三数之和" class="headerlink" title="16. 最接近的三数之和"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/3sum-closest/">16. 最接近的三数之和</a></h2><blockquote>
+<h2 id="16-最接近的三数之和"><a href="#16-最接近的三数之和" class="headerlink" title="16. 最接近的三数之和"></a><a target="_blank" rel="external nofollow noopener noreferrer" href="https://leetcode.cn/problems/3sum-closest/">16. 最接近的三数之和</a></h2><blockquote>
 <p>给你一个长度为 n 的整数数组 nums 和 一个目标值 target。请你从 nums 中选出三个整数，使它们的和与 target 最接近。</p>
 <p>返回这三个数的和。</p>
 <p>假定每组输入只存在恰好一个解。</p>
@@ -390,7 +387,7 @@
 
 
 
-<h2 id="18-四数之和"><a href="#18-四数之和" class="headerlink" title="18. 四数之和"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/4sum/">18. 四数之和</a></h2><blockquote>
+<h2 id="18-四数之和"><a href="#18-四数之和" class="headerlink" title="18. 四数之和"></a><a target="_blank" rel="external nofollow noopener noreferrer" href="https://leetcode.cn/problems/4sum/">18. 四数之和</a></h2><blockquote>
 <p>给你一个由 n 个整数组成的数组 nums ，和一个目标值 target 。请你找出并返回满足下述全部条件且不重复的四元组 [nums[a], nums[b], nums[c], nums[d]] （若两个四元组元素一一对应，则认为两个四元组重复）：</p>
 <ul>
 <li>0 &lt;= a, b, c, d &lt; n</li>
@@ -409,7 +406,7 @@
 <li><p>原先在处理数据结构时，总是习惯像这样 <code>long sum = nums[i] + nums[j] + nums[k];</code>，只注意等号左边。现在看来，两边都确定数据类型最好，像这样<code>long sum = (long)nums[i] + nums[j] + nums[k];</code>。</p>
 </li>
 </ul>
-<h2 id="26-删除有序数组中的重复项"><a href="#26-删除有序数组中的重复项" class="headerlink" title="26. 删除有序数组中的重复项"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/remove-duplicates-from-sorted-array/">26. 删除有序数组中的重复项</a></h2><h3 id="分析-5"><a href="#分析-5" class="headerlink" title="分析"></a>分析</h3><ul>
+<h2 id="26-删除有序数组中的重复项"><a href="#26-删除有序数组中的重复项" class="headerlink" title="26. 删除有序数组中的重复项"></a><a target="_blank" rel="external nofollow noopener noreferrer" href="https://leetcode.cn/problems/remove-duplicates-from-sorted-array/">26. 删除有序数组中的重复项</a></h2><h3 id="分析-5"><a href="#分析-5" class="headerlink" title="分析"></a>分析</h3><ul>
 <li><p>思路1</p>
 <p>考虑直接删除重复元素，则需要在遍历中改变 vector 长度。采用逆序遍历避免 index 错位。<code>erase</code> 函数的时间复杂度是 $O(n)$，效率不高。</p>
 </li>
@@ -424,7 +421,7 @@
 <h3 id="心得-4"><a href="#心得-4" class="headerlink" title="心得"></a>心得</h3><ul>
 <li>关注在遍历中改变 array 长度的操作</li>
 </ul>
-<h2 id="27-移除元素"><a href="#27-移除元素" class="headerlink" title="27. 移除元素"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/remove-element/">27. 移除元素</a></h2><h3 id="分析-6"><a href="#分析-6" class="headerlink" title="分析"></a>分析</h3><p>两种思路，都是通过双指针实现。</p>
+<h2 id="27-移除元素"><a href="#27-移除元素" class="headerlink" title="27. 移除元素"></a><a target="_blank" rel="external nofollow noopener noreferrer" href="https://leetcode.cn/problems/remove-element/">27. 移除元素</a></h2><h3 id="分析-6"><a href="#分析-6" class="headerlink" title="分析"></a>分析</h3><p>两种思路，都是通过双指针实现。</p>
 <ol>
 <li>将原数组视作输出数组，遍历数组，将不等于 <code>val</code> 的元素排列在输出数组中（即按序排在原数组头部），这是因为输出数组的长度一定小于原数组，因此覆盖操作不会影响遍历操作。</li>
 <li>将原数组中等于 <code>val</code> 的元素替换掉。用左指针从头开始检索出等于 <code>val</code> 的元素，用右指针从尾开始检索出不等于 <code>val</code> 的元素替换它。</li>
@@ -433,7 +430,7 @@
 <h3 id="代码-6"><a href="#代码-6" class="headerlink" title="代码"></a>代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">removeElement</span><span class="hljs-params">(vector&lt;<span class="hljs-type">int</span>&gt;&amp; nums, <span class="hljs-type">int</span> val)</span> </span>&#123;<br>        <span class="hljs-type">int</span> index = <span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; nums.<span class="hljs-built_in">size</span>(); i++) &#123;<br>            <span class="hljs-keyword">if</span> (nums[i] != val) nums[index++] = nums[i];<br>        &#125;<br>        <span class="hljs-keyword">return</span> index;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
 
 <h3 id="心得-5"><a href="#心得-5" class="headerlink" title="心得"></a>心得</h3><p>本题的分析中，两个方法的对比是比较有意思的。题目要求在「原数组」上操作，那么该如何看待和处理原数组的值？「覆盖」思路简单地忽略掉原先的值，而「替换」思路则将值分为 <code>==val</code> 和 <code>!=val</code> 两类。后者显然更细致，也更考验思维的深度。</p>
-<h2 id="31-下一个排列"><a href="#31-下一个排列" class="headerlink" title="31. 下一个排列"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/next-permutation/">31. 下一个排列</a></h2><h3 id="分析-7"><a href="#分析-7" class="headerlink" title="分析"></a>分析</h3><p>本题的数学模型并不直观。分析中，笔者给出以下直观的「推论」（显然在做题中无须对其证伪进行严谨证明）：</p>
+<h2 id="31-下一个排列"><a href="#31-下一个排列" class="headerlink" title="31. 下一个排列"></a><a target="_blank" rel="external nofollow noopener noreferrer" href="https://leetcode.cn/problems/next-permutation/">31. 下一个排列</a></h2><h3 id="分析-7"><a href="#分析-7" class="headerlink" title="分析"></a>分析</h3><p>本题的数学模型并不直观。分析中，笔者给出以下直观的「推论」（显然在做题中无须对其证伪进行严谨证明）：</p>
 <ul>
 <li>给定一个排列，通过交换其「靠前的较小数字」和「靠后的较大数字」，必然得到一个「字典序更大的排列」；反之亦然。</li>
 <li>给定一个排列的前缀，「满足前缀的排列」中的最小排列，它的非前缀部分必然为「非递减数列」；反之亦然。</li>
@@ -450,11 +447,31 @@
 <h3 id="心得-6"><a href="#心得-6" class="headerlink" title="心得"></a>心得</h3><ul>
 <li><strong>字典序</strong>可以简单理解为按照前缀排序的思路。</li>
 </ul>
+<h2 id="33-搜索旋转排序数组"><a href="#33-搜索旋转排序数组" class="headerlink" title="33. 搜索旋转排序数组"></a><a target="_blank" rel="external nofollow noopener noreferrer" href="https://leetcode.cn/problems/search-in-rotated-sorted-array/">33. 搜索旋转排序数组</a></h2><h3 id="分析-8"><a href="#分析-8" class="headerlink" title="分析"></a>分析</h3><p>二分查找实现对数时间。</p>
+<p>二分后，如果是递增序列，则套用基础的二分逻辑。如果是旋转过的数列，则根据mid所处的位置进行逻辑判断。</p>
+<p><strong>优化思路</strong>：二分后必然有一个递增数列和一个旋转数列，且两者的数域范围不相交。通过判断target是否在递增数列中来移动双指针。</p>
+<h3 id="代码-8"><a href="#代码-8" class="headerlink" title="代码"></a>代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">search</span><span class="hljs-params">(vector&lt;<span class="hljs-type">int</span>&gt;&amp; nums, <span class="hljs-type">int</span> target)</span> </span>&#123;<br>        <span class="hljs-type">int</span> left  = <span class="hljs-number">0</span>;<br>        <span class="hljs-type">int</span> right = nums.<span class="hljs-built_in">size</span>() - <span class="hljs-number">1</span>;<br>        <span class="hljs-type">int</span> mid = <span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">while</span> (left &lt;= right) &#123;<br>            mid = (left + right) / <span class="hljs-number">2</span>;<br>            <span class="hljs-keyword">if</span> (target == nums[mid]) <span class="hljs-keyword">return</span> mid;<br>            <span class="hljs-keyword">if</span> (nums[left] &lt;= nums[mid] &amp;&amp; nums[mid] &lt;= nums[right]) &#123;<br>                <span class="hljs-keyword">if</span> (target &lt; nums[mid]) right = mid - <span class="hljs-number">1</span>;<br>                <span class="hljs-keyword">else</span> left = mid + <span class="hljs-number">1</span>;<br>            &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (nums[mid] &gt;= nums[left]) &#123;<br>                <span class="hljs-keyword">if</span> (target &lt; nums[mid] &amp;&amp; target &gt; nums[right]) right = mid - <span class="hljs-number">1</span>;<br>                <span class="hljs-keyword">else</span> left = mid + <span class="hljs-number">1</span>;<br>            &#125; <span class="hljs-keyword">else</span> &#123;<br>                <span class="hljs-keyword">if</span> (target &gt; nums[mid] &amp;&amp; target &lt; nums[left]) left = mid + <span class="hljs-number">1</span>;<br>                <span class="hljs-keyword">else</span> right = mid - <span class="hljs-number">1</span>;<br>            &#125;<br><br>        &#125;<br>        <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
+
+<h3 id="心得-7"><a href="#心得-7" class="headerlink" title="心得"></a>心得</h3><p>二分的最直观理解：二分后判断目标可能出现在两者之一，从而缩减范围。从最直观、简单的思路出发来解决问题，是算法领域的进阶技巧，这需要不断精炼自己的思维。</p>
+<h2 id="34-在排序数组中查找元素的第一个和最后一个位置"><a href="#34-在排序数组中查找元素的第一个和最后一个位置" class="headerlink" title="34. 在排序数组中查找元素的第一个和最后一个位置"></a><a target="_blank" rel="external nofollow noopener noreferrer" href="https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/">34. 在排序数组中查找元素的第一个和最后一个位置</a></h2><h3 id="分析-9"><a href="#分析-9" class="headerlink" title="分析"></a>分析</h3><p>一种思路是通过二分法分别找到target的开始位置和结束位置。</p>
+<p>由于对寻找的目标有先后要求，在循环中找到target后不能直接退出循环。而是更新信息并继续缩小范围。</p>
+<h3 id="代码-9"><a href="#代码-9" class="headerlink" title="代码"></a>代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function">vector&lt;<span class="hljs-type">int</span>&gt; <span class="hljs-title">searchRange</span><span class="hljs-params">(vector&lt;<span class="hljs-type">int</span>&gt;&amp; nums, <span class="hljs-type">int</span> target)</span> </span>&#123;<br>        <span class="hljs-type">int</span> n = nums.<span class="hljs-built_in">size</span>();<br>        <span class="hljs-type">int</span> l = <span class="hljs-number">0</span>;<br>        <span class="hljs-type">int</span> r = n - <span class="hljs-number">1</span>;<br>        vector&lt;<span class="hljs-type">int</span>&gt; ans = &#123;<span class="hljs-number">-1</span>, <span class="hljs-number">-1</span>&#125;;<br>        <span class="hljs-keyword">if</span> (!n) <span class="hljs-keyword">return</span> ans;<br>        <span class="hljs-keyword">while</span> (l &lt;= r) &#123;<br>            <span class="hljs-type">int</span> mid = (l + r) / <span class="hljs-number">2</span>;<br>            <span class="hljs-keyword">if</span> (nums[mid] == target) &#123;<br>                ans[<span class="hljs-number">0</span>] = mid;<br>                r = mid - <span class="hljs-number">1</span>;<br>            &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (target &lt; nums[mid]) &#123;<br>                r = mid - <span class="hljs-number">1</span>;<br>            &#125; <span class="hljs-keyword">else</span> &#123;<br>                l = mid + <span class="hljs-number">1</span>;<br>            &#125;<br>        &#125;<br>        l = <span class="hljs-number">0</span>;<br>        r = n - <span class="hljs-number">1</span>;<br>        <span class="hljs-keyword">while</span> (l &lt;= r) &#123;<br>            <span class="hljs-type">int</span> mid = (l + r) / <span class="hljs-number">2</span>;<br>            <span class="hljs-keyword">if</span> (nums[mid] == target) &#123;<br>                ans[<span class="hljs-number">1</span>] = mid;<br>                l = mid + <span class="hljs-number">1</span>;<br>            &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (target &lt; nums[mid]) &#123;<br>                r = mid - <span class="hljs-number">1</span>;<br>            &#125; <span class="hljs-keyword">else</span> &#123;<br>                l = mid + <span class="hljs-number">1</span>;<br>            &#125;<br>        &#125;<br>        <span class="hljs-keyword">return</span> ans;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
+
+<h3 id="心得-8"><a href="#心得-8" class="headerlink" title="心得"></a>心得</h3><p>强化二分法缩小范围的作用。</p>
+<h2 id="35-搜索插入位置"><a href="#35-搜索插入位置" class="headerlink" title="35. 搜索插入位置"></a><a target="_blank" rel="external nofollow noopener noreferrer" href="https://leetcode.cn/problems/search-insert-position/">35. 搜索插入位置</a></h2><h3 id="分析-10"><a href="#分析-10" class="headerlink" title="分析"></a>分析</h3><p>用数学语言描述题目：<code>nums[ans-1] &lt; target &lt;= nums[ans]</code>。</p>
+<p>从而得到二分法的二分逻辑。</p>
+<p>考虑边界情况：target 大于所有 nums 中元素。</p>
+<h3 id="代码-10"><a href="#代码-10" class="headerlink" title="代码"></a>代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">searchInsert</span><span class="hljs-params">(vector&lt;<span class="hljs-type">int</span>&gt;&amp; nums, <span class="hljs-type">int</span> target)</span> </span>&#123;<br>        <span class="hljs-type">int</span> l = <span class="hljs-number">0</span>;<br>        <span class="hljs-type">int</span> r = nums.<span class="hljs-built_in">size</span>() - <span class="hljs-number">1</span>;<br>        <span class="hljs-keyword">while</span> (l &lt;= r) &#123;<br>            <span class="hljs-type">int</span> mid = (l + r) / <span class="hljs-number">2</span>;<br>            <span class="hljs-keyword">if</span> (nums[mid] &gt;= target) &#123;<br>                r = mid - <span class="hljs-number">1</span>;<br>            &#125; <span class="hljs-keyword">else</span> &#123;<br>                l = mid + <span class="hljs-number">1</span>;<br>            &#125;<br>        &#125;<br>        <span class="hljs-keyword">return</span> l;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
+
+<h3 id="心得-9"><a href="#心得-9" class="headerlink" title="心得"></a>心得</h3><ul>
+<li>数学化理解问题</li>
+<li>调试时枚举边界情况</li>
+</ul>
 
                 
               </div>
             
-            <hr/>
+            <hr>
             <div>
               <div class="post-metas my-3">
   
@@ -521,7 +538,7 @@
             
               
               
-                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/" rel="external nofollow noopener noreferrer">
                   <span class="hint--top hint--rounded" aria-label="BY - 署名">
                     <i class="iconfont icon-by"></i>
                   </span>
@@ -626,8 +643,7 @@
     
 
     
-      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header text-center">
@@ -656,7 +672,7 @@
     <div class="footer-inner">
   
     <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+       <a href="https://hexo.io" target="_blank" rel="external nofollow noopener noreferrer"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="external nofollow noopener noreferrer"><span>Fluid</span></a> 
     </div>
   
   
@@ -692,8 +708,8 @@
 
   <!-- Scripts -->
   
-  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+  <script src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js"></script>
+  <link rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css">
 
   <script>
     NProgress.configure({"showSpinner":false,"trickleSpeed":100})
@@ -704,13 +720,13 @@
   </script>
 
 
-<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
-<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
+<script src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>
+<script src="/js/events.js"></script>
+<script src="/js/plugins.js"></script>
 
 
-  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js"></script>
   <script>
     (function (window, document) {
       var typing = Fluid.plugins.typing;
@@ -729,7 +745,7 @@
 
 
   
-    <script  src="/js/img-lazyload.js" ></script>
+    <script src="/js/img-lazyload.js"></script>
   
 
 
@@ -775,7 +791,7 @@
 </script>
 
 
-  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+  <script src="https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js"></script>
 
   <script>Fluid.plugins.codeWidget();</script>
 
@@ -869,11 +885,11 @@
       </script>
     
 
-  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
+  <script src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
 
-  <script  src="/js/local-search.js" ></script>
+  <script src="/js/local-search.js"></script>
 
-  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 
@@ -881,7 +897,7 @@
 
 <!-- 主题的启动项，将它保持在最底部 -->
 <!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
+<script src="/js/boot.js"></script>
 
 
   
