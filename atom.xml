@@ -6,7 +6,7 @@
   <link href="https://01warpdrive.github.io/atom.xml" rel="self"/>
   
   <link href="https://01warpdrive.github.io/"/>
-  <updated>2023-09-11T03:03:02.738Z</updated>
+  <updated>2023-09-11T04:31:07.741Z</updated>
   <id>https://01warpdrive.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://01warpdrive.github.io/posts/30b1.html"/>
     <id>https://01warpdrive.github.io/posts/30b1.html</id>
     <published>2023-09-11T02:52:38.000Z</published>
-    <updated>2023-09-11T03:03:02.738Z</updated>
+    <updated>2023-09-11T04:31:07.741Z</updated>
     
     
     <summary type="html">本文及其系列文章是笔者基于上海交通大学《人工智能安全技术》课程内容整理并拓展，未经允许禁止转载。</summary>
@@ -31,9 +31,11 @@
     <category term="网络安全" scheme="https://01warpdrive.github.io/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
     
     
-    <category term="课程学习，AI" scheme="https://01warpdrive.github.io/tags/%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0%EF%BC%8CAI/"/>
-    
     <category term="网络安全" scheme="https://01warpdrive.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    
+    <category term="课程学习" scheme="https://01warpdrive.github.io/tags/%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="AI" scheme="https://01warpdrive.github.io/tags/AI/"/>
     
   </entry>
   
