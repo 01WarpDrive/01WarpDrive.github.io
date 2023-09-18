@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://notes.sjtu.edu.cn/uploads/upload_e905a030ff3af7915fa55084b3727cdf.png">
 <meta property="article:published_time" content="2023-09-11T05:14:50.000Z">
-<meta property="article:modified_time" content="2023-09-11T14:26:27.576Z">
+<meta property="article:modified_time" content="2023-09-17T14:05:10.649Z">
 <meta property="article:author" content="舣星">
 <meta property="article:tag" content="课程学习">
 <meta property="article:tag" content="AI">
@@ -295,7 +295,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年9月11日 晚上
+                    本文最后更新于：2023年9月17日 晚上
                   
                 
               </p>
@@ -304,6 +304,12 @@
               <div class="markdown-body">
                 
                 <h1 id="人工智能理论及应用（1）概论"><a href="#人工智能理论及应用（1）概论" class="headerlink" title="人工智能理论及应用（1）概论"></a>人工智能理论及应用（1）概论</h1><p>本文及其系列文章是笔者基于上海交通大学《人工智能理论及应用》课程和 Berkeley CS188 内容整理并拓展，未经允许禁止转载。</p>
+<p>本系列所有文章：</p>
+<ul>
+<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://starxyz.top/posts/6a12.html">人工智能理论及应用（1）概论 - 舣星码头 (starxyz.top)</a></li>
+<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://starxyz.top/posts/2017.html">人工智能理论及应用（2）搜索 - 舣星码头 (starxyz.top)</a></li>
+<li></li>
+</ul>
 <h1 id="人工智能定义"><a href="#人工智能定义" class="headerlink" title="人工智能定义"></a>人工智能定义</h1><p>人工智能是一门集成脑科学、认知科学、心理学、语言学、逻辑学、哲学
 与计算机科学的交叉学科。它是研究、开发用于模拟、延伸和扩展人的智
 道能的理论、方法、技术及应用系统的一门新的技术科学。</p>
@@ -356,7 +362,7 @@
 </li>
 <li><p>第二次寒冬（1987-1993）</p>
 <ul>
-<li>反向传播算法在深度神经网络中并不好用。梯度消失与梯度爆炸，</li>
+<li>反向传播算法在深度神经网络中并不好用。梯度消失与梯度爆炸。</li>
 <li>专家系统: 维护成本高昂，且局限于特定应用。</li>
 <li>计算机速度不够快、算法不够智能，学界再次对人工智能失去信心。</li>
 </ul>
@@ -388,16 +394,33 @@
 </li>
 <li>深度学习</li>
 <li>强化学习<ul>
-<li>强化学习是机器学习的重要领域，研究智能体如何最大化累
-计的回报，从而决定在环境中采用什么样的行动策略。</li>
+<li>强化学习是机器学习的重要领域，研究智能体如何最大化累计的回报，从而决定在环境中采用什么样的行动策略。</li>
 </ul>
 </li>
+</ul>
+<blockquote>
+<p>机器学习、深度学习、强化学习区分：<a target="_blank" rel="external nofollow noopener noreferrer" href="https://www.zhihu.com/question/279973545">(14 封私信 / 85 条消息) 机器学习、深度学习和强化学习的关系和区别是什么？ - 知乎 (zhihu.com)</a></p>
+<ul>
+<li>机器学习：一切通过<strong>优化方法</strong>挖掘数据中规律的学科。</li>
+<li>深度学习：一切运用了<strong>神经网络</strong>作为参数结构进行优化的机器学习算法。</li>
+<li>强化学习：不仅能利用现有数据，还可以通过对环境的<strong>探索获得新数据</strong>，并利用新数据循环往复地<strong>更新迭代</strong>现有模型的机器学习算法。</li>
+</ul>
+</blockquote>
+<hr>
+<ul>
 <li>基本功能<ul>
 <li>分类问题</li>
 <li>回归问题</li>
 </ul>
 </li>
 </ul>
+<blockquote>
+<p>分类问题和回归问题的区别：<a target="_blank" rel="external nofollow noopener noreferrer" href="https://cloud.tencent.com/developer/article/1604194">浅谈机器学习-回归与分类的区别-腾讯云开发者社区-腾讯云 (tencent.com)</a></p>
+<ul>
+<li>分类问题：离散变量、定性、输出空间不是度量空间</li>
+<li>回归问题：连续变量、定量、输出空间是度量空间</li>
+</ul>
+</blockquote>
 <hr>
 <ul>
 <li>传统的计算机视觉<ul>
@@ -420,7 +443,7 @@
 </ul>
 </li>
 <li>语言处理类技术<ul>
-<li>只能问题回答</li>
+<li>智能问题回答</li>
 <li>机器翻译</li>
 <li>网页搜索</li>
 <li>文本分类、垃圾邮件过滤等</li>
