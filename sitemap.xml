@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://01warpdrive.github.io/posts/2017.html</loc>
+    
+    <lastmod>2023-09-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://01warpdrive.github.io/posts/3a7a.html</loc>
     
     <lastmod>2023-09-18</lastmod>
@@ -14,15 +23,6 @@
     <loc>https://01warpdrive.github.io/posts/30b1.html</loc>
     
     <lastmod>2023-09-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://01warpdrive.github.io/posts/2017.html</loc>
-    
-    <lastmod>2023-09-17</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
