@@ -6,7 +6,7 @@
   <link href="https://01warpdrive.github.io/atom.xml" rel="self"/>
   
   <link href="https://01warpdrive.github.io/"/>
-  <updated>2023-09-25T07:34:58.183Z</updated>
+  <updated>2023-09-25T08:03:07.466Z</updated>
   <id>https://01warpdrive.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://01warpdrive.github.io/posts/dc42.html"/>
     <id>https://01warpdrive.github.io/posts/dc42.html</id>
     <published>2023-09-25T06:57:38.000Z</published>
-    <updated>2023-09-25T07:34:58.183Z</updated>
+    <updated>2023-09-25T08:03:07.466Z</updated>
     
     
     <summary type="html">本文及其系列文章是笔者基于上海交通大学《人工智能理论及应用》课程和 Berkeley CS188 内容整理并拓展，未经允许禁止转载。</summary>
@@ -42,7 +42,7 @@
     <link href="https://01warpdrive.github.io/posts/4577.html"/>
     <id>https://01warpdrive.github.io/posts/4577.html</id>
     <published>2023-09-19T12:36:42.000Z</published>
-    <updated>2023-09-25T03:39:45.921Z</updated>
+    <updated>2023-09-25T08:03:07.465Z</updated>
     
     
     <summary type="html">本文及其系列文章是笔者基于著名操作系统课程课程MIT6.S081撰写，主要涵盖笔者自学课程的学习资源和笔记心得。未经允许禁止转载。本文主要汇总学习相关的资源和感想。</summary>
@@ -132,7 +132,7 @@
     <link href="https://01warpdrive.github.io/posts/30b1.html"/>
     <id>https://01warpdrive.github.io/posts/30b1.html</id>
     <published>2023-09-11T02:52:38.000Z</published>
-    <updated>2023-09-25T03:52:39.715Z</updated>
+    <updated>2023-09-25T09:10:44.863Z</updated>
     
     
     <summary type="html">本文及其系列文章是笔者基于上海交通大学《人工智能安全技术》课程内容整理并拓展，未经允许禁止转载。本文介绍人工智能与安全的交叉问题。</summary>
@@ -157,7 +157,7 @@
     <link href="https://01warpdrive.github.io/posts/c862.html"/>
     <id>https://01warpdrive.github.io/posts/c862.html</id>
     <published>2023-08-18T03:11:38.000Z</published>
-    <updated>2023-09-21T06:28:44.958Z</updated>
+    <updated>2023-09-25T08:14:01.746Z</updated>
     
     
     <summary type="html">记录笔者根据网上推荐的 leetcode 刷题指南的学习过程，以此文章勉励自己在代码上不断进步。</summary>
@@ -178,7 +178,7 @@
     <link href="https://01warpdrive.github.io/posts/820f.html"/>
     <id>https://01warpdrive.github.io/posts/820f.html</id>
     <published>2023-02-28T06:30:07.000Z</published>
-    <updated>2023-08-18T11:50:40.031Z</updated>
+    <updated>2023-09-25T08:12:55.815Z</updated>
     
     
     <summary type="html">整理汇总了几种 windows 平台禁用 Hyper-V 的方法。</summary>
@@ -220,7 +220,7 @@
     <link href="https://01warpdrive.github.io/posts/a6dc.html"/>
     <id>https://01warpdrive.github.io/posts/a6dc.html</id>
     <published>2022-12-01T01:42:19.000Z</published>
-    <updated>2023-08-18T11:44:55.771Z</updated>
+    <updated>2023-09-25T08:12:19.936Z</updated>
     
     
     <summary type="html">简要介绍了如何通过 darknet 训练 yolov4-tiny 模型。</summary>
