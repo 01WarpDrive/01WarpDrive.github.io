@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>hexo+typora图片插入方案</title>
+    <link href="/posts/626b.html"/>
+    <url>/posts/626b.html</url>
+    
+    <content type="html"><![CDATA[<h1 id="hexo-typora图片插入方案"><a href="#hexo-typora图片插入方案" class="headerlink" title="hexo+typora图片插入方案"></a>hexo+typora图片插入方案</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Hexo 是目前比较流行的个人博客网站构建工具，文章基于 Markdown 撰写。</p><p>然而当前 Hexo 官方提供的<a href="https://hexo.io/zh-cn/docs/asset-folders.html">图片插入方式</a>往往与流行的 Markdown 编辑器不匹配。插入方式略显繁琐。</p><p>笔者使用 Typora 作为笔记软件，尝试寻求一种快捷的图片插入方式。</p><p>在<a href="https://www.cnblogs.com/himeka/p/16306906.html">hexo + typora 图片插入解决办法 - Yumine - 博客园 (cnblogs.com)</a>中，这位博主介绍了两种方案。一种是修改 Typora 默认图片保存地址为 Hexo 的图片目录。另一种是图床方案。</p><p>两者都存在一些缺陷：</p><ul><li>前者在修改后，对于那些不想提交到博客的笔记，图片也会被保存到 Hexo 图片目录，从而被提交到 Github 仓库。不仅耗费空间，而且造成信息泄漏。</li><li>Typora 默认的图片插入方式形如 <code>./.../xx.png</code>和<code>.../xx.png</code> 都无法被 Hexo 正确识别。只有<code>/img/xx.png</code>能被 Hexo 识别，而这样的形式必须手动修改，过于繁琐。</li><li>图床方案依赖图床平台，不稳定，插入 Typora 也不方便。</li></ul><p>此外，在<a href="https://github.com/hexojs/hexo-renderer-marked/issues/216">md img render part improvement of hexo-render-marked · Issue #216 · hexojs/hexo-renderer-marked (github.com)</a>中，使用者们也讨论出了一种方案。</p><p>该方案首先要求设置 Hexo 中<code>post_asset_folder: true</code>，从而 Hexo 会为每一篇文章创建一个专门的文件夹存储图片。</p><p>笔者比较排斥这个方案，当发布的文章数量多起来后，Hexo 文件夹中会看起来十分臃肿，不利于笔者维护博客文章。</p><p>因此笔者提出了一种新的图片插入方案：</p><ul><li>无须启用 <code>post_asset_folder: true</code></li><li>图片保存在本地，且非 Hexo 文章的 md 文件图片不会被上传</li><li>同时满足 Typora 和 博客网站的 Markdown 图片显示</li></ul><h2 id="实现方式"><a href="#实现方式" class="headerlink" title="实现方式"></a>实现方式</h2><ul><li><p>首先解决 Hexo 无法识别 <code>./.../xx.png</code> 的问题</p><ul><li>打开 Hexo 目录的<code>&quot;node_modules\hexo-renderer-marked\lib\renderer.js&quot;</code></li><li>在如图所示位置增添相应代码</li></ul><p><img src="/../image-20230925190324714.png" alt="image-20230925190324714"></p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">if</span> (href.<span class="hljs-title function_">startsWith</span>(<span class="hljs-string">&#x27;.&#x27;</span>)) &#123;<br>      href = href.<span class="hljs-title function_">slice</span>(<span class="hljs-number">1</span>);<br>    &#125;<br></code></pre></td></tr></table></figure></li><li><p>然后修改 Typora 配置</p><ul><li>进入「文件」- 「偏好设置」- 「图像」</li><li>修改「插入图片时」为「复制到指定路径」，路径填写为<code>./img</code></li><li>勾选如图配置</li></ul><p><img src="/img/image-20230925212438856.png" alt="image-20230925212438856"></p><blockquote><p>配置后，Typora 会将图片保存到 md 文件所在目录的文件夹 img</p><p> 中，笔者认为这是符合正常文件使用逻辑的。</p><p>在 <code>\source\_posts</code> 中，Typora 会创建文件夹 img，所有博客文章的图片都将被保存在该文件夹中。由于 Hexo 更新博客时只读取  <code>\source\img</code> 中的图片，因此还需要下步配置。</p></blockquote></li><li><p>通过 Shell 指令，每次更新博客都将 <code>\source\_posts\img</code>中图片复制到<code>\source\img</code>中</p><ul><li>创建一个 txt 文件</li><li>将下述内容复制到文档中</li><li>保存，并修改文件类型为 <code>.bat</code></li></ul><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bat"><span class="hljs-built_in">xcopy</span> /e &lt;待复制的绝对路径&gt; &lt;目标绝对路径&gt; /Y<br><span class="hljs-built_in">cd</span> &lt;Hexo 目录绝对路径&gt;<br>hexo g &amp;&amp; hexo d<br></code></pre></td></tr></table></figure></li></ul><p>完成上述步骤后，每次插入图片时，只需要直接将图片插入 Typora，无需额外修改图片 url。提交博客时只需要点击 bat 文件，自动完成图片迁移和博客上传。</p><p>当然，由于配置过程中修改 Hexo 的组件，理论上更新 Hexo 后需要再次修改配置。不过笔者认为博客以稳定为主，除了重大缺陷更新外，不需要保持最新版本。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术杂谈</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>hexo</tag>
+      
+      <tag>博客搭建</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>人工智能理论及应用（3）CSP问题</title>
     <link href="/posts/dc42.html"/>
     <url>/posts/dc42.html</url>
@@ -212,7 +239,7 @@
     
     <categories>
       
-      <category>windows</category>
+      <category>技术杂谈</category>
       
     </categories>
     
@@ -239,7 +266,7 @@
     
     <categories>
       
-      <category>资源分享</category>
+      <category>技术杂谈</category>
       
     </categories>
     

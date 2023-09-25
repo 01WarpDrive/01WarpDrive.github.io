@@ -16,27 +16,27 @@
   <meta name="author" content="舣星">
   <meta name="keywords" content>
   
-    <meta name="description" content="本文及其系列文章是笔者基于上海交通大学《人工智能理论及应用》课程和 Berkeley CS188 内容整理并拓展，未经允许禁止转载。">
+    <meta name="description" content="本文介绍了笔者构建的一种 Hexo + Typora 的图片插入方案，实现了 Typora 编辑器本地快速插入图片。无需额外操作。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="人工智能理论及应用（3）CSP问题">
-<meta property="og:url" content="https://01warpdrive.github.io/posts/dc42.html">
+<meta property="og:title" content="hexo+typora图片插入方案">
+<meta property="og:url" content="https://01warpdrive.github.io/posts/626b.html">
 <meta property="og:site_name" content="舣星码头">
-<meta property="og:description" content="本文及其系列文章是笔者基于上海交通大学《人工智能理论及应用》课程和 Berkeley CS188 内容整理并拓展，未经允许禁止转载。">
+<meta property="og:description" content="本文介绍了笔者构建的一种 Hexo + Typora 的图片插入方案，实现了 Typora 编辑器本地快速插入图片。无需额外操作。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://01warpdrive.github.io/img/index_img/cartoon5.png">
-<meta property="article:published_time" content="2023-09-25T06:57:38.000Z">
-<meta property="article:modified_time" content="2023-09-25T09:44:09.700Z">
+<meta property="og:image" content="https://01warpdrive.github.io/img/index_img/hexo.png">
+<meta property="article:published_time" content="2023-09-25T11:02:56.000Z">
+<meta property="article:modified_time" content="2023-09-25T13:39:06.736Z">
 <meta property="article:author" content="舣星">
-<meta property="article:tag" content="课程学习">
-<meta property="article:tag" content="AI">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="博客搭建">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://01warpdrive.github.io/img/index_img/cartoon5.png">
+<meta name="twitter:image" content="https://01warpdrive.github.io/img/index_img/hexo.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>人工智能理论及应用（3）CSP问题 - 舣星码头</title>
+  <title>hexo+typora图片插入方案 - 舣星码头</title>
 
   <link rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css">
 
@@ -227,7 +227,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="人工智能理论及应用（3）CSP问题"></span>
+            <span id="subtitle" data-typed-text="hexo+typora图片插入方案"></span>
           
         </div>
 
@@ -238,8 +238,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-09-25 14:57" pubdate>
-          2023年9月25日 下午
+        <time datetime="2023-09-25 19:02" pubdate>
+          2023年9月25日 晚上
         </time>
       </span>
     
@@ -290,12 +290,12 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">人工智能理论及应用（3）CSP问题</h1>
+            <h1 id="seo-header">hexo+typora图片插入方案</h1>
             
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年9月25日 下午
+                    本文最后更新于：2023年9月25日 晚上
                   
                 
               </p>
@@ -303,35 +303,57 @@
             
               <div class="markdown-body">
                 
-                <h1 id="人工智能理论及应用（3）CSP问题"><a href="#人工智能理论及应用（3）CSP问题" class="headerlink" title="人工智能理论及应用（3）CSP问题"></a>人工智能理论及应用（3）CSP问题</h1><h2 id="CSP"><a href="#CSP" class="headerlink" title="CSP"></a>CSP</h2><ul>
-<li>标准搜索问题：<ul>
-<li>在状态树中搜索一条由根节点到叶节点的路径</li>
+                <h1 id="hexo-typora图片插入方案"><a href="#hexo-typora图片插入方案" class="headerlink" title="hexo+typora图片插入方案"></a>hexo+typora图片插入方案</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Hexo 是目前比较流行的个人博客网站构建工具，文章基于 Markdown 撰写。</p>
+<p>然而当前 Hexo 官方提供的<a target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io/zh-cn/docs/asset-folders.html">图片插入方式</a>往往与流行的 Markdown 编辑器不匹配。插入方式略显繁琐。</p>
+<p>笔者使用 Typora 作为笔记软件，尝试寻求一种快捷的图片插入方式。</p>
+<p>在<a target="_blank" rel="external nofollow noopener noreferrer" href="https://www.cnblogs.com/himeka/p/16306906.html">hexo + typora 图片插入解决办法 - Yumine - 博客园 (cnblogs.com)</a>中，这位博主介绍了两种方案。一种是修改 Typora 默认图片保存地址为 Hexo 的图片目录。另一种是图床方案。</p>
+<p>两者都存在一些缺陷：</p>
+<ul>
+<li>前者在修改后，对于那些不想提交到博客的笔记，图片也会被保存到 Hexo 图片目录，从而被提交到 Github 仓库。不仅耗费空间，而且造成信息泄漏。</li>
+<li>Typora 默认的图片插入方式形如 <code>./.../xx.png</code>和<code>.../xx.png</code> 都无法被 Hexo 正确识别。只有<code>/img/xx.png</code>能被 Hexo 识别，而这样的形式必须手动修改，过于繁琐。</li>
+<li>图床方案依赖图床平台，不稳定，插入 Typora 也不方便。</li>
 </ul>
+<p>此外，在<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/hexojs/hexo-renderer-marked/issues/216">md img render part improvement of hexo-render-marked · Issue #216 · hexojs/hexo-renderer-marked (github.com)</a>中，使用者们也讨论出了一种方案。</p>
+<p>该方案首先要求设置 Hexo 中<code>post_asset_folder: true</code>，从而 Hexo 会为每一篇文章创建一个专门的文件夹存储图片。</p>
+<p>笔者比较排斥这个方案，当发布的文章数量多起来后，Hexo 文件夹中会看起来十分臃肿，不利于笔者维护博客文章。</p>
+<p>因此笔者提出了一种新的图片插入方案：</p>
+<ul>
+<li>无须启用 <code>post_asset_folder: true</code></li>
+<li>图片保存在本地，且非 Hexo 文章的 md 文件图片不会被上传</li>
+<li>同时满足 Typora 和 博客网站的 Markdown 图片显示</li>
+</ul>
+<h2 id="实现方式"><a href="#实现方式" class="headerlink" title="实现方式"></a>实现方式</h2><ul>
+<li><p>首先解决 Hexo 无法识别 <code>./.../xx.png</code> 的问题</p>
+<ul>
+<li>打开 Hexo 目录的<code>&quot;node_modules\hexo-renderer-marked\lib\renderer.js&quot;</code></li>
+<li>在如图所示位置增添相应代码</li>
+</ul>
+<p><img src="/../image-20230925190324714.png" srcset="/img/loading.gif" lazyload alt="image-20230925190324714"></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">if</span> (href.<span class="hljs-title function_">startsWith</span>(<span class="hljs-string">&#x27;.&#x27;</span>)) &#123;<br>      href = href.<span class="hljs-title function_">slice</span>(<span class="hljs-number">1</span>);<br>    &#125;<br></code></pre></td></tr></table></figure></li>
+<li><p>然后修改 Typora 配置</p>
+<ul>
+<li>进入「文件」- 「偏好设置」- 「图像」</li>
+<li>修改「插入图片时」为「复制到指定路径」，路径填写为<code>./img</code></li>
+<li>勾选如图配置</li>
+</ul>
+<p><img src="/img/image-20230925212438856.png" srcset="/img/loading.gif" lazyload alt="image-20230925212438856"></p>
+<blockquote>
+<p>配置后，Typora 会将图片保存到 md 文件所在目录的文件夹 img</p>
+<p> 中，笔者认为这是符合正常文件使用逻辑的。</p>
+<p>在 <code>\source\_posts</code> 中，Typora 会创建文件夹 img，所有博客文章的图片都将被保存在该文件夹中。由于 Hexo 更新博客时只读取  <code>\source\img</code> 中的图片，因此还需要下步配置。</p>
+</blockquote>
 </li>
-<li>Constraint satisfaction problems (CSPs)约束满足问题:  <ul>
-<li>一组对象的数学问题，状态必须满足给定的约束</li>
+<li><p>通过 Shell 指令，每次更新博客都将 <code>\source\_posts\img</code>中图片复制到<code>\source\img</code>中</p>
+<ul>
+<li>创建一个 txt 文件</li>
+<li>将下述内容复制到文档中</li>
+<li>保存，并修改文件类型为 <code>.bat</code></li>
 </ul>
-</li>
-<li>约束问题组成：<ul>
-<li>变量集合$X$：待赋值的对象</li>
-<li>值域集合$D$：每个变量的取值范围</li>
-<li>约束集合$C$：变量之间的关系限制</li>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bat"><span class="hljs-built_in">xcopy</span> /e &lt;待复制的绝对路径&gt; &lt;目标绝对路径&gt; /Y<br><span class="hljs-built_in">cd</span> &lt;Hexo 目录绝对路径&gt;<br>hexo g &amp;&amp; hexo d<br></code></pre></td></tr></table></figure></li>
 </ul>
-</li>
-<li>在约束问题中：<ul>
-<li>状态为一组变量的赋值</li>
-<li>初始状态为空的赋值</li>
-<li>后继函数是给一个未赋值的变量分配值</li>
-<li>目标测试是检查赋值是否满足约束</li>
-<li>当全部变量赋值且满足，则找到解</li>
-</ul>
-</li>
-</ul>
-<h2 id="Filtering"><a href="#Filtering" class="headerlink" title="Filtering"></a>Filtering</h2><ul>
-<li><p>回溯法</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs"><br></code></pre></td></tr></table></figure></li>
-</ul>
-<h2 id="Ordering"><a href="#Ordering" class="headerlink" title="Ordering"></a>Ordering</h2><h2 id="Structure"><a href="#Structure" class="headerlink" title="Structure"></a>Structure</h2><h2 id="Local-search"><a href="#Local-search" class="headerlink" title="Local search"></a>Local search</h2>
+<p>完成上述步骤后，每次插入图片时，只需要直接将图片插入 Typora，无需额外修改图片 url。提交博客时只需要点击 bat 文件，自动完成图片迁移和博客上传。</p>
+<p>当然，由于配置过程中修改 Hexo 的组件，理论上更新 Hexo 后需要再次修改配置。不过笔者认为博客以稳定为主，除了重大缺陷更新外，不需要保持最新版本。</p>
+
                 
               </div>
             
@@ -349,7 +371,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" class="category-chain-item">人工智能</a>
+  <a href="/categories/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" class="category-chain-item">技术杂谈</a>
   
   
 
@@ -364,9 +386,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/" class="print-no-link">#课程学习</a>
+        <a href="/tags/hexo/" class="print-no-link">#hexo</a>
       
-        <a href="/tags/AI/" class="print-no-link">#AI</a>
+        <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="print-no-link">#博客搭建</a>
       
     </div>
   
@@ -378,8 +400,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>人工智能理论及应用（3）CSP问题</div>
-      <div>https://01warpdrive.github.io/posts/dc42.html</div>
+      <div>hexo+typora图片插入方案</div>
+      <div>https://01warpdrive.github.io/posts/626b.html</div>
     </div>
     <div class="license-meta">
       
@@ -423,18 +445,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/posts/626b.html" title="hexo+typora图片插入方案">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">hexo+typora图片插入方案</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/posts/4577.html" title="MIT6.S081学习笔记（1）概述">
-                        <span class="hidden-mobile">MIT6.S081学习笔记（1）概述</span>
+                      <a href="/posts/dc42.html" title="人工智能理论及应用（3）CSP问题">
+                        <span class="hidden-mobile">人工智能理论及应用（3）CSP问题</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

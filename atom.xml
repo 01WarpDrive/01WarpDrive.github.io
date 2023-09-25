@@ -6,7 +6,7 @@
   <link href="https://01warpdrive.github.io/atom.xml" rel="self"/>
   
   <link href="https://01warpdrive.github.io/"/>
-  <updated>2023-09-25T09:44:09.700Z</updated>
+  <updated>2023-09-25T13:39:06.736Z</updated>
   <id>https://01warpdrive.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo+typora图片插入方案</title>
+    <link href="https://01warpdrive.github.io/posts/626b.html"/>
+    <id>https://01warpdrive.github.io/posts/626b.html</id>
+    <published>2023-09-25T11:02:56.000Z</published>
+    <updated>2023-09-25T13:39:06.736Z</updated>
+    
+    
+    <summary type="html">本文介绍了笔者构建的一种 Hexo + Typora 的图片插入方案，实现了 Typora 编辑器本地快速插入图片。无需额外操作。</summary>
+    
+    
+    
+    <category term="技术杂谈" scheme="https://01warpdrive.github.io/categories/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/"/>
+    
+    
+    <category term="hexo" scheme="https://01warpdrive.github.io/tags/hexo/"/>
+    
+    <category term="博客搭建" scheme="https://01warpdrive.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>人工智能理论及应用（3）CSP问题</title>
@@ -88,7 +109,7 @@
     <link href="https://01warpdrive.github.io/posts/2017.html"/>
     <id>https://01warpdrive.github.io/posts/2017.html</id>
     <published>2023-09-11T07:22:23.000Z</published>
-    <updated>2023-09-25T09:40:20.627Z</updated>
+    <updated>2023-09-25T11:00:22.425Z</updated>
     
     
     <summary type="html">本文及其系列文章是笔者基于上海交通大学《人工智能理论及应用》课程和 Berkeley CS188 内容整理并拓展，未经允许禁止转载。本文聚焦人工智能在搜索场景的应用。</summary>
@@ -178,14 +199,14 @@
     <link href="https://01warpdrive.github.io/posts/820f.html"/>
     <id>https://01warpdrive.github.io/posts/820f.html</id>
     <published>2023-02-28T06:30:07.000Z</published>
-    <updated>2023-09-25T08:12:55.815Z</updated>
+    <updated>2023-09-25T12:53:29.306Z</updated>
     
     
     <summary type="html">整理汇总了几种 windows 平台禁用 Hyper-V 的方法。</summary>
     
     
     
-    <category term="windows" scheme="https://01warpdrive.github.io/categories/windows/"/>
+    <category term="技术杂谈" scheme="https://01warpdrive.github.io/categories/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/"/>
     
     
     <category term="windows" scheme="https://01warpdrive.github.io/tags/windows/"/>
@@ -199,14 +220,14 @@
     <link href="https://01warpdrive.github.io/posts/bc95.html"/>
     <id>https://01warpdrive.github.io/posts/bc95.html</id>
     <published>2022-12-02T03:11:38.000Z</published>
-    <updated>2023-09-25T08:02:43.767Z</updated>
+    <updated>2023-09-25T12:53:40.919Z</updated>
     
     
     <summary type="html">这里汇集了一些笔者收藏的网络资源，五花八门、品类丰富。</summary>
     
     
     
-    <category term="资源分享" scheme="https://01warpdrive.github.io/categories/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/"/>
+    <category term="技术杂谈" scheme="https://01warpdrive.github.io/categories/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/"/>
     
     
     <category term="资源分享" scheme="https://01warpdrive.github.io/tags/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/"/>
