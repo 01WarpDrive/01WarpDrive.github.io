@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://notes.sjtu.edu.cn/uploads/upload_8eadb270be7146f93e02a3dc2f7a4bf3.png">
 <meta property="article:published_time" content="2023-09-11T07:22:23.000Z">
-<meta property="article:modified_time" content="2023-09-18T07:17:25.224Z">
+<meta property="article:modified_time" content="2023-09-25T07:00:15.576Z">
 <meta property="article:author" content="舣星">
 <meta property="article:tag" content="课程学习">
 <meta property="article:tag" content="AI">
@@ -295,7 +295,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年9月18日 下午
+                    本文最后更新于：2023年9月25日 下午
                   
                 
               </p>
@@ -305,7 +305,7 @@
                 
                 <h1 id="人工智能理论及应用（2）搜索"><a href="#人工智能理论及应用（2）搜索" class="headerlink" title="人工智能理论及应用（2）搜索"></a>人工智能理论及应用（2）搜索</h1><p>本文及其系列文章是笔者基于上海交通大学《人工智能理论及应用》课程和 Berkeley CS188 内容整理并拓展，未经允许禁止转载。本文聚焦人工智能在搜索场景的应用。</p>
 <p>本篇笔记包含从<a target="_blank" rel="external nofollow noopener noreferrer" href="https://www.yiibai.com/artificial-intelligence-tutorial/search-algorithms-in-ai.html">人工智能搜索算法 - 人工智能（AI）教程 (yiibai.com)</a>系列摘录的内容，侵删。该系列对搜索算法的解释比本笔记更全面，建议参考。</p>
-<h1 id="搜索问题定义"><a href="#搜索问题定义" class="headerlink" title="搜索问题定义"></a>搜索问题定义</h1><h2 id="搜索问题形式化定义"><a href="#搜索问题形式化定义" class="headerlink" title="搜索问题形式化定义"></a>搜索问题形式化定义</h2><ul>
+<h2 id="搜索问题定义"><a href="#搜索问题定义" class="headerlink" title="搜索问题定义"></a>搜索问题定义</h2><h3 id="搜索问题形式化定义"><a href="#搜索问题形式化定义" class="headerlink" title="搜索问题形式化定义"></a>搜索问题形式化定义</h3><ul>
 <li><p><strong>搜索</strong>：搜索是一个一步一步的过程，用于解决给定搜索空间中的搜索问题。搜索问题可能有三个主要因素：</p>
 <ul>
 <li>搜索空间：搜索空间表示系统可能具有的一组可能的解决方案。</li>
@@ -338,28 +338,28 @@
 </ul>
 </li>
 </ul>
-<h2 id="搜索问题数学工具"><a href="#搜索问题数学工具" class="headerlink" title="搜索问题数学工具"></a>搜索问题数学工具</h2><ul>
+<h3 id="搜索问题数学工具"><a href="#搜索问题数学工具" class="headerlink" title="搜索问题数学工具"></a>搜索问题数学工具</h3><ul>
 <li>搜索树</li>
 <li>空间状态图</li>
 </ul>
 <blockquote>
 <p>搜索树中的每一个节点都是状态空间图中的整条路径。</p>
 </blockquote>
-<h2 id="搜索算法的评价维度"><a href="#搜索算法的评价维度" class="headerlink" title="搜索算法的评价维度"></a>搜索算法的评价维度</h2><ul>
+<h3 id="搜索算法的评价维度"><a href="#搜索算法的评价维度" class="headerlink" title="搜索算法的评价维度"></a>搜索算法的评价维度</h3><ul>
 <li><strong>完备性</strong>：如果有解，保证能找到（complete)</li>
 <li><strong>最优性</strong>：保证找到代价最低的路径(optimal)</li>
 <li><strong>时间复杂度</strong></li>
 <li><strong>空间复杂度</strong></li>
 </ul>
-<h2 id="搜索算法类型"><a href="#搜索算法类型" class="headerlink" title="搜索算法类型"></a>搜索算法类型</h2><ul>
+<h3 id="搜索算法类型"><a href="#搜索算法类型" class="headerlink" title="搜索算法类型"></a>搜索算法类型</h3><ul>
 <li>无信息搜索算法</li>
 <li>启发式搜索算法</li>
 </ul>
-<h1 id="无信息搜索算法"><a href="#无信息搜索算法" class="headerlink" title="无信息搜索算法"></a>无信息搜索算法</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p><strong>无信息搜索</strong>：也称为盲目搜索，没有问题定义之外的附加信息，所有的搜索策略仅通过选择结点扩展的顺序进行定义。</p>
+<h2 id="无信息搜索算法"><a href="#无信息搜索算法" class="headerlink" title="无信息搜索算法"></a>无信息搜索算法</h2><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p><strong>无信息搜索</strong>：也称为盲目搜索，没有问题定义之外的附加信息，所有的搜索策略仅通过选择结点扩展的顺序进行定义。</p>
 <blockquote>
 <p>例如：深度优先搜索(DFS)、广度优先搜索(BFS)、一致代价搜索(UCS)</p>
 </blockquote>
-<h2 id="深度优先搜索-DFS"><a href="#深度优先搜索-DFS" class="headerlink" title="深度优先搜索(DFS)"></a>深度优先搜索(DFS)</h2><ul>
+<h3 id="深度优先搜索-DFS"><a href="#深度优先搜索-DFS" class="headerlink" title="深度优先搜索(DFS)"></a>深度优先搜索(DFS)</h3><ul>
 <li><p>搜索树示例：</p>
 <ul>
 <li><p>b是分支系数(branching factor)</p>
@@ -383,7 +383,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="广度优先搜索-BFS"><a href="#广度优先搜索-BFS" class="headerlink" title="广度优先搜索(BFS)"></a>广度优先搜索(BFS)</h2><ul>
+<h3 id="广度优先搜索-BFS"><a href="#广度优先搜索-BFS" class="headerlink" title="广度优先搜索(BFS)"></a>广度优先搜索(BFS)</h3><ul>
 <li>分析在这棵树上的广度优先搜索的算法性质：<ul>
 <li><strong>时间复杂度</strong>：$O(b^m)$</li>
 <li><strong>空间复杂度</strong>：$O(b^m)$</li>
@@ -392,7 +392,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="一致代价搜索-UCS"><a href="#一致代价搜索-UCS" class="headerlink" title="一致代价搜索(UCS)"></a>一致代价搜索(UCS)</h2><ul>
+<h3 id="一致代价搜索-UCS"><a href="#一致代价搜索-UCS" class="headerlink" title="一致代价搜索(UCS)"></a>一致代价搜索(UCS)</h3><ul>
 <li><p>代价敏感搜索</p>
 <ul>
 <li>广度优先搜索以行动次数为依据寻找最短路径，而不是寻找成本最低的路径。</li>
@@ -411,7 +411,7 @@
 </ul>
 </li>
 </ul>
-<h1 id="启发式搜索算法"><a href="#启发式搜索算法" class="headerlink" title="启发式搜索算法"></a>启发式搜索算法</h1><p>有信息搜索：也称为启发式搜索，能够获得超出问题本身定义的知识，例如距
+<h2 id="启发式搜索算法"><a href="#启发式搜索算法" class="headerlink" title="启发式搜索算法"></a>启发式搜索算法</h2><p>有信息搜索：也称为启发式搜索，能够获得超出问题本身定义的知识，例如距
 离终点的距离：</p>
 <ul>
 <li>提出评价函数，可用于选择扩展结点；</li>
@@ -419,7 +419,7 @@
 <li><strong>启发函数h(n)</strong>: 特有知识的融入；</li>
 <li>贪婪搜索算法，A*搜索算法。</li>
 </ul>
-<h2 id="贪婪搜索算法"><a href="#贪婪搜索算法" class="headerlink" title="贪婪搜索算法"></a>贪婪搜索算法</h2><ul>
+<h3 id="贪婪搜索算法"><a href="#贪婪搜索算法" class="headerlink" title="贪婪搜索算法"></a>贪婪搜索算法</h3><ul>
 <li>试图扩展最接近终点的结点<ul>
 <li>评价函数h(n) 计算当前扩展点与终点的距离。</li>
 </ul>
@@ -432,7 +432,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="A-搜索算法"><a href="#A-搜索算法" class="headerlink" title="A*搜索算法"></a>A*搜索算法</h2><ul>
+<h3 id="A-搜索算法"><a href="#A-搜索算法" class="headerlink" title="A*搜索算法"></a>A*搜索算法</h3><ul>
 <li><p>避免扩展高代价结点，评价函数$f(n)=g(n)+h(n)$。</p>
 <ul>
 <li>已知代价g(n)：距离起点的已知代价；  </li>
@@ -529,10 +529,106 @@
 </ul>
 </li>
 </ul>
-<h1 id="搜索算法应用"><a href="#搜索算法应用" class="headerlink" title="搜索算法应用"></a>搜索算法应用</h1><ul>
+<h2 id="零和博弈搜索算法"><a href="#零和博弈搜索算法" class="headerlink" title="零和博弈搜索算法"></a>零和博弈搜索算法</h2><ul>
+<li>零和博弈：两个玩家根据所掌握信息，做出最有利于自己的行动决策<ul>
+<li>假设我方策略与对手策略一样最优</li>
+<li>基本概念：<ul>
+<li>初始状态$S_0$：游戏的初始状态</li>
+<li>玩家PLAYER($P$)：当前状态$s$，哪个玩家行动</li>
+<li>行动ACTIONS($a$)：当前状态$s$，采取的可能行动</li>
+<li>状态转移模型RESULT$(s,a)$：当前状态$s$，采取行动$a$后得到的新状态</li>
+<li>终局状态检测TERMIMAL–TEST($S$)：检测游戏在状态$s$时是否结束</li>
+<li>终局得分UTILITY($s$, $p$)：在终局状态$s$时，玩家$p$的得分</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="最小最大搜索算法"><a href="#最小最大搜索算法" class="headerlink" title="最小最大搜索算法"></a>最小最大搜索算法</h3><ul>
+<li><p>最小最大搜索算法的思想：</p>
+<ul>
+<li>我方选择最大化我方利益的动作</li>
+<li> 对手选择最小化我方利益的动作  </li>
+</ul>
+</li>
+<li><p>最小最大搜索算法的优点：</p>
+<ul>
+<li>最优性</li>
+<li>普适性</li>
+</ul>
+</li>
+<li><p>以井字棋为例：</p>
+<p><img src="https://notes.sjtu.edu.cn/uploads/upload_8da2b3d9e00c75567514e4a5c7db8cd2.png" srcset="/img/loading.gif" lazyload></p>
+<ul>
+<li><p>两个玩家MAX和MIN，分别追求得分的最大化、最小化</p>
+</li>
+<li><p>针对对抗过程中的状态变换，构建一个状态树</p>
+<ul>
+<li>树的层级按照玩家顺序依次交替</li>
+<li>每一层涵盖了当前玩家不同行动导致的不同状态</li>
+<li>对于每个状态可以评估当前得分</li>
+<li>树的叶节点往往代表游戏终止</li>
+</ul>
+</li>
+<li><p>对于同一层中每个状态，相应玩家需要选取子状态中得分最优化的一个子节点。该过程从叶节点向根节点进行。</p>
+<blockquote>
+<p>例如MAX玩家对于的一个状态节点需要从其子状态中选取最大的得分作为该状态节点的得分</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><h4 id="minimax算法："><a href="#minimax算法：" class="headerlink" title="minimax算法："></a>minimax算法：</h4><ul>
+<li>通俗概述：每个玩家从最糟糕的情况中选择一个最好的情况。在<code>minimax</code>算法里面，<code>MAX</code>会选择后续玩法最大的一种玩法。而<code>MIN</code>会选择后续玩法里面最小的一种玩法。两者轮流竞争。</li>
+<li><code>minimax</code>的算法非常简单有效的对抗搜索算法，如果计算资源足够的话，这种算法可返回最优结果。但是就是这个计算资源可能会导致在对一些复杂的情况下无法穷举，无法在有效时间内返回结果。</li>
+<li>$b$为当下可执行动作数量，$m$为回合数<ul>
+<li>搜索树的节点数量$O(b^m)$</li>
+<li>搜索量巨大，耗费算力与时间  </li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h3 id="优化：alpha、beta剪枝"><a href="#优化：alpha、beta剪枝" class="headerlink" title="优化：alpha、beta剪枝"></a>优化：alpha、beta剪枝</h3><ul>
+<li>**Alpha值$\alpha$**：假设$n$为MIN节点，如果$n$的一个子节点$m$得分小于等于$\alpha$，则$n$和它的后续节点可以被剪枝。因为MIN节点的上一层是MAX节点，只需要MIN层中的最大得分，小于等于$\alpha$的得分无效。因为$n$为MIN节点，继续搜索也只会取不大于$m$得分的分数。</li>
+<li>**Beta值$\beta$**：假设$n$为MAX节点，如果$n$的一个子节点得分大于等于$\beta$，则$n$和它的后续节点可以被剪枝。因为MAX节点的上一层是MIN节点，只需要MAX层中的最小得分，因此大于等于$\beta$的得分无效。</li>
+<li>每个节点都有Alpha值和Beta值，在搜索过程中不断更新。$\alpha$从$-\infty$递增，$\beta$从$+\infty$递减。</li>
+<li>算法主要思想<ul>
+<li>每一个节点都会由 alpha 和 beta 两个值来确定一个范围 [alpha, beta]  </li>
+<li>alpha 值代表的是下界，beta 代表的是上界  </li>
+<li>每搜索一个子节点，都会按规则对范围进行修正  </li>
+<li>max 节点可以修改 alpha 值，min 节点修改 beta 值  </li>
+<li>如果max 节点出现了 v &gt;= beta 的情况，则不用搜索更多的子树了，未搜索的这部分子树将被忽略，这个操作就被称作剪枝（pruning）</li>
+<li>如果min 节点出现了 v &lt;= alpha 的情况，prune  </li>
+</ul>
+</li>
+</ul>
+<figure class="highlight pf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs pf">def max-value(<span class="hljs-keyword">state</span>, α, β):<br>    initialize v = -∞<br>    <span class="hljs-keyword">for</span> each successor of <span class="hljs-keyword">state</span>:<br>        v = <span class="hljs-keyword">max</span>(v, value(successor, α, β))<br>        if v ≥ β return v<br>        α = <span class="hljs-keyword">max</span>(α, v)<br>    return v<br><br>def min-value(<span class="hljs-keyword">state</span> , α, β):<br>    initialize v = +∞<br>    <span class="hljs-keyword">for</span> each successor of <span class="hljs-keyword">state</span>:<br>        v = <span class="hljs-keyword">min</span>(v, value(successor, α, β))<br>        if v ≤ α return v<br>        β = <span class="hljs-keyword">min</span>(β, v)<br>    return v<br></code></pre></td></tr></table></figure></li>
+<li><p>类比人类使用直觉估计状态的价值，AI可以通过价值评估函数根据当前状态评估获胜的概率，从而避免遍历整个状态树：</p>
+<ul>
+<li><p>避免状态无限重复：搜索有限深度</p>
+</li>
+<li><p>Evaluation functions are always imperfect</p>
+</li>
+<li><p>The deeper in the tree the evaluation function is buried, the</p>
+<p>less the quality of the evaluation function matters</p>
+</li>
+<li><p>An important example of the tradeoff between complexity of features and complexity of computation</p>
+</li>
+<li><p>Evaluation functions score non-terminals in depth-limited search  </p>
+</li>
+<li><p>Ideal function: returns the actual minimax value of the position  </p>
+</li>
+<li><p>In practice: typically weighted linear sum of features</p>
+</li>
+<li><p>…</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="搜索算法应用"><a href="#搜索算法应用" class="headerlink" title="搜索算法应用"></a>搜索算法应用</h2><ul>
 <li>地图导航</li>
 <li>VRP Methods</li>
 </ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p><img src="https://notes.sjtu.edu.cn/uploads/upload_46c20260ea8e928cef4a6730d9a6b245.png" srcset="/img/loading.gif" lazyload></p>
 
                 
               </div>
@@ -625,9 +721,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/posts/3a7a.html" title="人工智能安全技术笔记（2）AI伦理与公平">
+                      <a href="/posts/3a7a.html" title="人工智能安全技术笔记（2）">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">人工智能安全技术笔记（2）AI伦理与公平</span>
+                        <span class="hidden-mobile">人工智能安全技术笔记（2）</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     

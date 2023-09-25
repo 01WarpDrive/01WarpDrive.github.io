@@ -18,26 +18,25 @@
   
     <meta name="description" content="本文及其系列文章是笔者基于上海交通大学《人工智能理论及应用》课程和 Berkeley CS188 内容整理并拓展，未经允许禁止转载。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="人工智能理论及应用（1）概论">
-<meta property="og:url" content="https://01warpdrive.github.io/posts/6a12.html">
+<meta property="og:title" content="人工智能理论及应用（3）CSP问题">
+<meta property="og:url" content="https://01warpdrive.github.io/posts/dc42.html">
 <meta property="og:site_name" content="舣星码头">
 <meta property="og:description" content="本文及其系列文章是笔者基于上海交通大学《人工智能理论及应用》课程和 Berkeley CS188 内容整理并拓展，未经允许禁止转载。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://notes.sjtu.edu.cn/uploads/upload_e905a030ff3af7915fa55084b3727cdf.png">
-<meta property="article:published_time" content="2023-09-11T05:14:50.000Z">
-<meta property="article:modified_time" content="2023-09-20T08:09:29.093Z">
+<meta property="og:image" content="https://notes.sjtu.edu.cn/uploads/upload_e2c751a12ba1723826ab5f1568135acf.png">
+<meta property="article:published_time" content="2023-09-25T06:57:38.000Z">
+<meta property="article:modified_time" content="2023-09-25T07:34:58.183Z">
 <meta property="article:author" content="舣星">
 <meta property="article:tag" content="课程学习">
 <meta property="article:tag" content="AI">
-<meta property="article:tag" content="人工智能理论及应用">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://notes.sjtu.edu.cn/uploads/upload_e905a030ff3af7915fa55084b3727cdf.png">
+<meta name="twitter:image" content="https://notes.sjtu.edu.cn/uploads/upload_e2c751a12ba1723826ab5f1568135acf.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>人工智能理论及应用（1）概论 - 舣星码头</title>
+  <title>人工智能理论及应用（3）CSP问题 - 舣星码头</title>
 
   <link rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css">
 
@@ -228,7 +227,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="人工智能理论及应用（1）概论"></span>
+            <span id="subtitle" data-typed-text="人工智能理论及应用（3）CSP问题"></span>
           
         </div>
 
@@ -239,8 +238,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-09-11 13:14" pubdate>
-          2023年9月11日 下午
+        <time datetime="2023-09-25 14:57" pubdate>
+          2023年9月25日 下午
         </time>
       </span>
     
@@ -291,12 +290,12 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">人工智能理论及应用（1）概论</h1>
+            <h1 id="seo-header">人工智能理论及应用（3）CSP问题</h1>
             
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年9月20日 下午
+                    本文最后更新于：2023年9月25日 下午
                   
                 
               </p>
@@ -304,162 +303,35 @@
             
               <div class="markdown-body">
                 
-                <h1 id="人工智能理论及应用（1）概论"><a href="#人工智能理论及应用（1）概论" class="headerlink" title="人工智能理论及应用（1）概论"></a>人工智能理论及应用（1）概论</h1><p>本文及其系列文章是笔者基于上海交通大学《人工智能理论及应用》课程和 Berkeley CS188 内容整理并拓展，未经允许禁止转载。</p>
-<p>本系列所有文章：</p>
-<ul>
-<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://starxyz.top/posts/6a12.html">人工智能理论及应用（1）概论 - 舣星码头 (starxyz.top)</a></li>
-<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://starxyz.top/posts/2017.html">人工智能理论及应用（2）搜索 - 舣星码头 (starxyz.top)</a></li>
-<li></li>
-</ul>
-<h1 id="人工智能定义"><a href="#人工智能定义" class="headerlink" title="人工智能定义"></a>人工智能定义</h1><p>人工智能是一门集成脑科学、认知科学、心理学、语言学、逻辑学、哲学
-与计算机科学的交叉学科。它是研究、开发用于模拟、延伸和扩展人的智
-道能的理论、方法、技术及应用系统的一门新的技术科学。</p>
-<ul>
-<li><strong>强人工智能</strong>是像人类一样能够对世界进行感知和交互，通过自我学习的方式对所有领域进行记忆、推理和解决问题的人工智能。</li>
-<li><strong>弱人工智能</strong>指的是专注于且只能解决特定领域问题的人工智能，其自身模型只能够解决相关领域的问题。其不具备自我意识，不具备理解、思考、计划解决问题的能力。</li>
-</ul>
-<h1 id="人工智能简史"><a href="#人工智能简史" class="headerlink" title="人工智能简史"></a>人工智能简史</h1><ul>
-<li><p>时代先知：图灵和图灵测试  </p>
-<ul>
-<li><p>1950年，计算机科学之父阿兰图灵发表论文 《Computing Machinery and Intelligence》第一次提出了智能的概念，并定义了图灵测试。</p>
-<blockquote>
-<p>图灵测试（Turing Test)是指，人们通过设备和另外一个人进行聊天，可以是文字形式也可以是语音，聊天之后，如果30%的人认为是在和一个真人聊天，而实际对方却是个机器，那么我们就认为这个机器通过了图灵测试。</p>
-<p>图灵测试如今已经不具备较高的应用价值。</p>
-</blockquote>
-</li>
+                <h1 id="人工智能理论及应用（3）CSP问题"><a href="#人工智能理论及应用（3）CSP问题" class="headerlink" title="人工智能理论及应用（3）CSP问题"></a>人工智能理论及应用（3）CSP问题</h1><h2 id="CSP"><a href="#CSP" class="headerlink" title="CSP"></a>CSP</h2><ul>
+<li>标准搜索问题：<ul>
+<li>在状态树中搜索一条由根节点到叶节点的路径</li>
 </ul>
 </li>
-<li><p>诞生：1956年达特茅斯会议 </p>
-<ul>
-<li>1956年提出了人工智能的概念，列举了人工智能问题的七个方面。</li>
+<li>Constraint satisfaction problems (CSPs)约束满足问题:  <ul>
+<li>一组对象的数学问题，状态必须满足给定的约束</li>
 </ul>
 </li>
-<li><p>形成期（1956-1974）</p>
-<ul>
-<li><p>1957年，Richard Bellman提出贝尔曼方程（也被称作动态规划方程），奠定了强化学习基础。</p>
-</li>
-<li><p>1958年，心理学家Rosenblatt提出感知机模型，是最简单的神经网络，是第一个从算法上描述的神经网络。</p>
-</li>
-<li><p>1965年在美国国家航空航天局要求下，斯坦福大学成功研制了DENRAL专家系统，该系统具有非常丰富的化学知识，可根据质谱数据帮助化学家推断分子结构。这个系统的完成标志着专家系统的诞生。</p>
-<blockquote>
-<p>专家系统是一个具有大量专门知识与经验的程序系统，根据某领域多个专家提供的知识和经验，进行推理和判断，模拟人类专家的决策过程，以便解决那些需要人类专家处理的复杂问题。</p>
-</blockquote>
-</li>
+<li>约束问题组成：<ul>
+<li>变量集合$X$：待赋值的对象</li>
+<li>值域集合$D$：每个变量的取值范围</li>
+<li>约束集合$C$：变量之间的关系限制</li>
 </ul>
 </li>
-<li><p>第一次寒冬（1974-1980）</p>
-<ul>
-<li>1973年6月，在BBC节目中，Lighthill爵士与Richard Gregory教授、John McCarthy教授和Donald Michie教授的那场名为“通用机器人是海市蜃楼”的著名辩论。</li>
-<li>简单的非线性函数，例如XOR映射，也需要使用多层感知机（MLP）来表示。</li>
-<li>承诺无法兑现、乐观情绪遭到打击、研究经费缩减。</li>
-</ul>
-</li>
-<li><p>复苏期（1980-1987）</p>
-<ul>
-<li> 80年代主流人工智能的重点：专家系统。</li>
-<li>CMU XCON for Digital Equipment Corporation：截至1986年，每年为公司节省4000万美元。</li>
-<li>专家系统研究者的共识：人工智能系统的三个基础问题——知识获取、知识表征和知识利用。</li>
-</ul>
-</li>
-<li><p>第二次寒冬（1987-1993）</p>
-<ul>
-<li>反向传播算法在深度神经网络中并不好用。梯度消失与梯度爆炸。</li>
-<li>专家系统: 维护成本高昂，且局限于特定应用。</li>
-<li>计算机速度不够快、算法不够智能，学界再次对人工智能失去信心。</li>
-</ul>
-</li>
-<li><p>复苏期（1993-2012）  </p>
-<ul>
-<li>从传统机器学习走向深度学习。</li>
-<li> 1997年，IBM计算机系统“深蓝”战胜国际象棋世界冠军。</li>
-<li>1998年，Yann LeCun使用了带卷积的神经网络实现了手写数字识别。</li>
-<li>2006年，Hinton提出“深度学习”神经网络。</li>
-<li>2009年，当时的GPU的运算速度达到了CPU的70倍。</li>
-</ul>
-</li>
-<li><p>新一代人工智能（2012-至今）  </p>
-<ul>
-<li>2012年，深度学习网络AlexNet夺得图像识别比赛冠军；2016年，人工智能程序AlphaGo击败围棋世界冠军。</li>
-<li>人脸识别、AlphaGo、智能机器人、艺术创造、人机交互</li>
-<li>算法突破、大数据、并行计算：GPU</li>
+<li>在约束问题中：<ul>
+<li>状态为一组变量的赋值</li>
+<li>初始状态为空的赋值</li>
+<li>后继函数是给一个未赋值的变量分配值</li>
+<li>目标测试是检查赋值是否满足约束</li>
+<li>当全部变量赋值且满足，则找到解</li>
 </ul>
 </li>
 </ul>
-<h1 id="人工智能分类"><a href="#人工智能分类" class="headerlink" title="人工智能分类"></a>人工智能分类</h1><ul>
-<li>传统的机器学习：<ul>
-<li>支持向量机</li>
-<li>决策树</li>
-<li>线性回归</li>
-<li>…</li>
+<h2 id="Filtering"><a href="#Filtering" class="headerlink" title="Filtering"></a>Filtering</h2><ul>
+<li><p>回溯法</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs"><br></code></pre></td></tr></table></figure></li>
 </ul>
-</li>
-<li>深度学习</li>
-<li>强化学习<ul>
-<li>强化学习是机器学习的重要领域，研究智能体如何最大化累计的回报，从而决定在环境中采用什么样的行动策略。</li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p>机器学习、深度学习、强化学习区分：<a target="_blank" rel="external nofollow noopener noreferrer" href="https://www.zhihu.com/question/279973545">(14 封私信 / 85 条消息) 机器学习、深度学习和强化学习的关系和区别是什么？ - 知乎 (zhihu.com)</a></p>
-<ul>
-<li>机器学习：一切通过<strong>优化方法</strong>挖掘数据中规律的学科。</li>
-<li>深度学习：一切运用了<strong>神经网络</strong>作为参数结构进行优化的机器学习算法。</li>
-<li>强化学习：不仅能利用现有数据，还可以通过对环境的<strong>探索获得新数据</strong>，并利用新数据循环往复地<strong>更新迭代</strong>现有模型的机器学习算法。</li>
-</ul>
-</blockquote>
-<hr>
-<ul>
-<li>基本功能<ul>
-<li>分类问题</li>
-<li>回归问题</li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p>分类问题和回归问题的区别：<a target="_blank" rel="external nofollow noopener noreferrer" href="https://cloud.tencent.com/developer/article/1604194">浅谈机器学习-回归与分类的区别-腾讯云开发者社区-腾讯云 (tencent.com)</a></p>
-<ul>
-<li>分类问题：离散变量、定性、输出空间不是度量空间</li>
-<li>回归问题：连续变量、定量、输出空间是度量空间</li>
-</ul>
-</blockquote>
-<hr>
-<ul>
-<li>传统的计算机视觉<ul>
-<li>Canny算法</li>
-<li>Sift（尺度不变特征变换）算法  </li>
-<li>HOG（方向梯度直方图）算法  </li>
-</ul>
-</li>
-<li>深度学习的计算机视觉<ul>
-<li>卷积神经网络</li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li>语音类技术<ul>
-<li>自动语音识别</li>
-<li>文字转语音</li>
-<li>对话系统</li>
-</ul>
-</li>
-<li>语言处理类技术<ul>
-<li>智能问题回答</li>
-<li>机器翻译</li>
-<li>网页搜索</li>
-<li>文本分类、垃圾邮件过滤等</li>
-</ul>
-</li>
-</ul>
-<h1 id="人工智能产业架构"><a href="#人工智能产业架构" class="headerlink" title="人工智能产业架构"></a>人工智能产业架构</h1><ol>
-<li>基础层、技术层、应用层<ul>
-<li>基础层：计算机系统、计算硬件、数据</li>
-<li>技术层：算法理论、开发平台、应用需求</li>
-<li>应用层：教育、医疗等</li>
-</ul>
-</li>
-</ol>
-
+<h2 id="Ordering"><a href="#Ordering" class="headerlink" title="Ordering"></a>Ordering</h2><h2 id="Structure"><a href="#Structure" class="headerlink" title="Structure"></a>Structure</h2><h2 id="Local-search"><a href="#Local-search" class="headerlink" title="Local search"></a>Local search</h2>
                 
               </div>
             
@@ -496,8 +368,6 @@
       
         <a href="/tags/AI/" class="print-no-link">#AI</a>
       
-        <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%90%86%E8%AE%BA%E5%8F%8A%E5%BA%94%E7%94%A8/" class="print-no-link">#人工智能理论及应用</a>
-      
     </div>
   
 </div>
@@ -508,8 +378,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>人工智能理论及应用（1）概论</div>
-      <div>https://01warpdrive.github.io/posts/6a12.html</div>
+      <div>人工智能理论及应用（3）CSP问题</div>
+      <div>https://01warpdrive.github.io/posts/dc42.html</div>
     </div>
     <div class="license-meta">
       
@@ -521,7 +391,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年9月11日</div>
+          <div>2023年9月25日</div>
         </div>
       
       
@@ -553,18 +423,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/posts/2017.html" title="人工智能理论及应用（2）搜索">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">人工智能理论及应用（2）搜索</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/posts/30b1.html" title="人工智能安全技术笔记（1）概论">
-                        <span class="hidden-mobile">人工智能安全技术笔记（1）概论</span>
+                      <a href="/posts/4577.html" title="MIT6.S081学习笔记（1）概述">
+                        <span class="hidden-mobile">MIT6.S081学习笔记（1）概述</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

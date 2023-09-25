@@ -6,7 +6,7 @@
   <link href="https://01warpdrive.github.io/atom.xml" rel="self"/>
   
   <link href="https://01warpdrive.github.io/"/>
-  <updated>2023-09-18T03:20:59.412Z</updated>
+  <updated>2023-09-25T07:34:58.183Z</updated>
   <id>https://01warpdrive.github.io/</id>
   
   <author>
@@ -17,11 +17,55 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>人工智能安全技术笔记（2）AI伦理与公平</title>
+    <title>人工智能理论及应用（3）CSP问题</title>
+    <link href="https://01warpdrive.github.io/posts/dc42.html"/>
+    <id>https://01warpdrive.github.io/posts/dc42.html</id>
+    <published>2023-09-25T06:57:38.000Z</published>
+    <updated>2023-09-25T07:34:58.183Z</updated>
+    
+    
+    <summary type="html">本文及其系列文章是笔者基于上海交通大学《人工智能理论及应用》课程和 Berkeley CS188 内容整理并拓展，未经允许禁止转载。</summary>
+    
+    
+    
+    <category term="人工智能" scheme="https://01warpdrive.github.io/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    
+    <category term="课程学习" scheme="https://01warpdrive.github.io/tags/%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="AI" scheme="https://01warpdrive.github.io/tags/AI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MIT6.S081学习笔记（1）概述</title>
+    <link href="https://01warpdrive.github.io/posts/4577.html"/>
+    <id>https://01warpdrive.github.io/posts/4577.html</id>
+    <published>2023-09-19T12:36:42.000Z</published>
+    <updated>2023-09-25T03:39:45.921Z</updated>
+    
+    
+    <summary type="html">本文及其系列文章是笔者基于著名操作系统课程课程MIT6.S081撰写，主要涵盖笔者自学课程的学习资源和笔记心得。未经允许禁止转载。本文主要汇总学习相关的资源和感想。</summary>
+    
+    
+    
+    <category term="操作系统" scheme="https://01warpdrive.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+    <category term="课程学习" scheme="https://01warpdrive.github.io/tags/%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="操作系统" scheme="https://01warpdrive.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+    <category term="6.S081" scheme="https://01warpdrive.github.io/tags/6-S081/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>人工智能安全技术笔记（2）</title>
     <link href="https://01warpdrive.github.io/posts/3a7a.html"/>
     <id>https://01warpdrive.github.io/posts/3a7a.html</id>
     <published>2023-09-18T03:14:22.000Z</published>
-    <updated>2023-09-18T03:20:59.412Z</updated>
+    <updated>2023-09-25T03:52:50.305Z</updated>
     
     
     <summary type="html">本文及其系列文章是笔者基于上海交通大学《人工智能安全技术》课程内容整理并拓展，未经允许禁止转载。</summary>
@@ -44,7 +88,7 @@
     <link href="https://01warpdrive.github.io/posts/2017.html"/>
     <id>https://01warpdrive.github.io/posts/2017.html</id>
     <published>2023-09-11T07:22:23.000Z</published>
-    <updated>2023-09-18T07:17:25.224Z</updated>
+    <updated>2023-09-25T07:00:15.576Z</updated>
     
     
     <summary type="html">本文及其系列文章是笔者基于上海交通大学《人工智能理论及应用》课程和 Berkeley CS188 内容整理并拓展，未经允许禁止转载。本文聚焦人工智能在搜索场景的应用。</summary>
@@ -65,7 +109,7 @@
     <link href="https://01warpdrive.github.io/posts/6a12.html"/>
     <id>https://01warpdrive.github.io/posts/6a12.html</id>
     <published>2023-09-11T05:14:50.000Z</published>
-    <updated>2023-09-17T14:05:10.649Z</updated>
+    <updated>2023-09-20T08:09:29.093Z</updated>
     
     
     <summary type="html">本文及其系列文章是笔者基于上海交通大学《人工智能理论及应用》课程和 Berkeley CS188 内容整理并拓展，未经允许禁止转载。</summary>
@@ -79,6 +123,8 @@
     
     <category term="AI" scheme="https://01warpdrive.github.io/tags/AI/"/>
     
+    <category term="人工智能理论及应用" scheme="https://01warpdrive.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%90%86%E8%AE%BA%E5%8F%8A%E5%BA%94%E7%94%A8/"/>
+    
   </entry>
   
   <entry>
@@ -86,7 +132,7 @@
     <link href="https://01warpdrive.github.io/posts/30b1.html"/>
     <id>https://01warpdrive.github.io/posts/30b1.html</id>
     <published>2023-09-11T02:52:38.000Z</published>
-    <updated>2023-09-18T03:16:40.730Z</updated>
+    <updated>2023-09-25T03:52:39.715Z</updated>
     
     
     <summary type="html">本文及其系列文章是笔者基于上海交通大学《人工智能安全技术》课程内容整理并拓展，未经允许禁止转载。本文介绍人工智能与安全的交叉问题。</summary>
@@ -102,6 +148,8 @@
     
     <category term="AI" scheme="https://01warpdrive.github.io/tags/AI/"/>
     
+    <category term="人工智能安全技术笔记" scheme="https://01warpdrive.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AE%89%E5%85%A8%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/"/>
+    
   </entry>
   
   <entry>
@@ -109,7 +157,7 @@
     <link href="https://01warpdrive.github.io/posts/c862.html"/>
     <id>https://01warpdrive.github.io/posts/c862.html</id>
     <published>2023-08-18T03:11:38.000Z</published>
-    <updated>2023-09-17T05:31:16.762Z</updated>
+    <updated>2023-09-21T06:28:44.958Z</updated>
     
     
     <summary type="html">记录笔者根据网上推荐的 leetcode 刷题指南的学习过程，以此文章勉励自己在代码上不断进步。</summary>
@@ -151,7 +199,7 @@
     <link href="https://01warpdrive.github.io/posts/bc95.html"/>
     <id>https://01warpdrive.github.io/posts/bc95.html</id>
     <published>2022-12-02T03:11:38.000Z</published>
-    <updated>2023-08-18T11:50:56.285Z</updated>
+    <updated>2023-09-25T08:02:43.767Z</updated>
     
     
     <summary type="html">这里汇集了一些笔者收藏的网络资源，五花八门、品类丰富。</summary>
@@ -164,25 +212,6 @@
     <category term="资源分享" scheme="https://01warpdrive.github.io/tags/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/"/>
     
     <category term="不定期更新" scheme="https://01warpdrive.github.io/tags/%E4%B8%8D%E5%AE%9A%E6%9C%9F%E6%9B%B4%E6%96%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>图床测试</title>
-    <link href="https://01warpdrive.github.io/posts/f2eb.html"/>
-    <id>https://01warpdrive.github.io/posts/f2eb.html</id>
-    <published>2022-12-01T04:14:45.000Z</published>
-    <updated>2023-08-18T11:50:52.299Z</updated>
-    
-    
-    <summary type="html">这是一篇测试文章，用来确认笔者的图床没有挂掉。</summary>
-    
-    
-    
-    <category term="博客测试" scheme="https://01warpdrive.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%B5%8B%E8%AF%95/"/>
-    
-    
-    <category term="博客测试，趣味" scheme="https://01warpdrive.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%B5%8B%E8%AF%95%EF%BC%8C%E8%B6%A3%E5%91%B3/"/>
     
   </entry>
   

@@ -2,9 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://01warpdrive.github.io/posts/bc95.html</loc>
+    
+    <lastmod>2023-09-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://01warpdrive.github.io/posts/dc42.html</loc>
+    
+    <lastmod>2023-09-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://01warpdrive.github.io/posts/2017.html</loc>
     
-    <lastmod>2023-09-18</lastmod>
+    <lastmod>2023-09-25</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -13,7 +31,7 @@
   <url>
     <loc>https://01warpdrive.github.io/posts/3a7a.html</loc>
     
-    <lastmod>2023-09-18</lastmod>
+    <lastmod>2023-09-25</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -22,16 +40,16 @@
   <url>
     <loc>https://01warpdrive.github.io/posts/30b1.html</loc>
     
-    <lastmod>2023-09-18</lastmod>
+    <lastmod>2023-09-25</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://01warpdrive.github.io/posts/6a12.html</loc>
+    <loc>https://01warpdrive.github.io/posts/4577.html</loc>
     
-    <lastmod>2023-09-17</lastmod>
+    <lastmod>2023-09-25</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -40,25 +58,16 @@
   <url>
     <loc>https://01warpdrive.github.io/posts/c862.html</loc>
     
-    <lastmod>2023-09-17</lastmod>
+    <lastmod>2023-09-21</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://01warpdrive.github.io/posts/bc95.html</loc>
+    <loc>https://01warpdrive.github.io/posts/6a12.html</loc>
     
-    <lastmod>2023-08-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://01warpdrive.github.io/posts/f2eb.html</loc>
-    
-    <lastmod>2023-08-18</lastmod>
+    <lastmod>2023-09-20</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -121,7 +130,7 @@
 
   <url>
     <loc>https://01warpdrive.github.io/</loc>
-    <lastmod>2023-09-18</lastmod>
+    <lastmod>2023-09-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -129,84 +138,105 @@
   
   <url>
     <loc>https://01warpdrive.github.io/tags/windows/</loc>
-    <lastmod>2023-09-18</lastmod>
+    <lastmod>2023-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://01warpdrive.github.io/tags/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/</loc>
-    <lastmod>2023-09-18</lastmod>
+    <lastmod>2023-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://01warpdrive.github.io/tags/machine-learning/</loc>
-    <lastmod>2023-09-18</lastmod>
+    <lastmod>2023-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://01warpdrive.github.io/tags/darknet/</loc>
-    <lastmod>2023-09-18</lastmod>
+    <lastmod>2023-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://01warpdrive.github.io/tags/C/</loc>
-    <lastmod>2023-09-18</lastmod>
+    <lastmod>2023-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://01warpdrive.github.io/tags/%E7%AE%97%E6%B3%95%EF%BC%8C%E4%B8%8D%E5%AE%9A%E6%9C%9F%E6%9B%B4%E6%96%B0/</loc>
-    <lastmod>2023-09-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://01warpdrive.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%B5%8B%E8%AF%95%EF%BC%8C%E8%B6%A3%E5%91%B3/</loc>
-    <lastmod>2023-09-18</lastmod>
+    <lastmod>2023-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://01warpdrive.github.io/tags/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/</loc>
-    <lastmod>2023-09-18</lastmod>
+    <lastmod>2023-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://01warpdrive.github.io/tags/%E4%B8%8D%E5%AE%9A%E6%9C%9F%E6%9B%B4%E6%96%B0/</loc>
-    <lastmod>2023-09-18</lastmod>
+    <lastmod>2023-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://01warpdrive.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</loc>
-    <lastmod>2023-09-18</lastmod>
+    <lastmod>2023-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://01warpdrive.github.io/tags/%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2023-09-18</lastmod>
+    <lastmod>2023-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://01warpdrive.github.io/tags/AI/</loc>
-    <lastmod>2023-09-18</lastmod>
+    <lastmod>2023-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://01warpdrive.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
+    <lastmod>2023-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://01warpdrive.github.io/tags/6-S081/</loc>
+    <lastmod>2023-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://01warpdrive.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AE%89%E5%85%A8%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2023-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://01warpdrive.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%90%86%E8%AE%BA%E5%8F%8A%E5%BA%94%E7%94%A8/</loc>
+    <lastmod>2023-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -215,49 +245,49 @@
   
   <url>
     <loc>https://01warpdrive.github.io/categories/windows/</loc>
-    <lastmod>2023-09-18</lastmod>
+    <lastmod>2023-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://01warpdrive.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2023-09-18</lastmod>
+    <lastmod>2023-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://01warpdrive.github.io/categories/%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2023-09-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://01warpdrive.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2023-09-18</lastmod>
+    <lastmod>2023-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://01warpdrive.github.io/categories/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/</loc>
-    <lastmod>2023-09-18</lastmod>
+    <lastmod>2023-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://01warpdrive.github.io/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</loc>
-    <lastmod>2023-09-18</lastmod>
+    <lastmod>2023-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://01warpdrive.github.io/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</loc>
-    <lastmod>2023-09-18</lastmod>
+    <lastmod>2023-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://01warpdrive.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
+    <lastmod>2023-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
